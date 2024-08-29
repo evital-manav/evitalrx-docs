@@ -1,0 +1,122 @@
+# Table of contents
+
+* [API - powered by eVitalRx](README.md)
+
+## API for Product Catalogue
+
+* [Introduction](api-for-product-catalogue/introduction.md)
+* [Medicines](api-for-product-catalogue/medicines/README.md)
+  * [Search Product](api-for-product-catalogue/medicines/search-product.md)
+  * [Product Details](api-for-product-catalogue/medicines/product-details.md)
+  * [Search Content](api-for-product-catalogue/medicines/search-content.md)
+  * [Request Product](api-for-product-catalogue/medicines/request-product.md)
+  * [Get Categories](api-for-product-catalogue/medicines/get-categories.md)
+  * [Get Category Products](api-for-product-catalogue/medicines/get-category-products.md)
+
+## API for Patient App
+
+* [Introduction](api-for-patient-app/introduction.md)
+* [Login/Signup](api-for-patient-app/login-signup/README.md)
+  * [Signup send OTP](api-for-patient-app/login-signup/signup-send-otp.md)
+  * [Signup](api-for-patient-app/login-signup/add-patient.md)
+  * [Login](api-for-patient-app/login-signup/add-patient-1.md)
+  * [Forgot password send OTP](api-for-patient-app/login-signup/get-patient.md)
+  * [Reset password](api-for-patient-app/login-signup/add-patient-2.md)
+  * [Change password](api-for-patient-app/login-signup/add-patient-3.md)
+* [Patients](api-for-patient-app/patients/README.md)
+  * [Add Patient](api-for-patient-app/patients/add-patient.md)
+  * [Update Patient](api-for-patient-app/patients/add-patient-1.md)
+  * [Get Patient](api-for-patient-app/patients/get-patient.md)
+  * [Add Patient family member](api-for-patient-app/patients/add-patient-2.md)
+* [Addresses](api-for-patient-app/addresses/README.md)
+  * [List Addresses](api-for-patient-app/addresses/add-patient.md)
+  * [Add-Update Address](api-for-patient-app/addresses/add-patient-1.md)
+  * [Set Default Address](api-for-patient-app/addresses/add-patient-2.md)
+  * [Delete Address](api-for-patient-app/addresses/add-patient-3.md)
+* [Medicines](api-for-patient-app/medicines/README.md)
+  * [Search Products](api-for-patient-app/medicines/search-products.md)
+  * [Search Manufacturer](api-for-patient-app/medicines/search-manufacturer.md)
+  * [Product Details](api-for-patient-app/medicines/product-details.md)
+  * [Get Stock details](api-for-patient-app/medicines/get-stock-details.md)
+  * [Get Product Batch](api-for-patient-app/medicines/get-product-batch.md)
+  * [Search Content](api-for-patient-app/medicines/search-content.md)
+  * [Branded to Generic](api-for-patient-app/medicines/branded-to-generic.md)
+  * [Get Categories](api-for-patient-app/medicines/get-categories.md)
+  * [Get Category Products](api-for-patient-app/medicines/get-category-products.md)
+  * [Get Entity Categories](api-for-patient-app/medicines/get-entity-categories.md)
+  * [Get Entity Category Products](api-for-patient-app/medicines/get-entity-category-products.md)
+* [Orders](api-for-patient-app/orders/README.md)
+  * [Place Order](api-for-patient-app/orders/place-order.md)
+  * [Save](api-for-patient-app/orders/save.md)
+  * [Order Details](api-for-patient-app/orders/order-details.md)
+  * [Order List](api-for-patient-app/orders/order-list.md)
+  * [Mark as Accept](api-for-patient-app/orders/mark-as-accept.md)
+  * [Mark as Reject](api-for-patient-app/orders/mark-as-reject.md)
+  * [Get Reject Reasons](api-for-patient-app/orders/get-reject-reasons.md)
+  * [Get Chemist Order Settings](api-for-patient-app/orders/get-chemist-order-settings.md)
+  * [⛔ Mark as Shipped](api-for-patient-app/orders/mark-as-shipped.md)
+  * [Mark as Delivered](api-for-patient-app/orders/mark-as-delivered.md)
+  * [Order Return](api-for-patient-app/orders/order-return.md)
+
+## API FOR EMR/HMIS SOFTWARE <a href="#api-for-doctor-portal" id="api-for-doctor-portal"></a>
+
+* [Introduction](api-for-doctor-portal/introduction.md)
+* [Medicines](api-for-doctor-portal/medicines/README.md)
+  * [Search Products](api-for-doctor-portal/medicines/search-products.md)
+  * [Product Details](api-for-doctor-portal/medicines/product-details.md)
+  * [Get Alternatives](api-for-doctor-portal/medicines/get-alternatives.md)
+  * [Get Product Batch](api-for-doctor-portal/medicines/get-product-batch.md)
+  * [Get Expired Batches](api-for-doctor-portal/medicines/get-expired-batches.md)
+  * [Request Product](api-for-doctor-portal/medicines/request-product.md)
+  * [Branded to Generic](api-for-doctor-portal/medicines/branded-to-generic.md)
+  * [Search Content](api-for-doctor-portal/medicines/search-content.md)
+  * [Get Inventory Status](api-for-doctor-portal/medicines/get-inventory-status.md)
+  * [Get Inventory Items](api-for-doctor-portal/medicines/get-inventory-items.md)
+* [Patients](api-for-doctor-portal/patients/README.md)
+  * [Add Patient](api-for-doctor-portal/patients/add-patient.md)
+  * [Get Patient](api-for-doctor-portal/patients/get-patient.md)
+  * [Update Patient](api-for-doctor-portal/patients/update-patient.md)
+  * [Add Patient family member](api-for-doctor-portal/patients/add-patient-1.md)
+* [Orders](api-for-doctor-portal/orders/README.md)
+  * [Push Prescription](api-for-doctor-portal/orders/push-prescription.md)
+  * [Order Details](api-for-doctor-portal/orders/order-details.md)
+  * [Order List](api-for-doctor-portal/orders/order-list.md)
+  * [⛔ Update Order](api-for-doctor-portal/orders/update-order.md)
+  * [Save](api-for-doctor-portal/orders/save.md)
+
+## API FOR MASTER <a href="#api-for-master-portal" id="api-for-master-portal"></a>
+
+* [Reports](api-for-master-portal/reports/README.md)
+  * [Margin Report](api-for-master-portal/reports/margin-report.md)
+  * [Sales GST-wise Report](api-for-master-portal/reports/sales-gst-wise-report.md)
+
+## API FOR FULFILLMENT <a href="#api-for-fulfillment-portal" id="api-for-fulfillment-portal"></a>
+
+* [Introduction](api-for-fulfillment-portal/introduction.md)
+* [Medicines](api-for-fulfillment-portal/medicines/README.md)
+  * [Search Products](api-for-fulfillment-portal/medicines/search-products.md)
+  * [Product Details](api-for-fulfillment-portal/medicines/product-details.md)
+* [Orders](api-for-fulfillment-portal/orders/README.md)
+  * [Checkout](api-for-fulfillment-portal/orders/checkout.md)
+  * [Place Order](api-for-fulfillment-portal/orders/place-order.md)
+* [Patients](api-for-fulfillment-portal/patients/README.md)
+  * [Add Patient](api-for-fulfillment-portal/patients/add-patient.md)
+  * [Get Patient](api-for-fulfillment-portal/patients/get-patient.md)
+
+## Webhook Responses <a href="#api-for-webhook-responses" id="api-for-webhook-responses"></a>
+
+* [Introduction](api-for-webhook-responses/introduction.md)
+* [Medicine Webhook](api-for-webhook-responses/medicine-webhook.md)
+* [Transaction Webhook](api-for-webhook-responses/transaction-webhook.md)
+* [Draft Save](api-for-webhook-responses/draft-save.md)
+* [Draft Edit](api-for-webhook-responses/draft-edit.md)
+* [Order Save](api-for-webhook-responses/order-save.md)
+* [Order Edit](api-for-webhook-responses/order-edit.md)
+* [Order Accepted](api-for-webhook-responses/order-accepted.md)
+* [Order Rejected](api-for-webhook-responses/order-rejected.md)
+* [Order Shipped](api-for-webhook-responses/order-shipped.md)
+* [Order Delivered](api-for-webhook-responses/order-delivered.md)
+
+## Others
+
+* [Terms & Conditions](others/terms-and-conditions.md)
