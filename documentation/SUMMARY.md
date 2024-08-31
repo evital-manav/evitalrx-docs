@@ -47,7 +47,7 @@
   * [Get Entity Category Products](api-for-patient-app/medicines/get-entity-category-products.md)
 * [Orders](api-for-patient-app/orders/README.md)
   * [Place Order](api-for-patient-app/orders/place-order.md)
-  * [Copy of Mark as Reject](api-for-patient-app/orders/copy-of-mark-as-reject.md)
+  * [Cancel Order](api-for-patient-app/orders/cancel-order.md)
   * [Save](api-for-patient-app/orders/save.md)
   * [Order Details](api-for-patient-app/orders/order-details.md)
   * [Order List](api-for-patient-app/orders/order-list.md)

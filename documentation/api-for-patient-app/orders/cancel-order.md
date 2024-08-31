@@ -1,10 +1,10 @@
 ---
-description: This API is used to reject the order.
+description: The patient can cancel the order with this API.
 ---
 
-# Copy of Mark as Reject
+# Cancel Order
 
-## Push the Order in Rejected state
+## Push the Order in Cancelled state
 
 <mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/orders/`cancel\_order
 
