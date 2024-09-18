@@ -14,9 +14,11 @@
 | address\_id                                     | String | <p>Unique ID of address, If provided, it will update the address associated with this ID. </p><p></p><p>If this ID is not provided, then new address will be inserted. </p> |
 | address<mark style="color:red;">\*</mark>       | String | Address of the patient                                                                                                                                                      |
 | address\_line2                                  | String | Area, street or Landmark of the patient address.                                                                                                                            |
+| city                                            | String | City of the patient                                                                                                                                                         |
+| state                                           | String | State of the patient                                                                                                                                                        |
 | zipcode                                         | String | Pincode of the patient's address.                                                                                                                                           |
-| latitude<mark style="color:red;">\*</mark>      | Number | GPS co-ordinate of the patient's address.                                                                                                                                   |
-| longitude<mark style="color:red;">\*</mark>     | Number | GPS co-ordinate of the patient's address.                                                                                                                                   |
+| latitude                                        | Number | GPS co-ordinate of the patient's address.                                                                                                                                   |
+| longitude                                       | Number | GPS co-ordinate of the patient's address.                                                                                                                                   |
 
 {% tabs %}
 {% tab title="200: OK Success" %}
