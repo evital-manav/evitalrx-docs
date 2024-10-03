@@ -1,0 +1,2366 @@
+{
+	"info": {
+		"_postman_id": "2e30027b-73ab-417f-8c39-c5373efae6d3",
+		"name": "B2B",
+		"description": "**B2B API Routing from vitalRx for:**\n\n1. **Wholesale**\n    \n    1. List Sales\n        \n    2. Save Sales\n        \n    3. View Sales\n        \n2. **Wholesale Return**\n    \n    1. List Return\n        \n    2. Save Return\n        \n    3. View Return\n        \n3. **B2B Customers**\n    \n    1. List Customers\n        \n    2. Add/Update Customers\n        \n    3. Customer Details\n        \n\nMake sure localhost server 3000 is running.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38017393"
+	},
+	"item": [
+		{
+			"name": "Wholesale",
+			"item": [
+				{
+					"name": "B2B Sales List",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "wholesaleGDVYzLP559sGJeWty4wXHaw",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "e_invoice_generated",
+									"value": "all",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2025-3-31",
+									"type": "text"
+								},
+								{
+									"key": "gst_base",
+									"value": "all",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "desc",
+									"type": "text"
+								},
+								{
+									"key": "order_by_entity_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "orderby",
+									"value": "created_date",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-4-1",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "rrr",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Sales List - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "wholesaleGDVYzLP559sGJeWty4wXHaw",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "e_invoice_generated",
+											"value": "all",
+											"type": "text"
+										},
+										{
+											"key": "end_date",
+											"value": "2025-3-31",
+											"type": "text"
+										},
+										{
+											"key": "gst_base",
+											"value": "all",
+											"type": "text"
+										},
+										{
+											"key": "order",
+											"value": "desc",
+											"type": "text"
+										},
+										{
+											"key": "order_by_entity_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "orderby",
+											"value": "created_date",
+											"type": "text"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2024-4-1",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										},
+										{
+											"key": "searchstring",
+											"value": "rrr",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12284"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ffc-vnGJi7jhCOPD3dhU0dCL8xYQRk4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:28:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2024-09-30 18:58:16\",\n    \"data\": {\n        \"rpp\": 20,\n        \"current_page\": 1,\n        \"staff_list\": [\n            {\n                \"id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"fullname\": \"Owner\",\n                \"status\": \"active\",\n                \"entity\": \"chemist\",\n                \"role_id\": \"aBs1Hvl3Duj0n3tGG09Biw==\"\n            },\n            {\n                \"id\": \"AUggj/Nbe8fOBBWEUBAysA==\",\n                \"firstname\": \"Raju\",\n                \"lastname\": \"R\",\n                \"status\": \"active\",\n                \"role_id\": \"S7BTDcQD0IFOO7ypLxnmRg==\",\n                \"role_name\": \"Store Manager\",\n                \"fullname\": \"Raju R\",\n                \"entity\": \"staff\"\n            }\n        ],\n        \"results\": [\n            {\n                \"id\": \"HnZSEa0ysCYZ+5aCa6n+rw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 99,\n                \"bill_no\": \"99\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"4635977672\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:44:40\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"41GgBLwTsO9WxJTaVqeEzQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 98,\n                \"bill_no\": \"98\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"2956194181\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:35:51\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"gANAk+OFk/MZCFsz18IauA==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 97,\n                \"bill_no\": \"97\",\n                \"bill_date\": \"2024-09-30\",\n                \"amount\": 85,\n                \"payment_status\": 2,\n                \"order_number\": \"9728401963\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:26:46\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-10-06\",\n                \"total\": 85,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"Ug4oS1riepAT8sLonzsLPw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 0,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-30\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"6059984036\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"draft\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:25:28\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-10-06\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"p9k3ms7kTGjXa9O3/zoGjg==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 0,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-30\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"8276108456\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"draft\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:24:37\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-10-06\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"bsQhAH6422FE6r2ahdOFBw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 0,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-30\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"3224180757\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"draft\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:20:16\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-10-06\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"5WuC5egmYGKGlD9AmbfX5w==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 0,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-30\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"1668297866\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"draft\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 16:16:18\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-10-06\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"7FoJ5gV8+7AkEu0J9CZnlA==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 95,\n                \"bill_no\": \"95\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"7808418212\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 12:00:06\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"YFZYhg/3jvFxjDeqkWyBCQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 94,\n                \"bill_no\": \"94\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"6768993439\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 11:59:19\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"JFFvQa9iMubiGYYItct7fQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 93,\n                \"bill_no\": \"93\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"6062814022\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 11:03:12\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"EfIbbPz8NRtgZbC8dlTqhQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 92,\n                \"bill_no\": \"92\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"9754576847\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 10:31:59\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"pJQ4vOWegTMTBUbad+wCaQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 91,\n                \"bill_no\": \"91\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"1135046941\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:34:01\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"6oqWV+v2tYUdpXidw8KlOg==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 90,\n                \"bill_no\": \"90\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"4184323186\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:27:08\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"GFWYAEyKJq+/V2jR2MVYpQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 89,\n                \"bill_no\": \"89\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"0071081375\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 17:53:36\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"StVtK0wESCTNNIuxp+jYZg==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 88,\n                \"bill_no\": \"88\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"0265702483\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 17:21:11\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"JPnRr+z5C5H/XCWWaZ6kyQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 87,\n                \"bill_no\": \"87\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"0700128707\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 17:10:53\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"ZxXG39CGlshnK3Dq5Nbojg==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 86,\n                \"bill_no\": \"86\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"2874807497\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 15:41:42\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"NM8A5WReh7lwErJ1yupzVQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 85,\n                \"bill_no\": \"85\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"5743861798\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 15:28:09\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"mNUD3G3OxEC9KkYVQOmspQ==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 84,\n                \"bill_no\": \"84\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"4581742625\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 15:26:39\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            },\n            {\n                \"id\": \"Dlmt73Z0NWVJixrowENdow==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"reference_number\": 83,\n                \"bill_no\": \"83\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"5735998723\",\n                \"delivery_note\": \"\",\n                \"order_status\": \"completed\",\n                \"order_type\": \"wholesale\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 15:25:02\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"area\": \"\",\n                \"einvoice_url\": \"\",\n                \"payment_due_date\": \"2024-09-29\",\n                \"total\": 1033,\n                \"payment_cleared\": \"yes\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Sales Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "additional_information",
+									"value": "[{}]",
+									"type": "text"
+								},
+								{
+									"key": "bill_base",
+									"value": "ptr",
+									"type": "text"
+								},
+								{
+									"key": "bill_date",
+									"value": "2024-9-27",
+									"type": "text"
+								},
+								{
+									"key": "buyer_chemist_id",
+									"value": "bOhA95wWipFevGWyHpujmg==",
+									"description": "532",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "delivery_note",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "doctor_id",
+									"value": "LxH7UjhNHdXQY4F8MC4wBA==",
+									"description": "85",
+									"type": "text"
+								},
+								{
+									"key": "due_receipt_amount",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "entity",
+									"value": "chemist",
+									"type": "text"
+								},
+								{
+									"key": "entity_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "gst_base",
+									"value": "with_gst",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+									"description": "73861",
+									"type": "text"
+								},
+								{
+									"key": "payment_due_date",
+									"value": "2024-09-29",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "print_response",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "save_from",
+									"value": "click_from_btn",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "stock_transfer",
+									"value": "no",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"save"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Sales Save - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "additional_information",
+											"value": "[{}]",
+											"type": "text"
+										},
+										{
+											"key": "bill_base",
+											"value": "ptr",
+											"type": "text"
+										},
+										{
+											"key": "bill_date",
+											"value": "2024-9-27",
+											"type": "text"
+										},
+										{
+											"key": "buyer_chemist_id",
+											"value": "bOhA95wWipFevGWyHpujmg==",
+											"description": "532",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "delivery_note",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "doctor_id",
+											"value": "LxH7UjhNHdXQY4F8MC4wBA==",
+											"description": "85",
+											"type": "text"
+										},
+										{
+											"key": "due_receipt_amount",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "entity",
+											"value": "chemist",
+											"type": "text"
+										},
+										{
+											"key": "entity_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "gst_base",
+											"value": "with_gst",
+											"type": "text"
+										},
+										{
+											"key": "items",
+											"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+											"description": "73861",
+											"type": "text"
+										},
+										{
+											"key": "payment_due_date",
+											"value": "2024-09-29",
+											"type": "text"
+										},
+										{
+											"key": "payment_status",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "print_response",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "remark",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "save_from",
+											"value": "click_from_btn",
+											"type": "text"
+										},
+										{
+											"key": "shipping",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "stock_transfer",
+											"value": "no",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"save"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "152"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"98-wG/6rUdwzSXCikxKpcGA+owRrSg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:28:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Bill created successfully\",\n    \"datetime\": \"2024-09-30 18:58:43\",\n    \"data\": {\n        \"chemist_order_id\": \"diIp34WaJ1/zBxYJhsQShg==\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Sales View",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "chemist_wholesale_id",
+									"value": "SZ6AfI2e+h+Kb18NnvBDMA==",
+									"description": "1731",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "print_from_receiver",
+									"value": "yes",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								},
+								{
+									"key": "chemist_wholesale_id",
+									"value": "kRRKmAYlETwB/Rt+GX51tQ==",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"view"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Sales View - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "chemist_wholesale_id",
+											"value": "SZ6AfI2e+h+Kb18NnvBDMA==",
+											"description": "1731",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "print_from_receiver",
+											"value": "yes",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										},
+										{
+											"key": "chemist_wholesale_id",
+											"value": "kRRKmAYlETwB/Rt+GX51tQ==",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"view"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3401"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d49-FEdQnyBstMcz+UCsa86Oz/oK2xQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:29:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2024-09-30 18:59:00\",\n    \"data\": {\n        \"wholesale_id\": \"SZ6AfI2e+h+Kb18NnvBDMA==\",\n        \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n        \"owner_pharmacy_name\": \"Demo Pharmacy\",\n        \"owner_mobile\": \"8128937197\",\n        \"owner_email\": \"khush.shah@evital.in\",\n        \"owner_gstn_number\": \"05AAABB0639G1Z8\",\n        \"owner_address\": \"4d Square Mall\",\n        \"owner_address_line2\": \"Opp. Mr. Diy\",\n        \"owner_area\": \"Motera\",\n        \"owner_city\": \"Ahmedabad\",\n        \"owner_state\": \"Gujarat\",\n        \"owner_zipcode\": \"380005\",\n        \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n        \"buyer_pharmacy_name\": \"Test Pharma\",\n        \"buyer_mobile\": \"7878989877\",\n        \"buyer_email\": \"\",\n        \"buyer_gstn_number\": \"\",\n        \"buyer_address\": \"\",\n        \"buyer_address_line2\": \"\",\n        \"buyer_area\": \"\",\n        \"buyer_city\": \"Ahmedabad\",\n        \"buyer_state\": \"Gujarat\",\n        \"buyer_zipcode\": \"380013\",\n        \"bill_date\": \"2024-09-23\",\n        \"bill_no\": \"11\",\n        \"order_number\": \"7247878068\",\n        \"amount\": 1338,\n        \"due_amount\": 1338,\n        \"buyer_pan_no\": \"\",\n        \"created_date\": \"2024-09-23 16:15:28\",\n        \"order_status\": \"completed\",\n        \"payment_status\": 2,\n        \"payment_date\": \"2024-09-23 16:15:28\",\n        \"payment_due_date\": \"2024-09-29\",\n        \"margin\": 459.94,\n        \"roundoff\": 0.46,\n        \"einvoice_url\": \"\",\n        \"einvoice_qr\": \"\",\n        \"einvoice_irn\": \"\",\n        \"shipping\": 0,\n        \"tds_percentage\": 0,\n        \"tds\": 0,\n        \"tcs_percentage\": 0,\n        \"tcs\": 0,\n        \"bill_base\": \"ptr\",\n        \"remark\": \"\",\n        \"reference_number\": 11,\n        \"payment_ref_id\": \"\",\n        \"eway_billno\": \"\",\n        \"eway\": {},\n        \"delivery_note\": \"\",\n        \"doctor_id\": \"LxH7UjhNHdXQY4F8MC4wBA==\",\n        \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n        \"order_by_entity\": \"chemist\",\n        \"method_name\": \"Credit\",\n        \"buyer_latitude\": \"0\",\n        \"buyer_longitude\": \"0\",\n        \"delivery_id\": \"\",\n        \"buyer_license_number_20\": \"\",\n        \"buyer_license_number_21\": \"\",\n        \"total\": 1338,\n        \"total_qty\": 80,\n        \"total_discount\": 0,\n        \"total_items\": 1,\n        \"total_gst\": 137.18,\n        \"total_cess\": 57.16,\n        \"items\": [\n            {\n                \"id\": \"LyGWvI0Ah0CCoZzgO8HAdw==\",\n                \"chemist_wholesale_id\": \"SZ6AfI2e+h+Kb18NnvBDMA==\",\n                \"medicine_id\": \"TF7Wm49nceLV+NmoM6HJYw==\",\n                \"batch\": \"ADASASD\",\n                \"expiry\": \"2029-02-01\",\n                \"mrp\": 23.5,\n                \"quantity\": 80,\n                \"free\": 0,\n                \"price_to_retailer\": 14.29,\n                \"discount_percentage\": 0,\n                \"discount\": 0,\n                \"base_price\": 14.29,\n                \"gst_percentage\": 12,\n                \"gst\": 1.7148,\n                \"amount\": 1337.54,\n                \"size\": 10,\n                \"scheme_amount\": 0,\n                \"margin_percentage\": 0,\n                \"cess\": 0.7145,\n                \"cess_percentage\": 5,\n                \"hsn_code\": \"\",\n                \"medicine_name\": \"Ltk 50 Tablet\",\n                \"schedule_type\": \"H1\",\n                \"pack_size\": \"10 Tablets\",\n                \"packing_size\": \"10 tablets in 1 strip\",\n                \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n                \"landing_price\": 16.449848300677342,\n                \"location\": \"\",\n                \"sale_b2b_discount\": 0,\n                \"taxable\": 1143.2\n            }\n        ],\n        \"seller_chemist_details\": {\n            \"profileData\": {\n                \"gstn_number\": \"05AAABB0639G1Z8\",\n                \"email\": \"khush.shah@evital.in\",\n                \"mobile\": \"8128937197\",\n                \"city\": \"Ahmedabad\",\n                \"pharmacy_name\": \"Demo Pharmacy\",\n                \"address\": \"4d Square Mall\",\n                \"address_line2\": \"Opp. Mr. Diy\",\n                \"pharmacy_logo\": \"\",\n                \"chemist_qrcode_link\": \"localhost/evital/code/QCTPOAX/\",\n                \"license_number_20\": \"EFCS4645156\",\n                \"license_number_21\": \"EFCS4645151\",\n                \"fssai\": \"12345678910112\",\n                \"license_20b\": \"RFVGRF\",\n                \"license_21b\": \"123456Y7892\",\n                \"license_20f\": \"5943094438943\",\n                \"fssai_number\": \"12345678910112\"\n            },\n            \"shopTimings\": {\n                \"fullday_working\": \"\",\n                \"timings\": {}\n            },\n            \"api_access\": \"yes\"\n        },\n        \"settingResults\": {\n            \"wholesale_prefix\": \"\",\n            \"wholesale_default_payment_mode\": \"2\",\n            \"lock_wholesale_bills\": \"-1\",\n            \"allow_negative_wholesale\": \"yes\",\n            \"wholesale_whatsapp_msg\": \"yes\",\n            \"wholesale_return_default_payment_mode\": \"2\",\n            \"margin_safety_net_b2b\": \"no\",\n            \"lock_wholesale_item\": \"no\",\n            \"b2b_invoice_paper_size\": \"a5\"\n        },\n        \"doctor_name\": \"Aagam Jain\",\n        \"doctor_address\": \"\",\n        \"doctor_area\": \"\",\n        \"doctor_city\": \"ahmedabad\",\n        \"doctor_state\": \"gujarat\",\n        \"doctor_zipcode\": \"\",\n        \"doctor_license\": \"JDLKSJ439398\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Sales Draft Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bill_date",
+									"value": "2024-10-01",
+									"type": "text"
+								},
+								{
+									"key": "print_response",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "buyer_chemist_id",
+									"value": "bOhA95wWipFevGWyHpujmg==",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "payment_due_date",
+									"value": "2024-10-06",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+									"type": "text"
+								},
+								{
+									"key": "stock_transfer",
+									"value": "no",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "delivery_note",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "doctor_id",
+									"value": "LxH7UjhNHdXQY4F8MC4wBA==",
+									"description": "85",
+									"type": "text"
+								},
+								{
+									"key": "entity",
+									"value": "chemist",
+									"type": "text"
+								},
+								{
+									"key": "entity_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"type": "text"
+								},
+								{
+									"key": "bill_base",
+									"value": "ptr",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "draft",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "gst_base",
+									"value": "with_gst",
+									"type": "text"
+								},
+								{
+									"key": "save_from",
+									"value": "click_from_btn",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"type": "text"
+								},
+								{
+									"key": "accesstoken",
+									"value": "jcme3dk71xrz32g7",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/save_as_draft",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"save_as_draft"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Sales Draft Save - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "bill_date",
+											"value": "2024-9-30",
+											"type": "text"
+										},
+										{
+											"key": "print_response",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "buyer_chemist_id",
+											"value": "bOhA95wWipFevGWyHpujmg==",
+											"type": "text"
+										},
+										{
+											"key": "payment_status",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "payment_due_date",
+											"value": "2024-10-06",
+											"type": "text"
+										},
+										{
+											"key": "items",
+											"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+											"type": "text"
+										},
+										{
+											"key": "stock_transfer",
+											"value": "no",
+											"type": "text"
+										},
+										{
+											"key": "remark",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "delivery_note",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "doctor_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "entity",
+											"value": "chemist",
+											"type": "text"
+										},
+										{
+											"key": "entity_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"type": "text"
+										},
+										{
+											"key": "bill_base",
+											"value": "ptr",
+											"type": "text"
+										},
+										{
+											"key": "order_status",
+											"value": "draft",
+											"type": "text"
+										},
+										{
+											"key": "shipping",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "gst_base",
+											"value": "with_gst",
+											"type": "text"
+										},
+										{
+											"key": "save_from",
+											"value": "click_from_btn",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"type": "text"
+										},
+										{
+											"key": "accesstoken",
+											"value": "jcme3dk71xrz32g7",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/save_as_draft",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"save_as_draft"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-kKtFobJw7jJkvk9eCyAASP06wtU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:29:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Wholesale draft created successfully\",\n    \"datetime\": \"2024-09-30 18:59:20\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "B2B Customers List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "due_only",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "desc",
+									"type": "text"
+								},
+								{
+									"key": "orderby",
+									"value": "net_credit",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "rrr",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/b2b_customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"b2b_customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Customers List - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "due_only",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "order",
+											"value": "desc",
+											"type": "text"
+										},
+										{
+											"key": "orderby",
+											"value": "net_credit",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										},
+										{
+											"key": "searchstring",
+											"value": "rrr",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/b2b_customers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"b2b_customers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3263"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cbf-vNGw4tb8+y6QxkvIVoaeLZFtsPQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:29:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2024-09-30 18:59:42\",\n    \"data\": {\n        \"current_page\": 1,\n        \"rpp\": 20,\n        \"results\": [\n            {\n                \"net_credit\": 32186,\n                \"chemist_name\": \"Rrr\",\n                \"customer_attributes_mobile\": \"7656789034\",\n                \"pharmacy_name\": \"rrr\",\n                \"mobile\": \"7656789034\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"area\": \"\",\n                \"state\": \"Kerala\",\n                \"country\": \"India\",\n                \"zipcode\": \"680013\",\n                \"city\": \"Thrissur\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": 0,\n                \"chemist_name\": \"Doe Pharmacy\",\n                \"customer_attributes_mobile\": \"8564213978\",\n                \"pharmacy_name\": \"Doe Pharmacy\",\n                \"mobile\": \"8564213978\",\n                \"buyer_chemist_id\": \"NwwR8+AEqAAr8JXDyAeqYQ==\",\n                \"area\": \"\",\n                \"state\": \"Karnataka\",\n                \"country\": \"India\",\n                \"zipcode\": \"560025\",\n                \"city\": \"Bangalore\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": 0,\n                \"chemist_name\": \"Khush Shah\",\n                \"customer_attributes_mobile\": \"7776543210\",\n                \"pharmacy_name\": \"Demo Pharmacy\",\n                \"mobile\": \"8128937197\",\n                \"buyer_chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"Motera\",\n                \"state\": \"Gujarat\",\n                \"country\": \"India\",\n                \"zipcode\": \"380005\",\n                \"city\": \"Ahmedabad\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": 0,\n                \"chemist_name\": \"Blockfgh\",\n                \"customer_attributes_mobile\": \"9987898789\",\n                \"pharmacy_name\": \"blockfgh\",\n                \"mobile\": \"9987898789\",\n                \"buyer_chemist_id\": \"KPPs2hyUWljIACzO1sa/NA==\",\n                \"area\": \"\",\n                \"state\": \"Kerala\",\n                \"country\": \"India\",\n                \"zipcode\": \"680013\",\n                \"city\": \"Thrissur\",\n                \"status\": \"blocked\"\n            },\n            {\n                \"net_credit\": 0,\n                \"chemist_name\": \"Demo Test\",\n                \"customer_attributes_mobile\": \"7776543211\",\n                \"pharmacy_name\": \"demo test\",\n                \"mobile\": \"7776543210\",\n                \"buyer_chemist_id\": \"dNJOGN3GcbdKD0uWi9zROA==\",\n                \"area\": \"\",\n                \"state\": \"Kerala\",\n                \"country\": \"India\",\n                \"zipcode\": \"680013\",\n                \"city\": \"Thrissur\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": 0,\n                \"chemist_name\": \"\",\n                \"customer_attributes_mobile\": null,\n                \"pharmacy_name\": \"Strip Branch Pharma 2\",\n                \"mobile\": \"8222222222\",\n                \"buyer_chemist_id\": \"KLBzUxwjKIB7ADaN1IZM/Q==\",\n                \"area\": \"Ahmedabad\",\n                \"state\": \"\",\n                \"country\": \"\",\n                \"zipcode\": \"811111\",\n                \"city\": \"\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": 0,\n                \"chemist_name\": \"Shubh Pharmacy\",\n                \"customer_attributes_mobile\": \"7878989878\",\n                \"pharmacy_name\": \"shubh Pharmacy\",\n                \"mobile\": \"7878989878\",\n                \"buyer_chemist_id\": \"bC8/rM4KRntJFDgrEFtd7A==\",\n                \"area\": \"\",\n                \"state\": \"Ahmedabad\",\n                \"country\": \"India\",\n                \"zipcode\": \"380005\",\n                \"city\": \"Ahmedabad\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": -358,\n                \"chemist_name\": \"Abcd Pharma\",\n                \"customer_attributes_mobile\": \"9989812128\",\n                \"pharmacy_name\": \"ABCD Pharma\",\n                \"mobile\": \"9989812128\",\n                \"buyer_chemist_id\": \"llMleNLq1hpFhIEGgnSS2w==\",\n                \"area\": \"\",\n                \"state\": \"Gujarat\",\n                \"country\": \"India\",\n                \"zipcode\": \"380063\",\n                \"city\": \"Ahmedabad\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": -7161,\n                \"chemist_name\": \"Shah Pharmacy\",\n                \"customer_attributes_mobile\": \"8522589638\",\n                \"pharmacy_name\": \"Shah Pharmacy\",\n                \"mobile\": \"8522589638\",\n                \"buyer_chemist_id\": \"rYRgjDmeS5zg0JpJYE61yw==\",\n                \"area\": \"\",\n                \"state\": \"Bihar\",\n                \"country\": \"India\",\n                \"zipcode\": \"803216\",\n                \"city\": \"Nalanda\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": -9488,\n                \"chemist_name\": \"\",\n                \"customer_attributes_mobile\": null,\n                \"pharmacy_name\": \"Yyyyyyy\",\n                \"mobile\": \"8888888888\",\n                \"buyer_chemist_id\": \"Fd9LD2GsOOP2IXR4Okn5OA==\",\n                \"area\": \"\",\n                \"state\": \"Punjab\",\n                \"country\": \"India\",\n                \"zipcode\": \"147203\",\n                \"city\": \"Fatehgarh Sahib\",\n                \"status\": \"active\"\n            },\n            {\n                \"net_credit\": -98314,\n                \"chemist_name\": \"Test Pharma\",\n                \"customer_attributes_mobile\": \"7878989877\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"mobile\": \"7878989877\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"area\": \"\",\n                \"state\": \"Gujarat\",\n                \"country\": \"India\",\n                \"zipcode\": \"380013\",\n                \"city\": \"Ahmedabad\",\n                \"status\": \"active\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Add-Update Pharmacy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "pharmacy_name",
+									"value": "demo test",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "7776543211",
+									"type": "text"
+								},
+								{
+									"key": "gstn_number",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pan_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "discount_percentage",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "license_number_20",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "license_number_21",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address_line2",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": " 680013",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "dNJOGN3GcbdKD0uWi9zROA==",
+									"description": "541 = dNJOGN3GcbdKD0uWi9zROA==",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "requested_by",
+									"value": "add",
+									"type": "text"
+								},
+								{
+									"key": "entity_type",
+									"value": "b2b_customer",
+									"type": "text"
+								},
+								{
+									"key": "is_new_chemist",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "b2b_customer_document",
+									"value": "undefined",
+									"type": "text"
+								},
+								{
+									"key": "additional_information",
+									"value": "[{\"attribute_key\":\"phone\",\"attribute_value\":\"7656789034\"}]",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/add_update_pharmacy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"add_update_pharmacy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Add-Update Pharmacy - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pharmacy_name",
+											"value": "demo test",
+											"type": "text"
+										},
+										{
+											"key": "mobile",
+											"value": "7776543211",
+											"type": "text"
+										},
+										{
+											"key": "gstn_number",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "pan_no",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "discount_percentage",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "license_number_20",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "license_number_21",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address_line2",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "zipcode",
+											"value": " 680013",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "dNJOGN3GcbdKD0uWi9zROA==",
+											"description": "541 = dNJOGN3GcbdKD0uWi9zROA==",
+											"type": "text"
+										},
+										{
+											"key": "area",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "requested_by",
+											"value": "add",
+											"type": "text"
+										},
+										{
+											"key": "entity_type",
+											"value": "b2b_customer",
+											"type": "text"
+										},
+										{
+											"key": "is_new_chemist",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "b2b_customer_document",
+											"value": "undefined",
+											"type": "text"
+										},
+										{
+											"key": "additional_information",
+											"value": "[{\"attribute_key\":\"phone\",\"attribute_value\":\"7656789034\"}]",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/add_update_pharmacy",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"add_update_pharmacy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "288"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"120-NN5xJ6/2qti/tVEZkvP8nzBmzV4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 01 Oct 2024 05:12:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Pharmacy Details Updated Successfully.\",\n    \"datetime\": \"2024-10-01 10:42:10\",\n    \"data\": {\n        \"chemist_id\": \"dNJOGN3GcbdKD0uWi9zROA==\",\n        \"pharmacy_name\": \"demo test\",\n        \"pharmacist_name\": \"demo test\",\n        \"mobile\": \"7776543211\",\n        \"gstn_number\": \"\",\n        \"pan_no\": \"\",\n        \"area\": \"\",\n        \"city\": \"\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Customer Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "start_date",
+									"value": "2024-6-26",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-9-24",
+									"type": "text"
+								},
+								{
+									"key": "buyer_chemist_id",
+									"value": "llMleNLq1hpFhIEGgnSS2w==",
+									"description": "533",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/b2b_customer_details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"b2b_customer_details"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Customer Details",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "start_date",
+											"value": "2024-6-26",
+											"type": "text"
+										},
+										{
+											"key": "end_date",
+											"value": "2024-9-24",
+											"type": "text"
+										},
+										{
+											"key": "buyer_chemist_id",
+											"value": "dNJOGN3GcbdKD0uWi9zROA==",
+											"description": "541",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/b2b_customer_details",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"b2b_customer_details"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "779"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30b-9LEuoNVXGGk9BvzC2xGDxoKJP80\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:30:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2024-09-30 19:00:23\",\n    \"data\": {\n        \"rpp\": 20,\n        \"current_page\": 1,\n        \"staff_list\": [\n            {\n                \"id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"fullname\": \"Owner\",\n                \"status\": \"active\",\n                \"entity\": \"chemist\",\n                \"role_id\": \"aBs1Hvl3Duj0n3tGG09Biw==\"\n            },\n            {\n                \"id\": \"AUggj/Nbe8fOBBWEUBAysA==\",\n                \"firstname\": \"Raju\",\n                \"lastname\": \"R\",\n                \"status\": \"active\",\n                \"role_id\": \"S7BTDcQD0IFOO7ypLxnmRg==\",\n                \"role_name\": \"Store Manager\",\n                \"fullname\": \"Raju R\",\n                \"entity\": \"staff\"\n            }\n        ],\n        \"results\": [],\n        \"chemist_details\": {\n            \"id\": \"dNJOGN3GcbdKD0uWi9zROA==\",\n            \"pharmacy_name\": \"demo test\",\n            \"pharmacist_name\": \"Demo Test\",\n            \"gstn_number\": \"\",\n            \"mobile\": \"7776543210\",\n            \"pan_no\": \"\",\n            \"email\": \"\",\n            \"address_line1\": \"\",\n            \"address_line2\": \"\",\n            \"area\": \"\",\n            \"city\": \"Thrissur\",\n            \"state\": \"Kerala\",\n            \"zipcode\": \"680013\",\n            \"discount_percentage\": 0,\n            \"block_status\": \"active\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Wholesale Return",
+			"item": [
+				{
+					"name": "B2B Wholesale Return List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2025-3-31",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "desc",
+									"type": "text"
+								},
+								{
+									"key": "order_by_entity_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "orderby",
+									"value": "created_date",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-4-1",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "rrr",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/return/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"return",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Wholesale Return List - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "end_date",
+											"value": "2025-3-31",
+											"type": "text"
+										},
+										{
+											"key": "order",
+											"value": "desc",
+											"type": "text"
+										},
+										{
+											"key": "order_by_entity_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "orderby",
+											"value": "created_date",
+											"type": "text"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "start_date",
+											"value": "2024-4-1",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										},
+										{
+											"key": "searchstring",
+											"value": "rrr",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/return/list",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"return",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9755"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"261b-Nu6rzFQdv2Lb8AmKKvy8yTRo5i8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:30:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2024-09-30 19:00:41\",\n    \"data\": {\n        \"rpp\": 20,\n        \"current_page\": 1,\n        \"staff_list\": [\n            {\n                \"id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"fullname\": \"Owner\",\n                \"status\": \"active\",\n                \"entity\": \"chemist\",\n                \"role_id\": \"aBs1Hvl3Duj0n3tGG09Biw==\"\n            },\n            {\n                \"id\": \"AUggj/Nbe8fOBBWEUBAysA==\",\n                \"firstname\": \"Raju\",\n                \"lastname\": \"R\",\n                \"status\": \"active\",\n                \"role_id\": \"S7BTDcQD0IFOO7ypLxnmRg==\",\n                \"role_name\": \"Store Manager\",\n                \"fullname\": \"Raju R\",\n                \"entity\": \"staff\"\n            }\n        ],\n        \"results\": [\n            {\n                \"id\": \"eH1hM41IR4gqVjWDZpJ3cQ==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 52,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"9833768952\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:39:12\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"ZLMOG8UZrzMcH0fd8zohLw==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 51,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"6425428549\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:35:31\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"em40ocsuD8GFUgzQJwNkmQ==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 50,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"7077510067\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:34:57\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"ZUZCKzQsCCI+sjG3AG+a3g==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 49,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"9042886903\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:31:55\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"0BIxS56woPzkAKsBetuoaQ==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 48,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"5344187924\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:27:46\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"2iu1QpId5LYJ5K35ifyMYg==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 47,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"1600977465\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:26:22\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"i6l9oD2W++ihxT86mcBacw==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 46,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"1387491295\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:25:48\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"o0pdy6BbpUAEVaagh45/wg==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 45,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"8386715522\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:25:15\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"Nrlano0d4g4+TESgF24dpA==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 44,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"6137543989\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:24:42\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"kHgQP5UF70SytLeRtZhs+g==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 43,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"7048231723\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 18:24:06\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"rpy1RGKKEJGijAIyCLoa0Q==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 41,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"1508678697\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 12:02:22\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"OWaM/OBiejHNFQjq7eZHsA==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 40,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"6617947127\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 12:00:58\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"jdwykyMK2vN4HX9VF4TqUA==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 39,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"4836674301\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-30 10:38:40\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"diwX6Mw0V/L9vF/ZYa8ugA==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 38,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"8510409192\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:34:16\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"EE0yx2dfB9RqVLQKs3rDCA==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 37,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"8018187474\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:30:28\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"ipVfEpXteWGC53BLU8taHA==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 36,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"3233187051\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:15:28\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"wr0WI86eJ0VcnFFsKkCpLg==\",\n                \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 35,\n                \"bill_no\": \"\",\n                \"bill_date\": \"2024-09-27\",\n                \"amount\": 1033,\n                \"payment_status\": 2,\n                \"order_number\": \"0185396766\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:14:29\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"Test Pharma\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7878989877\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"/KFBwhlwMhKmf45D2ehLlg==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 34,\n                \"bill_no\": \"1811\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"3717304838\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:13:16\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"SbDOpmgxWXPWeUoCWB4z2g==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 33,\n                \"bill_no\": \"384\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"0958211046\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:10:22\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            },\n            {\n                \"id\": \"xhujlJ89t4EbXtSGdVc3dg==\",\n                \"buyer_chemist_id\": \"9RraDPXEXeI+7FJlRkv7Kw==\",\n                \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"area\": \"\",\n                \"reference_number\": 32,\n                \"bill_no\": \"352\",\n                \"bill_date\": \"2024-09-24\",\n                \"amount\": 847,\n                \"payment_status\": 2,\n                \"order_number\": \"9597690073\",\n                \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"order_by_entity\": \"chemist\",\n                \"order_by_name\": \"Owner\",\n                \"created_date\": \"2024-09-28 18:09:02\",\n                \"remark\": \"\",\n                \"pharmacy_name\": \"rrr\",\n                \"einvoice_url\": \"\",\n                \"mobile\": \"7656789034\",\n                \"total\": 0\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Wholesale Return Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bill_date",
+									"value": "2024-9-24",
+									"type": "text"
+								},
+								{
+									"key": "print_response",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "buyer_chemist_id",
+									"value": "9RraDPXEXeI+7FJlRkv7Kw==",
+									"description": "540",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+									"description": "72411",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "delivery_note",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "doctor_id",
+									"value": "LxH7UjhNHdXQY4F8MC4wBA==",
+									"description": "85",
+									"type": "text"
+								},
+								{
+									"key": "entity",
+									"value": "chemist",
+									"type": "text"
+								},
+								{
+									"key": "entity_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "wholesale_order_id",
+									"value": " oC8H6iM43tYvLhzpmVxaMw==",
+									"description": "1741",
+									"type": "text"
+								},
+								{
+									"key": "save_from",
+									"value": "click_from_btn",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/return/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"return",
+								"save"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Wholesale Return Save - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "bill_date",
+											"value": "2024-9-24",
+											"type": "text"
+										},
+										{
+											"key": "print_response",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "buyer_chemist_id",
+											"value": "9RraDPXEXeI+7FJlRkv7Kw==",
+											"description": "540",
+											"type": "text"
+										},
+										{
+											"key": "payment_status",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "items",
+											"value": "[{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+											"description": "72411",
+											"type": "text"
+										},
+										{
+											"key": "remark",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "delivery_note",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "doctor_id",
+											"value": "LxH7UjhNHdXQY4F8MC4wBA==",
+											"description": "85",
+											"type": "text"
+										},
+										{
+											"key": "entity",
+											"value": "chemist",
+											"type": "text"
+										},
+										{
+											"key": "entity_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "wholesale_order_id",
+											"value": " oC8H6iM43tYvLhzpmVxaMw==",
+											"description": "1741",
+											"type": "text"
+										},
+										{
+											"key": "save_from",
+											"value": "click_from_btn",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/return/save",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"return",
+										"save"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "163"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a3-UQ51sP7nN8Lj/rpPu9d3yP/jJe4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:30:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Bill created successfully\",\n    \"datetime\": \"2024-09-30 19:00:54\",\n    \"data\": {\n        \"chemist_wholesale_return_id\": \"abCard8QXDoHSxhulL60EA==\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "B2B Wholesale Return View",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "chemist_wholesale_return_id",
+									"value": "2kz3qQobevj9wkrgNXyPHQ==",
+									"description": "294",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+									"description": "531",
+									"type": "text"
+								},
+								{
+									"key": "accesstoken",
+									"value": "ki2tb3tog0qmp5rx",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "oadDEWRWEF17122DFDSFs2swholesale",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/b2b/return/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"b2b",
+								"return",
+								"view"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "B2B Wholesale Return View - Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "chemist_wholesale_return_id",
+											"value": "2kz3qQobevj9wkrgNXyPHQ==",
+											"description": "294",
+											"type": "text"
+										},
+										{
+											"key": "chemist_id",
+											"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+											"description": "531",
+											"type": "text"
+										},
+										{
+											"key": "accesstoken",
+											"value": "ki2tb3tog0qmp5rx",
+											"type": "text"
+										},
+										{
+											"key": "device_id",
+											"value": "89fb25cc-0e6d-4dcb-ae2d-bd4b4484ce9c",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "oadDEWRWEF17122DFDSFs2swholesale",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/v1/b2b/return/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"v1",
+										"b2b",
+										"return",
+										"view"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2643"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a53-dOUnkmQi1JPoUVP2nIE1XtBQsMw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 30 Sep 2024 13:31:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"\",\n    \"datetime\": \"2024-09-30 19:01:18\",\n    \"data\": {\n        \"wholesale_return_id\": \"2kz3qQobevj9wkrgNXyPHQ==\",\n        \"chemist_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n        \"reference_number\": 6,\n        \"owner_pharmacy_name\": \"Demo Pharmacy\",\n        \"owner_mobile\": \"8128937197\",\n        \"owner_email\": \"khush.shah@evital.in\",\n        \"owner_gstn_number\": \"05AAABB0639G1Z8\",\n        \"owner_address\": \"4d Square Mall\",\n        \"owner_address_line2\": \"Opp. Mr. Diy\",\n        \"owner_city\": \"Ahmedabad\",\n        \"owner_state\": \"Gujarat\",\n        \"owner_zipcode\": \"380005\",\n        \"buyer_chemist_id\": \"bOhA95wWipFevGWyHpujmg==\",\n        \"buyer_pharmacy_name\": \"Test Pharma\",\n        \"buyer_mobile\": \"7878989877\",\n        \"buyer_gstn_number\": \"\",\n        \"buyer_address\": \"\",\n        \"buyer_address_line2\": \"\",\n        \"buyer_area\": \"\",\n        \"buyer_city\": \"Ahmedabad\",\n        \"buyer_state\": \"Gujarat\",\n        \"buyer_zipcode\": \"380013\",\n        \"bill_date\": \"2024-09-23\",\n        \"bill_no\": \"\",\n        \"order_number\": \"0547754682\",\n        \"order_status\": \"completed\",\n        \"amount\": 1338,\n        \"delivery_note\": \"\",\n        \"created_date\": \"2024-09-24 16:54:05\",\n        \"payment_status\": 2,\n        \"payment_date\": \"2024-09-24 16:54:05\",\n        \"roundoff\": 0.46,\n        \"einvoice_irn\": \"\",\n        \"einvoice_qr\": \"\",\n        \"einvoice_url\": \"\",\n        \"doctor_id\": \"LxH7UjhNHdXQY4F8MC4wBA==\",\n        \"order_by_id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n        \"order_by_entity\": \"chemist\",\n        \"wholesale_reference_id\": \"oC8H6iM43tYvLhzpmVxaMw==\",\n        \"customer_attributes_mobile\": \"7878989877\",\n        \"buyer_pharmacy_status\": \"active\",\n        \"buyer_license_number_20\": \"\",\n        \"buyer_license_number_21\": \"\",\n        \"total\": 1338,\n        \"total_qty\": 80,\n        \"total_items\": 1,\n        \"total_gst\": 137.18,\n        \"total_cess\": 57.16,\n        \"items\": [\n            {\n                \"id\": \"mPaPfB/3j9xS45qABp+07A==\",\n                \"chemist_wholesale_return_id\": \"2kz3qQobevj9wkrgNXyPHQ==\",\n                \"medicine_id\": \"TF7Wm49nceLV+NmoM6HJYw==\",\n                \"batch\": \"ADASASD\",\n                \"expiry\": \"2029-02-01\",\n                \"mrp\": 23.5,\n                \"quantity\": 80,\n                \"free\": 0,\n                \"price_to_retailer\": 14.29,\n                \"discount_percentage\": 0,\n                \"discount\": 0,\n                \"base_price\": 14.29,\n                \"gst_percentage\": 12,\n                \"gst\": 1.7148,\n                \"amount\": 1337.54,\n                \"size\": 10,\n                \"scheme_amount\": 0,\n                \"cess\": 0.7145,\n                \"cess_percentage\": 5,\n                \"hsn_code\": \"\",\n                \"medicine_name\": \"Ltk 50 Tablet\",\n                \"pack_size\": \"10 Tablets\",\n                \"packing_size\": \"10 tablets in 1 strip\",\n                \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n                \"landing_price\": 16.449848300677342,\n                \"location\": \"\",\n                \"taxable\": 1143.2\n            }\n        ],\n        \"total_discount\": 0,\n        \"settingResults\": {\n            \"terms_and_conditions_wholesale\": \"\"\n        },\n        \"staff_list\": [\n            {\n                \"id\": \"pAUYuNJCJxZDFD5U4Nq/ZQ==\",\n                \"fullname\": \"Owner\",\n                \"status\": \"active\",\n                \"entity\": \"chemist\",\n                \"role_id\": \"aBs1Hvl3Duj0n3tGG09Biw==\"\n            },\n            {\n                \"id\": \"AUggj/Nbe8fOBBWEUBAysA==\",\n                \"firstname\": \"Raju\",\n                \"lastname\": \"R\",\n                \"status\": \"active\",\n                \"role_id\": \"S7BTDcQD0IFOO7ypLxnmRg==\",\n                \"role_name\": \"Store Manager\",\n                \"fullname\": \"Raju R\",\n                \"entity\": \"staff\"\n            }\n        ],\n        \"doctor_name\": \"Aagam Jain\",\n        \"is_already_adjusted\": \"no\",\n        \"doctor_address\": \"\",\n        \"doctor_area\": \"\",\n        \"doctor_city\": \"ahmedabad\",\n        \"doctor_state\": \"gujarat\",\n        \"doctor_zipcode\": \"\",\n        \"doctor_license\": \"JDLKSJ439398\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

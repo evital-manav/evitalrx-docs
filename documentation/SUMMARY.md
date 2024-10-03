@@ -107,6 +107,21 @@
   * [Add Patient](api-for-fulfillment-portal/patients/add-patient.md)
   * [Get Patient](api-for-fulfillment-portal/patients/get-patient.md)
 
+## API for B2B
+
+* [Introduction](api-for-b2b/introduction.md)
+* [Orders](api-for-b2b/orders/README.md)
+  * [Order Save](api-for-b2b/orders/order-save.md)
+  * [Order Save as Draft](api-for-b2b/orders/order-save-as-draft.md)
+  * [Order List](api-for-b2b/orders/order-list.md)
+  * [Order Details](api-for-b2b/orders/order-details.md)
+  * [Order Return Save](api-for-b2b/orders/order-return-save.md)
+  * [Order Return List](api-for-b2b/orders/order-return-list.md)
+  * [Order Return Details](api-for-b2b/orders/order-return-details.md)
+* [Customers](api-for-b2b/customers/README.md)
+  * [Add / Update Customer](api-for-b2b/customers/add-update-customer.md)
+  * [Customer List](api-for-b2b/customers/customer-list.md)
+
 ## Webhook Responses <a href="#api-for-webhook-responses" id="api-for-webhook-responses"></a>
 
 * [Introduction](api-for-webhook-responses/introduction.md)
