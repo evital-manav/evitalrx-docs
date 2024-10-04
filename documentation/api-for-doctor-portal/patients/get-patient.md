@@ -46,7 +46,11 @@ description: To get the patient details
                     "mobile": ""
                 }
             ],
-            "patient_id": "dXuOGHX5xlrfXQkkByAX3g=="
+            "patient_id": "dXuOGHX5xlrfXQkkByAX3g==",
+            "custom_fields": {
+                "patient_ipd_id": "IPD1234",
+                "patient_mapped_id": "PMID9876"
+            }
         }
     ]
 }

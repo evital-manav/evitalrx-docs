@@ -52,6 +52,18 @@ description: To get the order details
         "patient_id": "KFb7duiHDJAXqKUJc2poVw==",
         "delivery_pin": "U2FsdGVkX1/ChV2gPONI9ava2S0tZ8h9Hf7LAV2E6WA=",
         "payment_ref_id": "",
+        "custom_fields": [
+            {
+                "id": "Ld8/i0ldfhC/rab1KHw5vA==",
+                "attribute_key": "test1",
+                "attribute_value": "123"
+            },
+            {
+                "id": "1G0LbvVlHLTYUZLiGgU5gA==",
+                "attribute_key": "test2",
+                "attribute_value": "12"
+            }
+        ],
         "medicine_details": [
             {
                 "medicine_id": "Eli4pMFfzobV63G67jtjZw==",

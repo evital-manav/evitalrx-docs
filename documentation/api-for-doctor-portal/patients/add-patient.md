@@ -10,16 +10,19 @@ description: To add patients with mobile number, name and address.
 
 #### Request Body
 
-| Name                                          | Type   | Description                                                   |
-| --------------------------------------------- | ------ | ------------------------------------------------------------- |
-| mobile<mark style="color:red;">\*</mark>      | Number | Mobile number of Patient                                      |
-| first\_name<mark style="color:red;">\*</mark> | String | First name of Patient                                         |
-| last\_name<mark style="color:red;">\*</mark>  | String | Last name of Patient                                          |
-| zipcode                                       | Number | Zipcode of the patient                                        |
-| apikey<mark style="color:red;">\*</mark>      | String | Authentication token                                          |
-| dob                                           | String | <p>Date of Birth of the Patient </p><p>Format: YYYY-MM-DD</p> |
-| gender                                        | String | Gender of the Patient.Must be one of **male, female, other**. |
-| blood\_group                                  | String | Blood Group of the Patient                                    |
+| Name                                          | Type   | Description                                                                                                                          |
+| --------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| mobile<mark style="color:red;">\*</mark>      | Number | Mobile number of Patient                                                                                                             |
+| first\_name<mark style="color:red;">\*</mark> | String | First name of Patient                                                                                                                |
+| last\_name<mark style="color:red;">\*</mark>  | String | Last name of Patient                                                                                                                 |
+| zipcode                                       | Number | Zipcode of the patient                                                                                                               |
+| apikey<mark style="color:red;">\*</mark>      | String | Authentication token                                                                                                                 |
+| dob                                           | String | <p>Date of Birth of the Patient </p><p>Format: YYYY-MM-DD</p>                                                                        |
+| gender                                        | String | Gender of the Patient.Must be one of **male, female, other**.                                                                        |
+| blood\_group                                  | String | Blood Group of the Patient                                                                                                           |
+| custom\_fields                                | Object | <p>Key value pairs of attribute_key and it's value.<br>For ex:<br>{"patient_ipd_id": "IPD1234", "patient_mapped_id": "PMID9876"}</p> |
+
+
 
 {% tabs %}
 {% tab title="200: OK Patient added successfully." %}

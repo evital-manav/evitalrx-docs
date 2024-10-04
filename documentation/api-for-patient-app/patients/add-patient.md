@@ -4,22 +4,23 @@ description: To add patients with mobile number, name and address.
 
 # Add Patient
 
-## Add Patient &#x20;
+## Key value pairs of attribute\_key and it's value.Add Patient &#x20;
 
 <mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/patients/add`
 
 #### Request Body
 
-| Name                                          | Type   | Description                                                                              |
-| --------------------------------------------- | ------ | ---------------------------------------------------------------------------------------- |
-| apikey<mark style="color:red;">\*</mark>      | String | Authentication token                                                                     |
-| zipcode                                       | Number | Zip code of the Patient                                                                  |
-| mobile<mark style="color:red;">\*</mark>      | String | Mobile number of Patient                                                                 |
-| first\_name<mark style="color:red;">\*</mark> | String | First name of Patient                                                                    |
-| last\_name                                    | String | Last name of Patient                                                                     |
-| dob                                           | String | <p>Date of Birth of the Patient</p><p>Format: YYYY-MM-DD</p>                             |
-| gender                                        | String | <p>Gender of the Patient.</p><p>Must be one of <strong>male, female, other</strong>.</p> |
-| blood\_group                                  | String | Blood Group of the Patient                                                               |
+| Name                                          | Type   | Description                                                                                                                          |
+| --------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| apikey<mark style="color:red;">\*</mark>      | String | Authentication token                                                                                                                 |
+| zipcode                                       | Number | Zip code of the Patient                                                                                                              |
+| mobile<mark style="color:red;">\*</mark>      | String | Mobile number of Patient                                                                                                             |
+| first\_name<mark style="color:red;">\*</mark> | String | First name of Patient                                                                                                                |
+| last\_name                                    | String | Last name of Patient                                                                                                                 |
+| dob                                           | String | <p>Date of Birth of the Patient</p><p>Format: YYYY-MM-DD</p>                                                                         |
+| gender                                        | String | <p>Gender of the Patient.</p><p>Must be one of <strong>male, female, other</strong>.</p>                                             |
+| blood\_group                                  | String | Blood Group of the Patient                                                                                                           |
+| custom\_fields                                | Object | <p>Key value pairs of attribute_key and it's value.<br>For ex:<br>{"patient_ipd_id": "IPD1234", "patient_mapped_id": "PMID9876"}</p> |
 
 {% tabs %}
 {% tab title="200 Patient added successfully." %}

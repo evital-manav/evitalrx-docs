@@ -29,7 +29,11 @@ description: To get the patient details
             "lastname": "Patel",
             "zipcode": "380008",
             "mobile": "9787998785",
-            "patient_id": "qAj4hhwefVxwuZX9nFxHkQ=="
+            "patient_id": "qAj4hhwefVxwuZX9nFxHkQ==",
+            "custom_fields": {
+                "patient_ipd_id": "IPD1234",
+                "patient_mapped_id": "PMID9876"
+            }
         }
     ]
 }

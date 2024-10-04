@@ -53,6 +53,10 @@ description: To get the order details
         "patient_id": "3Dc6fhD+sruK/l2h585s7w==",
         "delivery_pin": "U2FsdGVkX1+twZ9Ase9xSlahDQno3tEh1A/fF3RGZI4=",
         "payment_ref_id": "",
+        "custom_fields": {
+                "prescription_id": "879",
+                "appointment_id": "123"
+            }
         "medicine_details": [
             {
                 "medicine_id": "ZnsQl586DmR/ANT3aLdM4g==",
