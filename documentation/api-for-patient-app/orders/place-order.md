@@ -39,7 +39,7 @@ curl --location 'https://api.evitalrx.in/v1/patient/orders/place\_order'\
 | parent\_patient\_id                              | String | If billing for family member, then pass parent patient's ID here.                                                                                           |
 | order\_status                                    | String | It will save the order in the "draft" status.                                                                                                               |
 | image                                            | File   | <p>Pass one or more prescription images in FormData.</p><p></p><p>allowed formats (png/jpg/jpeg)</p>                                                        |
-| custom\_fields                                   | Object | Key value pairs of attribute\_key and it's value.                                                                                                           |
+| custom\_fields                                   | Object | <p>Key value pairs of attribute_key and it's value.<br>For ex: <br>{"prescription_id": "879", "appointment_id": "123"}</p>                                  |
 
 {% tabs %}
 {% tab title="200 Order Placed successfully." %}

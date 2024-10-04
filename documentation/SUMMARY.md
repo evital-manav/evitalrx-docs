@@ -87,12 +87,12 @@
 
 ***
 
-* [API FOR UDF](api-for-udf/README.md)
-  * [Introduction](api-for-udf/introduction.md)
-  * [Add Custom Fields](api-for-udf/add-custom-fields.md)
-  * [Update Custom Field](api-for-udf/update-custom-field.md)
-  * [Delete Custom Fields](api-for-udf/delete-custom-fields.md)
-  * [List Custom Fields](api-for-udf/list-custom-fields.md)
+* [API FOR Custom Fields](api-for-custom-fields/README.md)
+  * [Introduction](api-for-custom-fields/introduction.md)
+  * [Add Custom Fields](api-for-custom-fields/add-custom-fields.md)
+  * [Update Custom Field](api-for-custom-fields/update-custom-field.md)
+  * [Delete Custom Fields](api-for-custom-fields/delete-custom-fields.md)
+  * [List Custom Fields](api-for-custom-fields/list-custom-fields.md)
 
 ## API FOR MASTER <a href="#api-for-master-portal" id="api-for-master-portal"></a>
 
