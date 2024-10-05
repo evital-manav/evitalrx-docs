@@ -68,3 +68,16 @@ description: To get the patient details
 ```
 {% endtab %}
 {% endtabs %}
+
+## Get Patient
+
+<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/patients/view`
+
+#### Request Body
+
+| Name                                          | Type    | Description  |
+| --------------------------------------------- | ------- | ------------ |
+| patient\_id<mark style="color:red;">\*</mark> | String  | 1A62EQMlDx8t |
+| apikey<mark style="color:red;">\*</mark>      | String  | V6oBy7oMFZbX |
+| mobile<mark style="color:red;">\*</mark>      | String  | AsD3PhN0mKYs |
+| show\_family\_list                            | Boolean | 2dHrkQuS9UDT |

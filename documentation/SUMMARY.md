@@ -73,6 +73,7 @@
   * [Search Content](api-for-doctor-portal/medicines/search-content.md)
   * [Get Inventory Status](api-for-doctor-portal/medicines/get-inventory-status.md)
   * [Get Inventory Items](api-for-doctor-portal/medicines/get-inventory-items.md)
+  * [Add Favorite Medicine](api-for-doctor-portal/medicines/add-favorite-medicine.md)
 * [Patients](api-for-doctor-portal/patients/README.md)
   * [Add Patient](api-for-doctor-portal/patients/add-patient.md)
   * [Get Patient](api-for-doctor-portal/patients/get-patient.md)
