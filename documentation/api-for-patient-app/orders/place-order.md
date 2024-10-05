@@ -16,7 +16,7 @@ more than 1 prescription is accepted. prescription can also be sent in the deliv
 
 curl --location 'https://api.evitalrx.in/v1/patient/orders/place\_order'\
 \--form 'apikey="\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"'\
-\--form 'items="\[{"medicine\_id":"gv0GokYn9w4zFL51eouS2g==","quantity":50}]"'\
+\--form 'items="\[{"medicine\_id":"gv0GokYn9w4zFL51eouS2g==","quantity":50,"discount\_percentage": 5}]"'\
 \--form 'patient\_id="yxu0Bh1hNM61K3b7t7+vlw=="'\
 \--form 'delivery\_type="pickup"'\
 \--form 'image=@"/C:/Users/91999/Downloads/image (51f8e0f5-d996-4d8e-91bb-752d923d88a6).png"'
@@ -25,22 +25,22 @@ curl --location 'https://api.evitalrx.in/v1/patient/orders/place\_order'\
 
 #### Request Body
 
-| Name                                             | Type   | Description                                                                                                                                                 |
-| ------------------------------------------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| patient\_id<mark style="color:red;">\*</mark>    | String | Id to uniquely identify the patient for whom the order is placed                                                                                            |
-| items<mark style="color:red;">\*</mark>          | String | <p>Stringified Array of items with quantity (in pills) and medicine_id.</p><p><em>i.e.</em> [{"medicine_id":"Eli4pMFfzobV63G67jtjZw==","quantity": 10}]</p> |
-| apikey<mark style="color:red;">\*</mark>         | String | Authentication token                                                                                                                                        |
-| delivery\_type<mark style="color:red;">\*</mark> | String | Order Delivery type can be **pickup** or **delivery**                                                                                                       |
-| address<mark style="color:red;">\*</mark>        | String | Address of Patient for delivery                                                                                                                             |
-| address\_line2                                   | String | Address Line 2 for long address                                                                                                                             |
-| city<mark style="color:red;">\*</mark>           | String | City of Patient for delivery                                                                                                                                |
-| state<mark style="color:red;">\*</mark>          | String | State of Patient for delivery                                                                                                                               |
-| zipcode<mark style="color:red;">\*</mark>        | String | Zip code of Patient for delivery                                                                                                                            |
-| parent\_patient\_id                              | String | If billing for family member, then pass parent patient's ID here.                                                                                           |
-| order\_status                                    | String | It will save the order in the "draft" status.                                                                                                               |
-| image                                            | File   | <p>Pass one or more prescription images in FormData.</p><p></p><p>allowed formats (png/jpg/jpeg)</p>                                                        |
-| custom\_fields                                   | Object | <p>Key value pairs of attribute_key and it's value.<br>For ex: <br>{"prescription_id": "879", "appointment_id": "123"}</p>                                  |
-| shipping                                         | Number | <p>Shipping charge for delivery<br>(Will round up the given value<br>For ex: </p><p>20.5 => 21</p><p>20.2 => 20 )</p>                                       |
+| Name                                             | Type   | Description                                                                                                                                                                           |
+| ------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| patient\_id<mark style="color:red;">\*</mark>    | String | Id to uniquely identify the patient for whom the order is placed                                                                                                                      |
+| items<mark style="color:red;">\*</mark>          | String | <p>Stringified Array of items with quantity (in pills) and medicine_id.</p><p><em>i.e.</em> [{"medicine_id":"Eli4pMFfzobV63G67jtjZw==","quantity": 10, "discount_percentage": 5}]</p> |
+| apikey<mark style="color:red;">\*</mark>         | String | Authentication token                                                                                                                                                                  |
+| delivery\_type<mark style="color:red;">\*</mark> | String | Order Delivery type can be **pickup** or **delivery**                                                                                                                                 |
+| address<mark style="color:red;">\*</mark>        | String | Address of Patient for delivery                                                                                                                                                       |
+| address\_line2                                   | String | Address Line 2 for long address                                                                                                                                                       |
+| city<mark style="color:red;">\*</mark>           | String | City of Patient for delivery                                                                                                                                                          |
+| state<mark style="color:red;">\*</mark>          | String | State of Patient for delivery                                                                                                                                                         |
+| zipcode<mark style="color:red;">\*</mark>        | String | Zip code of Patient for delivery                                                                                                                                                      |
+| parent\_patient\_id                              | String | If billing for family member, then pass parent patient's ID here.                                                                                                                     |
+| order\_status                                    | String | It will save the order in the "draft" status.                                                                                                                                         |
+| image                                            | File   | <p>Pass one or more prescription images in FormData.</p><p></p><p>allowed formats (png/jpg/jpeg)</p>                                                                                  |
+| custom\_fields                                   | Object | <p>Key value pairs of attribute_key and it's value.<br>For ex: <br>{"prescription_id": "879", "appointment_id": "123"}</p>                                                            |
+| shipping                                         | Number | <p>Shipping charge for delivery<br>(Will round up the given value<br>For ex: </p><p>20.5 => 21</p><p>20.2 => 20 )</p>                                                                 |
 
 
 
