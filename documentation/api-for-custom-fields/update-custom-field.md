@@ -13,7 +13,6 @@ curl --location 'https://api.evitalrx.in/v1/custom_fields/add_update_custom_fiel
 --header 'Content-Type: application/json' \
 --data '{
   "apikey":"**************",
-  "entity": "chemist",
   "action": "update",
    "custom_fields": [
     {
