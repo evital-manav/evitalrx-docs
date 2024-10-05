@@ -40,6 +40,9 @@ curl --location 'https://api.evitalrx.in/v1/patient/orders/place\_order'\
 | order\_status                                    | String | It will save the order in the "draft" status.                                                                                                               |
 | image                                            | File   | <p>Pass one or more prescription images in FormData.</p><p></p><p>allowed formats (png/jpg/jpeg)</p>                                                        |
 | custom\_fields                                   | Object | <p>Key value pairs of attribute_key and it's value.<br>For ex: <br>{"prescription_id": "879", "appointment_id": "123"}</p>                                  |
+| shipping                                         | Number | <p>Shipping charge for delivery<br>(Will round up the given value<br>For ex: </p><p>20.5 => 21</p><p>20.2 => 20 )</p>                                       |
+
+
 
 {% tabs %}
 {% tab title="200 Order Placed successfully." %}
