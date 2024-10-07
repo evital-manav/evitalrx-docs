@@ -12,11 +12,11 @@ Get Alternate medicines with the best in terms of Expiry, Margin, and Price.
 
 #### Request Body
 
-| Name                                           | Type   | Description                                                                                                                                                                                                                   |
-| ---------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| apikey<mark style="color:red;">\*</mark>       | String | Authentication Token                                                                                                                                                                                                          |
-| medicine\_id<mark style="color:red;">\*</mark> | String | Unique id of the product                                                                                                                                                                                                      |
-| order\_by                                      | String | <p>must be one of <strong>epm, mep, pem</strong></p><p></p><p><strong>epm</strong>: Expiry -> Price -> Margin</p><p><strong>mep</strong>: Margin -> Expiry -> Price</p><p><strong>pem</strong>: Price -> Expiry -> Margin</p> |
+| Name                                            | Type              | Description                                                                                                                                                                                                                   |
+| ----------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| apikey<mark style="color:red;">\*</mark>        | String            | Authentication Token                                                                                                                                                                                                          |
+| medicine\_ids<mark style="color:red;">\*</mark> | Stringified Array | <p>Array of medicine_ids in the form data</p><p></p><p>[\"eGMwtMdst4OkfNrNoAFxRw\",  \"77eruTI3h1JUg4RqaV20JQ\=="]</p>                                                                                                        |
+| order\_by                                       | String            | <p>must be one of <strong>epm, mep, pem</strong></p><p></p><p><strong>epm</strong>: Expiry -> Price -> Margin</p><p><strong>mep</strong>: Margin -> Expiry -> Price</p><p><strong>pem</strong>: Price -> Expiry -> Margin</p> |
 
 {% tabs %}
 {% tab title="200: OK Success" %}
