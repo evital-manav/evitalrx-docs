@@ -6,7 +6,7 @@ description: To search content
 
 ## Search Contents
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/content_search`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/content_search`](https://api.evitalrx.in/v1/doctor/medicines/content_search)
 
 #### Request Body
 

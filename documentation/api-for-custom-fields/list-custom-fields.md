@@ -8,17 +8,9 @@ List custom fields
 
 Below is a sample cURL to list custom fields.
 
-```json
-curl --location 'localhost:4000/v1/custom_fields/list_user_custom_fields' \
---header 'Content-Type: application/json' \
---data '{
-  "apikey":"**************",
-  "module": "sales"
-}
-'
-```
+{% file src="../.gitbook/assets/sample_curl - list_custom_fields.txt" %}
 
-<mark style="color:green;">`POST`</mark>`https://api.evitalrx.in/v1/custom_fields/`list\_user\_custom\_fields
+<mark style="color:green;">`POST`</mark>[`{{apiUrl}}custom_fields/`list\_user\_custom\_fields](https://api.evitalrx.in/v1/custom_fields/list_user_custom_fields)
 
 #### Request Body
 

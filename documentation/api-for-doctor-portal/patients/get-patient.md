@@ -6,7 +6,7 @@ description: To get the patient details
 
 ## Get Patient
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/patients/view`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/patients/view`](https://api.evitalrx.in/v1/doctor/patients/view)
 
 #### Request Body
 
@@ -30,7 +30,7 @@ description: To get the patient details
             "lastname": "Patel",
             "zipcode": "380005",
             "mobile": "9846251658",
-            "family_member_list": [
+            "family_member_list": [ // family members if any
                 {
                     "id": "dXuOGHX5xlrfXQkkByAX3g==",
                     "firstname": "Poojan",
@@ -47,7 +47,7 @@ description: To get the patient details
                 }
             ],
             "patient_id": "dXuOGHX5xlrfXQkkByAX3g==",
-            "custom_fields": {
+            "custom_fields": { // addtionaly fields related to patient
                 "patient_ipd_id": "IPD1234",
                 "patient_mapped_id": "PMID9876"
             }

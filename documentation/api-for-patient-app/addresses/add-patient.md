@@ -1,8 +1,6 @@
 # List Addresses
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/addresses`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/addresses`](https://api.evitalrx.in/v1/patient/addresses)
 
 #### Request Body
 
@@ -22,7 +20,7 @@
         "results": [
             {
                 "id": "1NaBJ+MBG9iGjRzCHAMQkA==",
-                "address_name": "home",
+                "address_name": "home", // home or work
                 "address": "Kurubarahalli",
                 "address_line2": "Bengaluru, Karnataka 562162",
                 "city": "Bangalore",
@@ -31,7 +29,7 @@
                 "zipcode": "562130",
                 "latitude": "13.002850494898789",
                 "longitude": "77.52918554865722",
-                "is_default": "yes",
+                "is_default": "yes", // default address
                 "created_date": "2023-07-24 16:02:03",
                 "updated_date": "2023-09-18 17:53:16"
             },

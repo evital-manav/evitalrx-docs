@@ -6,9 +6,11 @@ description: >-
 
 # Search Products
 
+#### [Explore Medicines Available in Staging](../../getting-started-with-evitalrx.md#explore-medicines-available-in-staging)
+
 ## Search Products
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/search`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/search`](https://api.evitalrx.in/v1/doctor/medicines/search)
 
 If the Item is present in your inventory, then it will appear first.
 
@@ -27,7 +29,7 @@ If the Item is present in your inventory, then it will appear first.
     "status_message": "Success",
     "datetime": "2022-12-07 10:49:06",
     "data": {
-        "did_you_mean_result": [],
+        "did_you_mean_result": [], // if medicine not found then suggestions
         "result": [
             {
                 "dosage_type": "tablet",

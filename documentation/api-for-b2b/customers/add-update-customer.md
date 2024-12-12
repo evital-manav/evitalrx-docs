@@ -6,7 +6,7 @@ description: To add patients with mobile number, name and address.
 
 ## Add Patient &#x20;
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/add_update_pharmacy`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/add_update_pharmacy`](https://api.evitalrx.in/v1/b2b/add_update_pharmacy)
 
 #### Request Body
 
@@ -33,13 +33,13 @@ description: To add patients with mobile number, name and address.
 
 {% tabs %}
 {% tab title="200 Patient added successfully." %}
-```
+```json
 {
     "status_code": "1",
     "status_message": "New Pharmacy Added Successfully",
     "datetime": "2024-10-01 15:56:54",
     "data": {
-        "chemist_id": "kg/N9s0A0Y03GXuiuo/Iqw==",
+        "chemist_id": "kg/N9s0A0Y03GXuiuo/Iqw==", // ID of newly added/existing B2B Chemist/Customer
         "pharmacy_name": "Sharma Medical Store",
         "pharmacist_name": "Sdsadasdsd",
         "mobile": "1414141414",

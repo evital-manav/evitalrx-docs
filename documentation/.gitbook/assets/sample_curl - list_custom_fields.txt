@@ -1,0 +1,7 @@
+curl --location 'localhost:4000/v1/custom_fields/list_user_custom_fields' \
+--header 'Content-Type: application/json' \
+--data '{
+  "apikey":"**************",
+  "module": "sales"
+}
+'

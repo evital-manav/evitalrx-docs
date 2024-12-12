@@ -1,8 +1,6 @@
 # Delete Address
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/addresses/delete`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/addresses/delete`](https://api.evitalrx.in/v1/patient/addresses/delete)
 
 #### Request Body
 

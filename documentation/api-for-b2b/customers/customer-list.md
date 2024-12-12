@@ -6,7 +6,7 @@ description: To get the patient details
 
 ## Get Patient
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/b2b_customers`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/b2b_customers`](https://api.evitalrx.in/v1/b2b/b2b_customers)
 
 #### Request Body
 

@@ -6,7 +6,7 @@ description: To get item details in your inventory by unique medicine Id.
 
 ## Product Details
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/view`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/medicines/view`](https://api.evitalrx.in/v1/patient/medicines/view)
 
 #### Request Body
 
@@ -29,7 +29,7 @@ description: To get item details in your inventory by unique medicine Id.
             "content": "Losartan (50mg)",
             "how_medicine_works": "Ltk 50 Tablet is an angiotensin receptor blocker (ARB). It relaxes blood vessel by blocking the action of a chemical that usually makes blood vessels tighter. This lowers the blood pressure, allowing the blood to flow more smoothly to different organs and the heart to pump more efficiently.",
             "how_to_use": "Take this medicine in the dose and duration as advised by your doctor. Swallow it as a whole. Do not chew, crush or break it. Ltk 50 Tablet may be taken with or without food, but it is better to take it at a fixed time.",
-            "id": "y8P5ElKQqfn/Dkb0uhE9Sg==",
+            "id": "y8P5ElKQqfn/Dkb0uhE9Sg==", // medicine_id
             "medicine_image": "https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/default.jpg",
             "is_rx_required": 0,
             "dosage_type": "tablet",

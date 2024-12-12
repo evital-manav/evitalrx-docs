@@ -4,7 +4,7 @@ description: Get list of reasons to reject the order.
 
 # Get Reject Reasons
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/fulfillment/orders/reject_reasons`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/reject_reasons`](https://api.evitalrx.in/v1/fulfillment/orders/reject_reasons)
 
 #### Request Body
 

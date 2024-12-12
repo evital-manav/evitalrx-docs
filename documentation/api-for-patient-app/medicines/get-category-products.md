@@ -6,7 +6,7 @@ description: Get the Products of a particular category.
 
 ## Get Category Products
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/get_category_items`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}patient/medicines/get_category_items`](https://api.evitalrx.in/v1/patient/medicines/get_category_items)
 
 #### Request Body
 

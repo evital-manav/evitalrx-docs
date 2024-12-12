@@ -1,0 +1,19 @@
+curl --location 'localhost:4000/v1/custom_fields/add_update_custom_field' \
+--header 'Content-Type: application/json' \
+--data '{
+  "apikey":"**************",
+  "action": "delete",
+  "custom_fields": [
+        {
+            "id": "5wP6t/dlZrIzNqssQLUUbQ==",
+            "attribute_key": "zipcode",
+            "module": "customers"
+        },
+        {
+            "id": "iZ4zlQnA1LpIEiZ+i0D25Q==",
+            "attribute_key": "prescription_id",
+            "module": "customers"
+        }
+   ]
+}
+'

@@ -4,7 +4,7 @@ description: Get settings chemist has configured in eVitalRx for online orders.
 
 # Get Chemist Order Settings
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/orders/get_chemist_order_settings`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/get_chemist_order_settings`](https://api.evitalrx.in/v1/patient/orders/get_chemist_order_settings)
 
 #### Request Body
 
@@ -20,8 +20,8 @@ description: Get settings chemist has configured in eVitalRx for online orders.
     "status_message": "Success",
     "datetime": "2024-02-08 12:15:13",
     "data": {
-        "shipping_charges": "10",
-        "minimum_order_value": "50"
+        "shipping_charges": "10", // pre-defined by chemist
+        "minimum_order_value": "50" // // pre-defined by chemist
     }
 }
 ```

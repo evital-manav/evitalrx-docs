@@ -4,11 +4,9 @@ description: To add patients with mobile number, name and address.
 
 # Update Patient
 
-
-
 ## Update Patient &#x20;
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/patients/update`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/patients/update`](https://api.evitalrx.in/v1/patient/patients/update)
 
 #### Request Body
 

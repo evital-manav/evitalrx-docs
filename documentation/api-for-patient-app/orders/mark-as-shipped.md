@@ -6,7 +6,7 @@ description: This API is deprecated.
 
 ## Push the Order in shipped state
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in//v1/patient/orders/mark_as_shipped`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/mark_as_shipped`](https://api.evitalrx.in/v1/patient/orders/mark_as_shipped)
 
 If the order is made with batch through Place Order API, It can be saved by this API. This removes the headache of the integration partners, who don't want their chemists to switch 2 portals. Their portal to place orders, and eVitalRx portal push the order.
 

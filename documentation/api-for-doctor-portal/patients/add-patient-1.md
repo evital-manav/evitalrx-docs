@@ -4,9 +4,7 @@ description: To add family member of the patient
 
 # Add Patient family member
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/patients/add_family_member`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}doctor/patients/add_family_member`](https://api.evitalrx.in/v1/doctor/patients/add_family_member)
 
 #### Request Body
 
@@ -24,7 +22,7 @@ description: To add family member of the patient
 
 {% tabs %}
 {% tab title="200 Patient added successfully." %}
-```
+```json
 {
     "status_code": "1",
     "status_message": "Family member added successfully",

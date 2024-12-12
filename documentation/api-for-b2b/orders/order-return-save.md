@@ -1,6 +1,6 @@
 # Order Return Save
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/return/save`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/return/save`](https://api.evitalrx.in/v1/b2b/return/save)
 
 #### Request Body
 
@@ -26,7 +26,7 @@
     "status_message": "Bill created successfully",
     "datetime": "2024-10-01 14:56:06",
     "data": {
-        "chemist_wholesale_return_id": "f4Prpako4VmiRuhdUA8gYg=="
+        "chemist_wholesale_return_id": "f4Prpako4VmiRuhdUA8gYg==" // Return Order ID
     }
 }
 ```

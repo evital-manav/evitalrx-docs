@@ -6,7 +6,7 @@ description: This API is deprecated.
 
 ## Update order
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/orders/update_order`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/orders/update_order`](https://api.evitalrx.in/v1/doctor/orders/update_order)
 
 #### Request Body
 
@@ -24,7 +24,7 @@ description: This API is deprecated.
     "status_message": "Order updated successfully",
     "datetime": "2022-12-08 18:32:25",
     "data": {
-        "amount": "345",
+        "amount": "345", // updated amount
         "order_number": "OGLBF2YAYW",
         "order_id": "Kv1Dmatn3q7QW147CsWKAg=="
     }

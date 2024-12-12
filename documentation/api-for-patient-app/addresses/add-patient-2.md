@@ -1,8 +1,6 @@
 # Set Default Address
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/addresses/set_default`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/addresses/set_default`](https://api.evitalrx.in/v1/patient/addresses/set_default)
 
 #### Request Body
 

@@ -1,6 +1,6 @@
 # Order Details
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/view`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/view`](https://api.evitalrx.in/v1/b2b/view)
 
 #### Request Body
 
@@ -17,7 +17,7 @@
     "status_message": "Success",
     "datetime": "2024-10-01 13:43:43",
     "data": {
-        "wholesale_id": "SZ6AfI2e+h+Kb18NnvBDMA==",
+        "wholesale_id": "SZ6AfI2e+h+Kb18NnvBDMA==", // Order ID
         "chemist_id": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
         "owner_pharmacy_name": "Demo Pharmacy",
         "owner_mobile": "8128937197",
@@ -87,7 +87,7 @@
             {
                 "id": "LyGWvI0Ah0CCoZzgO8HAdw==",
                 "chemist_wholesale_id": "SZ6AfI2e+h+Kb18NnvBDMA==",
-                "medicine_id": "TF7Wm49nceLV+NmoM6HJYw==",
+                "medicine_id": "TF7Wm49nceLV+NmoM6HJYw==", // Medicine ID
                 "batch": "ADASASD",
                 "expiry": "2029-02-01",
                 "mrp": 23.5,
@@ -112,7 +112,7 @@
                 "packing_size": "10 tablets in 1 strip",
                 "manufacturer_name": "Unison Pharmaceuticals Pvt Ltd",
                 "landing_price": 16.449848300677342,
-                "location": "",
+                "location": "", // Location where the Product was placed in pharmacy
                 "sale_b2b_discount": 0,
                 "taxable": 1143.2
             }

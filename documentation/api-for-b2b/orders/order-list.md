@@ -6,7 +6,7 @@ description: To get the order details
 
 ## Order List
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/list`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}b2b/list`](https://api.evitalrx.in/v1/b2b/list)
 
 #### Request Body
 
@@ -46,7 +46,7 @@ description: To get the order details
                 "role_id": "aBs1Hvl3Duj0n3tGG09Biw=="
             },
             {
-                "id": "AUggj/Nbe8fOBBWEUBAysA==",
+                "id": "AUggj/Nbe8fOBBWEUBAysA==", // id of the staff / owner
                 "firstname": "Raju",
                 "lastname": "R",
                 "status": "active",
@@ -58,7 +58,7 @@ description: To get the order details
         ],
         "results": [
             {
-                "id": "4opko4aPVaWqRvxgkS68gQ==",
+                "id": "4opko4aPVaWqRvxgkS68gQ==", // Order ID
                 "chemist_id": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
                 "buyer_chemist_id": "bOhA95wWipFevGWyHpujmg==",
                 "reference_number": 104,

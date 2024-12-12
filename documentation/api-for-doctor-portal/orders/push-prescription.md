@@ -6,7 +6,7 @@ description: To push prescription with items and its quantity.
 
 ## Push Prescription
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/orders/push_prescription`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}doctor/orders/push_prescription`](https://api.evitalrx.in/v1/doctor/orders/push_prescription)
 
 #### Request Body
 

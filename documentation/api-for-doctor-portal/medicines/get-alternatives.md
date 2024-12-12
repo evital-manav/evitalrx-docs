@@ -4,11 +4,9 @@ description: To get Medicine alternatives on the basis of the drug composition
 
 # Get Alternatives
 
-
-
 ## Get Alternatives
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/get_alternatives`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/get_alternatives`](https://api.evitalrx.in/v1/doctor/medicines/get_alternatives)
 
 The API gives alternatives available of the Product.
 

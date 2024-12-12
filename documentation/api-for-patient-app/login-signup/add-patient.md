@@ -1,8 +1,6 @@
 # Signup
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/login/signup`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/login/signup`](https://api.evitalrx.in/v1/patient/login/signup)
 
 Register the Patient in the system.&#x20;
 
@@ -28,7 +26,7 @@ Register the Patient in the system.&#x20;
     "datetime": "2023-10-27 18:17:36",
     "data": {
         "profile_picture": "https://d1tu4pmhr82np8.cloudfront.net/storage/users/placeholder_a.png",
-        "patient_id": "+FEWdxQs/6ciAyINkc430A==",
+        "patient_id": "+FEWdxQs/6ciAyINkc430A==", // Unique ID of the Patient
         "firstname": "Aman",
         "lastname": "Shukla",
         "mobile": "9033071756",

@@ -4,9 +4,11 @@ description: To get item details in your inventory by unique medicine Id.
 
 # Get Stock details
 
-## Product Details
+### <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Before Fetching Stock Details, Add Medicines to Your Inventory](https://youtu.be/v29o6YEsocc?si=WM0nJ2BmAuye7tNE)
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/get_inventory_status`
+### Product Details
+
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/medicines/get_inventory_status`](https://api.evitalrx.in/v1/patient/medicines/get_inventory_status)
 
 #### Request Body
 

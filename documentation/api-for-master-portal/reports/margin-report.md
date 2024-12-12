@@ -6,7 +6,7 @@ description: To view Margin of Sales/Sales Return
 
 ## Margin Report&#x20;
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/master/reports/margin_report`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}master/reports/margin_report`](https://api.evitalrx.in/v1/master/reports/margin_report)
 
 #### Request Body
 
@@ -49,7 +49,7 @@ description: To view Margin of Sales/Sales Return
                 "gstpercentage": 5,
                 "mrp": 112,
                 "discount": 10,
-                "current_stock": 90,
+                "current_stock": 90, // present stock
                 "total_selling_price": 100.8,
                 "total_landing_price": 10.08,
                 "total_sales_gst": 4.8,

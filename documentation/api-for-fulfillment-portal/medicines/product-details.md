@@ -6,7 +6,7 @@ description: To get item details in your inventory by unique medicine Id.
 
 ## Product Details
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/fulfillment/medicines/view`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/medicines/view`](https://api.evitalrx.in/v1/fulfillment/medicines/view)
 
 #### Request Body
 

@@ -1,0 +1,1064 @@
+{
+	"info": {
+		"_postman_id": "5598c80c-2685-4a6a-b40a-c97f31fa6947",
+		"name": "Doctor Shareable Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22353893",
+		"_collection_link": "https://blue-astronaut-968969.postman.co/workspace/API-Product~af2b05c1-9fa9-4d21-b349-4c423bcac03f/collection/22353893-5598c80c-2685-4a6a-b40a-c97f31fa6947?action=share&source=collection_link&creator=22353893"
+	},
+	"item": [
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "push_prescription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apikey\": \"{{apikey}}\",\r\n    \"patient_id\": \"\",\r\n    \"mobile\": \"0001122212\",\r\n    \"items\": \"[\\n        {\\n            \\\"medicine_id\\\": \\\"PUe/q5mC00cuci4cVAgiWg==\\\",\\n            \\\"quantity\\\": 1\\n        }\\n    ]\",\r\n    \"batch_with\": \"yes\",\r\n    \"patient_name\": \"Jijabai Uttamrao Patil\",\r\n    \"doctor_name\": \"Dr. Vikas Namdeo Desale\",\r\n    \"api_client_id\": 396,\r\n    \"linked_entity_id\": 52564,\r\n    \"utm_source\": \"\",\r\n    \"linked_entity\": \"chemist\",\r\n    \"allowed_ips\": [],\r\n    \"chemist_id\": 52564,\r\n    \"chemist_parent_id\": 0,\r\n    \"referral_code\": \"\",\r\n    \"utm_campaign\": \"api\",\r\n    \"chemist_code\": \"C14K4\",\r\n    \"requested_api\": \"/orders/push_prescription\",\r\n    \"ip\": \"::ffff:172.31.30.128\",\r\n    \"product_name\": \"doctor_api\",\r\n    \"utm_medium\": \"doctor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}orders/push_prescription",
+							"host": [
+								"{{url}}orders"
+							],
+							"path": [
+								"push_prescription"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[\n            {\n                \"medicine_id\": \"XbD2L1EtXmxaHwrKH4tHow==\",\n                \"medicine_name\": \"Joymol 650 Tablet\",\n                \"size\": 15,\n                \"medicine_type\": \"drug\",\n                \"packing_size\": \"1 Strip of  15 Tablet\",\n                \"gst_percentage\": 12,\n                \"quantity\": 30,\n                \"mrp\": 34,\n                \"amount\": 68,\n                \"price\": 34,\n                \"manufacturer_name\": \"Smart Laboratories Pvt Ltd\",\n                \"order_details_id\": \"v8t3O2pxFcWeFXj9RK5diw==\",\n                \"discount_percentage\": 0,\n                \"batch\": \"API-3\",\n                \"discount\": 5,\n                \"batch_id\": \"\",\n                \"expiry\": \"2024-02-01\",\n                \"gst\": 7.29,\n                \"hsn_code\": \"\",\n                \"cess\": 0,\n                \"cess_percentage\": 0,\n                \"loose_quantity\": 30\n            }\n        ]",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "pickup",
+									"type": "text"
+								},
+								{
+									"key": "patient_name",
+									"value": "Manav Patel",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "7458787853",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cambridge Road, Halasuru",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Banglore",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Karnataka",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "560008",
+									"type": "text"
+								},
+								{
+									"key": "auto_assign",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pFSLzbwQTH8LY23N2IlczQ==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "12.970612",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "77.6382433",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "b+sE8Lei8OSrP6Wr1g9Nhg==",
+									"type": "text"
+								},
+								{
+									"key": "batch_with",
+									"value": "yes",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order_id",
+									"value": "tBQkrRgPchy39RfVlN0S/w==",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2023-06-02",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "doctor_id",
+									"value": "PqSkAZWUH/8B41xDrRCHIQ==",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "This is testing order for Farmako",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}orders/save",
+							"host": [
+								"{{url}}orders"
+							],
+							"path": [
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "dVA1IUQ+eYfnpOzGz8005A==",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "2023-11-01",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-11-06",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}orders/list",
+							"host": [
+								"{{url}}orders"
+							],
+							"path": [
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "tBQkrRgPchy39RfVlN0S/w==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order_number",
+									"value": "OILQRZHHIX",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}orders/view",
+							"host": [
+								"{{url}}orders"
+							],
+							"path": [
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "WrVMY0YGZp+H8bBPkrujDw==",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"gv0GokYn9w4zFL51eouS2g\",\"discount\":0,\"quantity\":1,\"batch_id\": \"06db8nGG3IDirPVx30iWXg\"}]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}orders/update_order",
+							"host": [
+								"{{url}}orders"
+							],
+							"path": [
+								"update_order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "patients",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9787990022",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Manav",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Deepakbhai",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "560008",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Banglore",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "Karnataka",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "India",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}patients/add",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "PSfUdb7KHz3aNH/F+Q36sw==",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9787998739",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Manav",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Patel",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380009",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}patients/update",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "haaLvntZX7KmadCtJa314w==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "7458787859",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}patients/view",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_family_member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "adDEWRWEF46546DFDSFsdfsfsdfsdfsl",
+									"type": "text"
+								},
+								{
+									"key": "parent_patient_mobile",
+									"value": "7867869999",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "mobile",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "doctor",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "relation",
+									"value": "Sister",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "OozQ9pK/4TBpfBAdDDa5ig==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "7867869999",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}patients/add_family_member",
+							"host": [
+								"{{url}}patients"
+							],
+							"path": [
+								"add_family_member"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "medicines",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "MamyPoko Standard Pants L\n",
+									"type": "text"
+								},
+								{
+									"key": "show_sale_rate",
+									"value": "yes",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/search",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "content_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "ltk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/content_search",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"content_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "1iFlObGAoedKDQW27+2EQw==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"1iFlObGAoedKDQW27+2EQw==\"]",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"BEXJIx1DBa0TyZQjJB+qDw=\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_id",
+									"value": "1iFlObGAoedKDQW27+2EQw==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"hcw98HYeVwst/cn02Ew5eQ==\",\"ZlrAqNjeHsRIpp26ZsO2uw==\"]",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/view",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_alternatives",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_id",
+									"value": "8HiQkGfpzbiAzkma2b5/yw==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "content",
+									"value": "Paracetamol (500mg) + Phenylephrine Hydrochloride (5mg) + Chlorpheniramine Maleate (2mg)",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "JNwhhgnwnnPUZNPqGaNVau2PVLhrC7SU",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_alternatives",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_alternatives"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_inventory_items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "8HiQkGfpzbiAzkma2b5/yw==",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_inventory_items",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_inventory_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_inventory_status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"Q4Mc+0PtLw19EfvsFBC6FQ==\"]",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Paracetamol (500mg) + Phenylephrine Hydrochloride (5mg) + Chlorpheniramine Maleate (2mg)",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "apikey",
+									"value": "JNwhhgnwnnPUZNPqGaNVau2PVLhrC7SU",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_inventory_status",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_inventory_status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_batches",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "gv0GokYn9w4zFL51eouS2g==",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "[\"8HiQkGfpzbiAzkma2b5/yw==\", \"AQhKdRdSelbLxU4DvbO39w==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "batch_name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_batches",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_batches"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "branded_to_generic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"eGMwtMdst4OkfNrNoAFxRw==\", \"77eruTI3h1JUg4RqaV20JQ==\", \"1iFlObGAoedKDQW27+2EQw==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"buuFcMkpKTXqj7rxexDKew==\"]",
+									"type": "text"
+								},
+								{
+									"key": "order_by",
+									"value": "epm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/branded_to_generic",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"branded_to_generic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_expire_batch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "otUfMtG4nIpWSc+oWoX7Lw==",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "[\"8HiQkGfpzbiAzkma2b5/yw==\", \"AQhKdRdSelbLxU4DvbO39w==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expiry",
+									"value": "2023-12-01",
+									"type": "text"
+								},
+								{
+									"key": "batch",
+									"value": "pqr",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_expire_batch",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_expire_batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request_medicine",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_name",
+									"value": "request test2",
+									"type": "text"
+								},
+								{
+									"key": "manufacturer_name",
+									"value": "manav manufacturer",
+									"type": "text"
+								},
+								{
+									"key": "packaging",
+									"value": "bottle",
+									"type": "text"
+								},
+								{
+									"key": "mrp",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "medicine_category",
+									"value": "otc",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/91999/Downloads/image (6).png"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/91999/Downloads/image (6).png"
+								},
+								{
+									"key": "medicine_category",
+									"value": "alcohole",
+									"type": "text"
+								},
+								{
+									"key": "weightage",
+									"value": "100",
+									"description": "Optional",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/request_medicine",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"request_medicine"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:4000/v1/doctor/",
+			"type": "string"
+		},
+		{
+			"key": "apikey",
+			"value": "asdfasf",
+			"type": "string"
+		}
+	]
+}

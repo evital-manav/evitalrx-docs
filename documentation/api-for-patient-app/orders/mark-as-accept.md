@@ -6,7 +6,7 @@ description: This API is used to accept the order.
 
 ## Push the Order in Accepted state
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in//v1/patient/orders/mark_as_accept`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/mark_as_accept`](https://api.evitalrx.in/v1/patient/orders/mark_as_accept)
 
 This API marks the order in the accepted state.
 

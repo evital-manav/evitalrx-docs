@@ -4,9 +4,11 @@ description: To place order with items and its quantity.
 
 # Place Order
 
+## <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Placing Orders with Ease: A Step-by-Step Guide](https://youtu.be/1TlUVPaWolI?si=2ybv22QYp_P3w994)
+
 ## Place Order
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/fulfillment/orders/place_order`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order`](https://api.evitalrx.in/v1/fulfillment/orders/place_order)
 
 &#x20;
 
@@ -31,7 +33,7 @@ description: To place order with items and its quantity.
 
 {% tabs %}
 {% tab title="200 Order Placed successfully." %}
-```
+```json
 {
     "status_code": "1",
     "status_message": "Order placed successfully",

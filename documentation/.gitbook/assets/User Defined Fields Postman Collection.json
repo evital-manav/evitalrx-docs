@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "865fe09e-994e-44bc-959d-871ac50f8caa",
+		"name": "User Defined Fields-Production",
+		"description": "This API provides an entity to add custom fields with their attribute keys and value. Adding custom fields gives flexibility to the entity to store extra information related to an order or a patient.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38017393"
+	},
+	"item": [
+		{
+			"name": "add custom field",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\":\"{{apikey}}\", // your api key here\r\n    \"custom_fields\": // Array of custom field object For ex:{attribute_key: string, module: string } Valid module are: sales and customers\r\n    [\r\n        {\r\n            \"attribute_key\": \"TEST01\",\r\n            \"module\":\"sales\"\r\n        }\r\n    ],\r\n    \"action\": \"add\" // add here means to insert new value\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{apiURL}}/add_update_custom_field",
+					"host": [
+						"{{apiURL}}"
+					],
+					"path": [
+						"add_update_custom_field"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'localhost:4000/v1/custom_fields/add_update_custom_field' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"apikey\":\"adDEWRWEF46546DFDSFsdfsfsddoctor\",\r\n    \"custom_fields\": \r\n    [\r\n        {\r\n            \"attribute_key\": \"TEST01\",\r\n            \"module\":\"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"TEST02\",\r\n            \"module\":\"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"TEST03\",\r\n        \"module\":\"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"TEST04\",\r\n            \"module\":\"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"TEST03\",\r\n            \"module\":\"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"company\",\r\n            \"module\": \"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"zipcode\",\r\n            \"module\": \"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"company\",\r\n            \"module\": \"sales\"\r\n        },\r\n        {\r\n            \"attribute_key\": \"test4\",\r\n            \"module\": \"sales\"\r\n        }\r\n    ],\r\n    \"action\": \"add\"\r\n}\r\n'"
+			},
+			"response": []
+		},
+		{
+			"name": "list custom field",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\":\"{{apikey}}\", // your api key here\r\n    \"module\": \"orders\" // Type of module, Valid module are: sales and customers. If not provided all module fields are listed \r\n}"
+				},
+				"url": {
+					"raw": "{{apiURL}}/list_user_custom_fields",
+					"host": [
+						"{{apiURL}}"
+					],
+					"path": [
+						"list_user_custom_fields"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'localhost:4000/v1/custom_fields/list_user_custom_fields' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"apikey\":\"adDEWRWEF46546DFDSFsdfsfsddoctor\",\r\n    \"module\": \"orders\"\r\n}\r\n'"
+			},
+			"response": []
+		},
+		{
+			"name": "update custom field",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apikey\":\"{{apikey}}\", // your api key here\r\n    \"entity\": \"chemist\", // type of the entity\r\n    \"action\": \"update\", // update the existing record\r\n    \"custom_fields\": // Array of custom field object For ex:{attribute_key: string, module: string } Valid module are: sales and customers\r\n    [\r\n        {\r\n        \"id\": \"JNodDoo0ZoRQdnEPgGmguQ==\", // existing ID of the field\r\n        \"attribute_key\": \"TEST05 Success\", // key\r\n        \"module\":\"sales\" // value\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{apiURL}}/add_update_custom_field",
+					"host": [
+						"{{apiURL}}"
+					],
+					"path": [
+						"add_update_custom_field"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'localhost:4000/v1/custom_fields/add_update_custom_field' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"apikey\":\"adDEWRWEF46546DFDSFsdfsfsddoctor\",\r\n    \"entity\": \"chemist\",\r\n    \"action\": \"update\",\r\n    \"custom_fields\": \r\n    [\r\n        {\r\n        \"id\": \"2oxy4+4P1wfDOhVFHOHIng==\",\r\n        \"attribute_key\": \"TEST05 Success\",\r\n        \"module\":\"sales\"\r\n        }\r\n    ]\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "delete custom field",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"entity\": \"chemist\", // type of the entity\r\n    \"action\": \"delete\", // delete the existing record\r\n    \"apikey\": \"{{apikey}}\", // your api key here\r\n    \"custom_fields\": // Array of custom field object For ex:{attribute_key: string, module: string } Valid module are: sales and customers\r\n    [\r\n        {\r\n            \"id\": \"JNodDoo0ZoRQdnEPgGmguQ==\", //  existing ID of the field\r\n            \"attribute_key\": \"TEST05 Success\", // key\r\n            \"module\": \"sales\" // value\r\n        }\r\n    ]\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{apiURL}}/add_update_custom_field",
+					"host": [
+						"{{apiURL}}"
+					],
+					"path": [
+						"add_update_custom_field"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'localhost:4000/v1/custom_fields/add_update_custom_field' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"chemist_id\": \"681\",\r\n    \"accesstoken\": \"w79j3cvzt14hog7e\",\r\n    \"entity\": \"chemist\",\r\n    \"action\": \"delete\",\r\n    \"apikey\": \"adDEWRWEF46546DFDSFsdfsfsddoctor\",\r\n    \"custom_fields\": \r\n    [\r\n        {\r\n            \"id\": \"hXcYVPhK9YThXAWXG5+ZNw==\",\r\n            \"attribute_key\": \"company\",\r\n            \"module\": \"sales\"\r\n        },\r\n        {\r\n            \"id\": \"n/t/5tzL8Os4EIgEsvVkSw==\",\r\n            \"attribute_key\": \"zipcode\",\r\n            \"module\": \"sales\"\r\n        }\r\n    ]\r\n}\r\n'"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiURL",
+			"value": "https://dev-api.evitalrx.in/v1/custom_fields",
+			"type": "default"
+		},
+		{
+			"key": "apikey",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

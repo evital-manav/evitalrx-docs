@@ -4,9 +4,7 @@ description: To get alternate products by unique medicine Id.
 
 # Branded to Generic
 
-
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/branded_to_generic`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}patient/medicines/branded_to_generic`](https://api.evitalrx.in/v1/patient/medicines/branded_to_generic)
 
 Get Alternate medicines with the best in terms of Expiry, Margin, and Price.
 
@@ -26,7 +24,7 @@ Get Alternate medicines with the best in terms of Expiry, Margin, and Price.
     "status_message": "Success",
     "datetime": "2022-11-17 10:30:42",
     "data": {
-        "eGMwtMdst4OkfNrNoAFxRw==": {
+        "eGMwtMdst4OkfNrNoAFxRw==": { // medicine_id
             "data": [],
             "message": "alternative not found",
             "status": 0

@@ -4,9 +4,11 @@ description: To add patients with mobile number, name and address.
 
 # Add Patient
 
+### <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Learn How to Add a Patient or Family Member](https://youtu.be/voc4bcyhZ_8?si=Nf_SpvsQX9vVo26v)
+
 ## Add Patient
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/patients/add`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/patients/add`](https://api.evitalrx.in/v1/doctor/patients/add)
 
 #### Request Body
 
@@ -32,7 +34,7 @@ description: To add patients with mobile number, name and address.
     "status_message": "This Mobile is already exist.",
     "datetime": "2022-12-07 12:18:55",
     "data": {
-        "patient_id": "haaLvntZX7KmadCtJa314w=="
+        "patient_id": "haaLvntZX7KmadCtJa314w==" // Uniquue ID of the Patient
     }
 }
 ```

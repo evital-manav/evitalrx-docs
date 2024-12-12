@@ -1,6 +1,6 @@
 # Order Return List
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/return/list`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/return/list`](https://api.evitalrx.in/v1/b2b/return/list)
 
 #### Request Body
 
@@ -50,7 +50,7 @@
         ],
         "results": [
             {
-                "id": "tktJBTVofF3vGazDa6GlOQ==",
+                "id": "tktJBTVofF3vGazDa6GlOQ==", // Rturn Order ID
                 "buyer_chemist_id": "9RraDPXEXeI+7FJlRkv7Kw==",
                 "chemist_id": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
                 "area": "",

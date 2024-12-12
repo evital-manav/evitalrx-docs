@@ -4,9 +4,11 @@ description: To get status of the items in your inventory.
 
 # Get Inventory Status
 
+### <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Before Fetching Stock Details, Add Medicines to Your Inventory](https://youtu.be/v29o6YEsocc?si=WM0nJ2BmAuye7tNE)
 
+### Inventory Status:
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/get_inventory_status`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/get_inventory_status`](https://api.evitalrx.in/v1/doctor/medicines/get_inventory_status)
 
 #### Request Body
 
@@ -26,9 +28,9 @@ description: To get status of the items in your inventory.
         {
             "medicine_id": "otUfMtG4nIpWSc+oWoX7Lw==",
             "chemist_id": "pR/skynRizeVxF1blGRVMw==",
-            "quantity": 1380,
+            "quantity": 1380, // Current Quantity
             "mrp": 24,
-            "lock_discount": "no",
+            "lock_discount": "no", // Default discount if any
             "sell_in_loose": "yes",
             "cess_percentage": 0,
             "gst_percentage": 12

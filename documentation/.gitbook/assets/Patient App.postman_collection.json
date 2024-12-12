@@ -1,0 +1,2003 @@
+{
+	"info": {
+		"_postman_id": "d2126daa-57a7-41eb-a9fa-787cdb425635",
+		"name": "Patient App - Production",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38017393"
+	},
+	"item": [
+		{
+			"name": "addresses",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/addresses/",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"addresses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								},
+								{
+									"key": "address_name",
+									"value": "home",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "hBLrWEgpQeGZeRmCE93K4Q==",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "1001 B Raman Tower",
+									"type": "text"
+								},
+								{
+									"key": "address_line2",
+									"value": "Noida Sector 52",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "201301",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "72",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/addresses/add_update",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"addresses",
+								"add_update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set_default",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "hBLrWEgpQeGZeRmCE93K4Q==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/addresses/set_default",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"addresses",
+								"set_default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "TYqc8L/vJW+r9c+uK6T3XQ==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/addresses/delete",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"addresses",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "signup_sendotp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Khush",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Shah",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/signup_sendotp",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"signup_sendotp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotpassword_sendotp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Khush",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Shah",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/forgotpassword_sendotp",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"forgotpassword_sendotp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset_password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qbxo4031ppyuJK09",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "8863",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/reset_password",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"reset_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Khush",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Shah",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "7406",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "rootroot",
+									"type": "text"
+								},
+								{
+									"key": "os",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380013",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/signup",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"    console.log(\"jsonData\", jsonData)\r",
+									"\r",
+									"if (jsonData.status_code == \"1\") {\r",
+									"    user_id = jsonData.data.id;\r",
+									"    patient_id = jsonData.data.patient_id;\r",
+									"    pm.variables.set(\"user_id\", user_id);\r",
+									"    pm.variables.set(\"patient_id\", patient_id);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "7778889840",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qbxo4031ppyuJK09",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "place_order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"niQUCJ+B1q7/JCUN9pqzsA==\",\"quantity\":10}]",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "delivery",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "Call before order shipment.",
+									"type": "text"
+								},
+								{
+									"key": "batch_with",
+									"value": "yes",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order_status",
+									"value": "draft",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipping",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "c-32, pushpak city",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address_line2",
+									"value": "Hathijan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Ahemedabad",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "382445",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "gujarat",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1efb07d3-8f00-47b0-a402-65c5f9969467",
+									"disabled": true
+								},
+								{
+									"key": "address_id",
+									"value": "hBLrWEgpQeGZeRmCE93K4Q==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/place_order",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"place_order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "place_order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "items",
+											"value": "[{\"medicine_id\": \"SwAb2//rlstOjXa6IWRisw==\",\"quantity\": 10}]",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "{{apikey}}",
+											"type": "text"
+										},
+										{
+											"key": "patient_id",
+											"value": "zRC97Kh3xOMVdHZKkyZRVA==",
+											"type": "text"
+										},
+										{
+											"key": "delivery_type",
+											"value": "pickup",
+											"type": "text"
+										},
+										{
+											"key": "batch_with",
+											"value": "yes",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "Cambridge Road, Halasuru",
+											"description": "your address",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Banglore",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "Karnataka",
+											"type": "text"
+										},
+										{
+											"key": "zipcode",
+											"value": "560008",
+											"type": "text"
+										},
+										{
+											"key": "is_draft",
+											"value": "yes",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "batch_with",
+											"value": "yes",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}orders/place_order",
+									"host": [
+										"{{url}}orders"
+									],
+									"path": [
+										"place_order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ac-UIO4IuphivMmzkBNcH+fss+vlcQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Jan 2023 09:41:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Order placed successfully\",\n    \"datetime\": \"2023-01-10 15:11:53\",\n    \"data\": {\n        \"order_id\": \"jL7PJWebyGnAt7UNb3Uihg==\",\n        \"order_number\": \"O8LCQ1N4H8\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mark_as_shipped",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5,\"discount\":0}]",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "pickup",
+									"type": "text"
+								},
+								{
+									"key": "patient_name",
+									"value": "Khush Shah",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cambridge Road, Halasuru",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Banglore",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Karnataka",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "560008",
+									"type": "text"
+								},
+								{
+									"key": "auto_assign",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pFSLzbwQTH8LY23N2IlczQ==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "12.970612",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "77.6382433",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								},
+								{
+									"key": "batch_with",
+									"value": "yes",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "MJKDbQuLmrca1sY51OHjLw==",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2024-12-02",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "this is remark",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_shipped",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_shipped"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5,\"discount\":0}]",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "pickup",
+									"type": "text"
+								},
+								{
+									"key": "patient_name",
+									"value": "Khush Shah",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cambridge Road, Halasuru",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Banglore",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Karnataka",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "560008",
+									"type": "text"
+								},
+								{
+									"key": "auto_assign",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "chemist_id",
+									"value": "pFSLzbwQTH8LY23N2IlczQ==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "12.970612",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "77.6382433",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								},
+								{
+									"key": "batch_with",
+									"value": "yes",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "cj6dv8X/4h4eVxXcTAk/2Q==",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2024-12-02",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "this it asjflkjklj1kl234;l;llr][ll'',.;.,",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/save",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales_return",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5,\"discount\":0}]",
+									"type": "text"
+								},
+								{
+									"key": "patient_name",
+									"value": "Avi Patel",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "ol9yB5QU/R7YW7CBLhJVBw==",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2024-07-24",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "39",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/sales_return",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"sales_return"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark_as_delivered",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "MJKDbQuLmrca1sY51OHjLw==",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_delivered",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_delivered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark_as_accept",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "cj6dv8X/4h4eVxXcTAk/2Q==",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_accept",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_accept"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark_as_reject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "cj6dv8X/4h4eVxXcTAk/2Q==",
+									"type": "text"
+								},
+								{
+									"key": "reason_source",
+									"value": "delivery",
+									"type": "text"
+								},
+								{
+									"key": "reason_id",
+									"value": "25",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_reject",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_reject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reject_reasons",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "reason_source",
+									"value": "delivery",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/reject_reasons",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"reject_reasons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "cj6dv8X/4h4eVxXcTAk/2Q==",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "[\"cj6dv8X/4h4eVxXcTAk/2Q==\", \"MJKDbQuLmrca1sY51OHjLw==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order_number",
+									"value": "O9LF0XE26F",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/list",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "report",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-11-25",
+									"description": "Required | maximum duration 1 month allowed",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-12-02",
+									"description": "Required | maximum duration 1 month allowed",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "assigned",
+									"description": "'assigned', 'accepted', 'rejected', 'shipped', 'completed', 'cancelled'",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "OHM46RAZAU",
+									"description": "Search with order_number or mobile like OOLH4J1GM3 | 7043120038",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Page no for pagination",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "delivery",
+									"description": "Order Type like 'pickup' | 'delivery' ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/order_report",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"order_report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "patients",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "8567127197",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Lionel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Patel",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Ahmedabad",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Gujarat",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/add",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_family_member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "parent_patient_mobile",
+									"value": "8567127197",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "first_name",
+									"value": "Jenny",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "AB+",
+									"type": "text"
+								},
+								{
+									"key": "relation",
+									"value": "Sister",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "h3+O+GuTYRHnd6rDXfqpKg==",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "mxzcCeMqmfn95pk4HhWsNg==",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/add_family_member",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"add_family_member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "lhi0dsdbEOhkEJCTOmPyDA==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "8567127197",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "h3+O+GuTYRHnd6rDXfqpKg==",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "8567127197",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Lionel",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Messi",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/patients/update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"patients",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "medicines",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "z7mv1f863ODBaTHMPxvcqkWM6hOXtVLU",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "searchstring",
+									"value": "telmiride",
+									"type": "text"
+								},
+								{
+									"key": "apikey",
+									"value": "EvhwWTfhTgP85FpnMMg6DGTYVGkqSG83",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "show_sale_rate",
+									"value": "no",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/search",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"dxeoYjkuKmRVnSp3wdWIXA==\", \"eKT0ScsqsJHPM+FgPL7aLA==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"gv0GokYn9w4zFL51eouS2g==\", \"YGRDTONIwE509Pq4nodu/A==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"hKtRHscgbs/zRdGqisi3HA==\"]",
+									"type": "text"
+								},
+								{
+									"key": "show_sale_rate",
+									"value": "yes",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_medicine_by_batch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "hKtRHscgbs/zRdGqisi3HA==",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"BXGcaezmfzcQEdh7fZVmUg==\", \"otUfMtG4nIpWSc+oWoX7Lw==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "batch_name",
+									"value": "ASDAS234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/search_medicine_by_batch",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"search_medicine_by_batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_category_items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "M5PevXRL7Iy+CZXC2UB6Jw==",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_category_items",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_category_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "well",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_categories",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_entity_categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/medicines/get_entity_categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medicines",
+								"get_entity_categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_entity_category_items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "M5PevXRL7Iy+CZXC2UB6Jw==",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/medicines/get_entity_category_items",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"medicines",
+								"get_entity_category_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_inventory_status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "1iFlObGAoedKDQW27+2EQw==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"P80KstV0c7EoQwvKJwrRNw==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "apikey",
+									"value": "yqHe0r7DYyyQ7b5CRlD1W4FINOl7hCnj",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"hKtRHscgbs/zRdGqisi3HA==\"]",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"UrTCe4zuaduEJk3GS5/K7Q==\", \"jgadgLBeNCAEIDNDOSq9Lw==\", \"+SUBYR+hmkJWRDYChGEpMA==\", \"mHrkl/k1tKoV2TA4sKpqow==\", \"b5fC3H0KD+s+RVOYrap1sQ==\", \"Akj/icRT53sLLlxceAfHtg==\", \"Y4Ax3gp1XjnzKcYKa/UF/A==\", \"CoGwmTTgGMgdQGlpyrOQIw==\", \"EO69w0XszdXmTnDHnxT5tA==\", \"V+ax+ChAG4cE87lNlQyliA==\", \"aqGoSwFgO05AH6jLEND7nQ==\", \"6/DOVgTzJPwJcGzD+CL+lQ==\", \"W3yaFkkRtLcx66J93GuAhg==\", \"KqWVEJWaEt07+lFDINXKAw==\", \"KB0FEqXbHJpLbrckFM94aw==\", \"ML7XiT2FiSFOFoHy8CeBJA==\", \"VyZ//fv8MxlRyj9vrVlkcw==\", \"kwMy+2pCR6TsF1tbBcxGxg==\", \"3raBdAj5dYhEPOLOceUAmg==\", \"7SIi6pNhBj7ftaH0s0WXaw==\", \"o78PiZa6YfAizAUEfNcQIQ==\", \"yQbP4VrFJCwUZQ4LCgmeeg==\", \"UYGIinjzR7QLT/59iocfcA==\", \"GdX2hx4IBGDNgVTMvQL3yg==\", \"zveE6yS9vjOyUaCOZnviww==\", \"0EzWCLqw7hR4KoL07vd5Mw==\", \"QECB7DtdWtZ9TPRxLIJ/ug==\", \"teKBIj9TzqG1W6WYYtnblA==\", \"+RonZoR0PJUntqtIQnj3ZA==\", \"6jJV9vQV/Srx8/RZyW5DMg==\", \"zuTpc5jyPn3AlgulSxlg+Q==\", \"h4N8x5M8dkGEaQOSuA+2EQ==\", \"Zjz5L9Sa3dDPGiRTSrm7nQ==\", \"eKzhdHsqv2jrQohnrEl4dw==\", \"yrmzexPBiPihPoyHp/Xqrg==\", \"qGHJYq1XpqgopOgeQ9D8MQ==\", \"X1GG8J6+gKnFXWLqpVvs9w==\", \"juGl16Qt8a1yU7oel951kA==\", \"RWGWuuoLZno1stNYZ9Otig==\", \"jPx/9zaIZB5aicqyTLlC+w==\", \"pYWWWCXOGtktF/Jq0jr/9w==\", \"mMtTDatbvcna3GB6QxMP5Q==\", \"oQEkqBwJJJGSyNdvfMWWGA==\", \"PxRnn2m7zLZT1iMjL0lKJw==\", \"acNkRW1IPttyJPsuIy3wwg==\", \"BmVeQBv+9TtHxGOJRgw+UA==\", \"RmttVxjPVzybiOPFYL0gEw==\", \"0+55GOHKUMzLVyqiGqOTtw==\", \"23pFb5XXdM4RZqmRiXrEXA==\", \"+sIulS+I3AIE7I1fbOOLsQ==\", \"4F4za8NIa01CejOC13Sqcw==\", \"t9EAVk9giv2FK0zFNn3qxQ==\", \"FyU/5UEQVDeCdIR0K6Hx8g==\", \"K1I5Lq3NKcDEAAk+yfgI0w==\", \"VfwJ72ilrG4AIdzVq8NAvQ==\", \"DA65kaZyZk+GJwncOD53Xw==\", \"UozM8bfsfQ9Qhfleld6hvQ==\", \"ptbqOSj0yFvf3vRYvDEicg==\", \"A7LfCN34XA9xlO2nzqWaQQ==\", \"uY5yBb9VvpftW9prGNF1vQ==\", \"Yx2WMs01bt9sYv1wL0hBhg==\", \"BasDTeuL2Awzke3M0Qq+7A==\", \"PHWGyq0aq+qKoJ3O9BxaqA==\", \"wU9Gq9kw5R4Foluk0VPirA==\", \"KrPABPKRvNsyGDqJ5nR/Iw==\", \"iW5RKfIo4znTxjBCkkztqA==\", \"UCo8L0eVe30iYKmFChXB8Q==\", \"bMY8v3yjhyjPWyw8a6mk9Q==\", \"ORe0n7u/3IisbPN8bfBLVQ==\", \"TASsN5ixbiHy5Z90ayd1dA==\", \"yO1GsSKKYm4/aL3WLHwfXA==\", \"Yo0nD92E73REvEuL5J0p5g==\", \"vcax5YHzquURcqSqLa+REQ==\", \"GLNNbZ8aEcp/370lwJPJFw==\", \"o3WgYlEXUN+9oKwi1Sgk4w==\", \"6z3UIVFiOejHpPHF/7bDjg==\", \"3v6GS/v+OwXsMzIpuqPfUg==\", \"29QZg5tU7QnGXxvNW+YC5w==\", \"cMxMfQgMAIAdf0hQYcU9XQ==\", \"sqtget5egtaNMV4pLCiOjw==\", \"4q1NTXhXmLStRq2xOe9hPQ==\", \"tdb/Hfx0y3n1KRwpP52P2Q==\", \"z2FqkdUWeIyruZCsHbR9qA==\", \"o+pA7y4Wcl+ASWOje8h+2w==\", \"pY0TtYJu3mYuYGAaynfp+w==\", \"u7cFIGnVwQSd6d20+nONLw==\", \"GyNW0E5K+9XSE8nZM8jF3A==\", \"Vvu4kNBCL9bYcAlfjEfU9w==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[ \"IRRkRqMN5Hf0ZHNkUNvPFQ==\", \"uWEwUK447LhjoYVqbuVM7g==\", \"w5JSfwLEUqciIEnl7n6DwQ==\", \"fpfFcRxRxdjdUjKJLJ8EIA==\", \"OiYnfvBuWxgmYbYZ16C3SA==\", \"AKTCpiwtOVg3RsIqLy9UVQ==\", \"ogO9lLYyaC2MtJ9Iqntz8g==\", \"fO+zsG7D7Eqi9E0AnQ0YBA==\", \"pUVv7pzTrfgTD5JpDjJgqQ==\", \"ptA8/IV4UyRnTiL5bau83Q==\", \"3ZG9m3ZImr7NocVepCPZjw==\", \"peWzKA5ZExWY0Uz0k2hDGw==\", \"2KyN/9zgWSuva6LrN4ufvQ==\", \"a98cSac4+wxc6+f5+chFgg==\", \"gvPrbNLaWQE/VmC0CL8GJg==\", \"nPaocKFL299nVcK9h7MP/A==\", \"8sBPYqtqyy8eZIk7qEe+jQ==\", \"crxqBgpDlY8Cck6/IPHsOw==\", \"boEOpsqjD4nG+TeGXmNP+Q==\", \"ERTgSvQb/Qw7Wy0tzI0KWg==\"]",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_inventory_status",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_inventory_status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiUrl",
+			"value": "https://api.evitalrx.in/v1/patient/",
+			"type": "string"
+		},
+		{
+			"key": "apikey",
+			"value": "XMFvChaAbrQgdpBHQhsYDYNeavvzsG58",
+			"type": "default"
+		},
+		{
+			"key": "url",
+			"value": "http://localhost:4000/v1/patient",
+			"type": "default"
+		},
+		{
+			"key": "user_id",
+			"value": "p6/ijEOd6txe4W7iWzKUpA==",
+			"type": "default"
+		}
+	]
+}

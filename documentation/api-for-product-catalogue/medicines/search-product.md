@@ -6,9 +6,11 @@ description: >-
 
 # Search Product
 
+#### [Explore Medicines Available in Staging](../../getting-started-with-evitalrx.md#explore-medicines-available-in-staging)
+
 ## Search Products
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/catalog/medicines/search`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}catalog/medicines/search`](https://api.evitalrx.in/v1/catalog/medicines/search)
 
 If the Item is present in your inventory, then it will appear first.
 
@@ -27,10 +29,10 @@ If the Item is present in your inventory, then it will appear first.
     "status_message": "Success",
     "datetime": "2022-12-06 15:16:32",
     "data": {
-        "did_you_mean_result": [],
+        "did_you_mean_result": [], // if medicine not found then suggestions
         "result": [
             {
-                "dosage_type": "",
+                "dosage_type": "drop",
                 "medicine_name": "Spasmex 20 mg/500 mg Drop",
                 "content": "Dicyclomine (20mg) + Paracetamol (500mg)",
                 "mrp": "22.5",
@@ -41,7 +43,7 @@ If the Item is present in your inventory, then it will appear first.
                 "medicine_type": "drug"
             },
             {
-                "dosage_type": "",
+                "dosage_type": "drop",
                 "medicine_name": "Lanol 100 Mg/ml Drop",
                 "content": "Paracetamol (100mg/ml)",
                 "mrp": "18",

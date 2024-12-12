@@ -4,9 +4,7 @@ description: This API sends verification code to register mobile number to reset
 
 # Forgot password send OTP
 
-
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/login/forgotpassword_sendotp`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/login/forgotpassword_sendotp`](https://api.evitalrx.in/v1/patient/login/forgotpassword_sendotp)
 
 #### Request Body
 

@@ -1,0 +1,14 @@
+curl --location 'https://api.evitalrx.in/v1/custom_fields/add_update_custom_field' \
+--header 'Content-Type: application/json' \
+--data '{
+  "apikey":"**************",
+  "action": "update",
+   "custom_fields": [
+    {
+      "id": "oyESErpn5eM/lQZPgEvxRw==",
+      "attribute_key": "patient_mapped_id",
+      "module":"customers"
+    }
+   ]
+}
+'

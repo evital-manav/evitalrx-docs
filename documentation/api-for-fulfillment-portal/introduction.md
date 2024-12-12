@@ -8,17 +8,6 @@ The healthcare industry is changing how it serves patients, and a fulfillment AP
 
 <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption><p><strong>Fulfillment API flow</strong></p></figcaption></figure>
 
-#### Here are the credentials to access the Staging Environment.
-
-Portal Link: [https://staging.evitalrx.in/dashboard](https://staging.evitalrx.in/dashboard)
-
-```
-mobile: 7777777777
-password: test@api
-```
-
-**Staging API endpoint base URL:** [**https://dev-api.evitalrx.in**](https://api.evitalrx.in)
-
 #### Here is the Postman Collection of APIs
 
 {% embed url="https://drive.google.com/file/d/1Pdm6OML-mBEtOuTn2DX_s168qPOZptjT/view?usp=sharing" %}

@@ -6,7 +6,7 @@ description: To save the order.
 
 ## Save
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/orders/save`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}doctor/orders/save`](https://api.evitalrx.in/v1/doctor/orders/save)
 
 If the order is made with batch through push\_prescription API, It can be saved by this API. This removes the headache of the integration partners, who don't want their chemists to switch 2 portals. Their portal to make drafts, and eVitalRx portal to save the order.
 
@@ -29,7 +29,6 @@ If the order is made with batch through push\_prescription API, It can be saved 
 
 {% tabs %}
 {% tab title="200: OK Order Placed successfully." %}
-````json
 ```json
 {
     "status_code": "1",
@@ -46,7 +45,7 @@ If the order is made with batch through push\_prescription API, It can be saved 
         "invoice_url": "Hi%20Aagam%20Shah%2C%0AThank%20you%20for%20your%20purchase%20at%20*Manav%20Medical%20GJ*.%20We%20hope%20to%20serve%20you%20again.%0AClick%20to%20make%20Payment%20or%20view%20Invoice%3A%20http%3A%2F%2Flocalhost%2Fevital%2Finvoice%2FT0tMRjExMkg1OQ%3D%3D%2F%3Fsource%3DWhatsApp%26medium%3DManual%0A%0AIf%20the%20link%20is%20not%20clickable%2C%20please%20save%20this%20number%20and%20try%20again.%0A%0AYour%20trusted%20pharmacist%2C%0AManav%20Medical%20GJ"
     }
 }
-````
+```
 {% endtab %}
 
 {% tab title="200: OK Validation Error" %}

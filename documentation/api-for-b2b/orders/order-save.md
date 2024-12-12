@@ -6,7 +6,7 @@ description: To save the b2b sales order.
 
 ## Save Order
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/save`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/save`](https://api.evitalrx.in/v1/b2b/save)
 
 &#x20;
 
@@ -30,12 +30,12 @@ description: To save the b2b sales order.
 
 {% tabs %}
 {% tab title="200 Order Saved successfully." %}
-<pre><code><strong>{
+<pre class="language-json"><code class="lang-json"><strong>{
 </strong>    "status_code": "1",
     "status_message": "Bill created successfully",
     "datetime": "2024-10-01 12:50:37",
     "data": {
-        "chemist_order_id": "QlOCazEdBCkSk9qdEQF2qA=="
+        "chemist_order_id": "QlOCazEdBCkSk9qdEQF2qA==" // Order ID
     }
 }
 </code></pre>

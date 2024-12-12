@@ -4,9 +4,7 @@ description: This API is for doctors to add their favorite medicine.
 
 # Add Favorite Medicine
 
-
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/favorite/add`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/favorite/add`](https://api.evitalrx.in/v1/doctor/medicines/favorite/add)
 
 #### Request Body
 

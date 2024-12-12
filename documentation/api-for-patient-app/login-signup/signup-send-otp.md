@@ -1,8 +1,6 @@
 # Signup send OTP
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/login/signup_sendotp`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/login/signup_sendotp`](https://api.evitalrx.in/v1/patient/login/signup_sendotp)
 
 API to check whether the patient should sign up or log in.&#x20;
 

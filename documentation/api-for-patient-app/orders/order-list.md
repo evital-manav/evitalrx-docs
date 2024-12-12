@@ -6,7 +6,7 @@ description: To fetch order history of patient.
 
 ## Order List
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/orders/list`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/list`](https://api.evitalrx.in/v1/patient/orders/list)
 
 #### Request Body
 

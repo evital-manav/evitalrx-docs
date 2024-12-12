@@ -4,9 +4,7 @@ description: To change password
 
 # Change password
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/login/change_password`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/login/change_password`](https://api.evitalrx.in/v1/patient/login/change_password)
 
 #### Request Body
 

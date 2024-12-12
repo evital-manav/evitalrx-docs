@@ -2,7 +2,7 @@
 
 ## Make Sales Return bill with API
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in//v1/patient/orders/sales_return`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/sales_return`](https://api.evitalrx.in/v1/patient/orders/sales_return)
 
 This API will make a Sales Return bill. chemist no need to go to the eVitalRx portal to complete the Return bill.
 
@@ -17,6 +17,7 @@ This API will make a Sales Return bill. chemist no need to go to the eVitalRx po
 | remark                                            | String            | Note for the Order Return.                                                                                                                                                                                                                                                                                                                                                      |
 | order\_date<mark style="color:red;">\*</mark>     | String            | <p>Date of the bill. </p><p>Format: YYYY-MM-DD</p><p></p>                                                                                                                                                                                                                                                                                                                       |
 | payment\_status<mark style="color:red;">\*</mark> | Number            | <p>To choose payment mode of the order. </p><p>1: CASH </p><p>2: CREDIT </p><p>3: UPI </p><p>4: CHEQUE </p><p>5: PAYTM </p><p>6: CC/DC </p><p>7: RTGS/NEFT</p>                                                                                                                                                                                                                  |
+| quantity\_type                                    | strip \| loose    | <p>[strip]: The quantity you are passing will considered as strip </p><p>[loose]: The quantity you are passing will considered as pills</p>                                                                                                                                                                                                                                     |
 
 {% tabs %}
 {% tab title="200: OK Success" %}

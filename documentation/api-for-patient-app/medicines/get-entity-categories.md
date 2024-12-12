@@ -6,7 +6,7 @@ description: Get the Product categories list.
 
 ## Get Entity Categories
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/get_entity_categories`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}patient/medicines/get_entity_categories`](https://api.evitalrx.in/v1/patient/medicines/get_entity_categories)
 
 #### Request Body
 
@@ -24,7 +24,7 @@ description: Get the Product categories list.
     "data": {
         "results": [
             {
-                "id": "BPuoYPiBInH/hiFVTaXQ3Q==",
+                "id": "BPuoYPiBInH/hiFVTaXQ3Q==", // id of Categories a entity have
                 "category_name": "Ayurvedic"
             },
             {

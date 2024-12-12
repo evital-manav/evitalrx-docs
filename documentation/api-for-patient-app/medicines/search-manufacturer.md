@@ -6,7 +6,7 @@ description: To search manufacturer by name.
 
 ## Search Manufacturer
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/manufacturer/search`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}patient/medicines/manufacturer/search`](https://api.evitalrx.in/v1/patient/medicines/manufacturer/search)
 
 #### Request Body
 
@@ -27,7 +27,7 @@ description: To search manufacturer by name.
     "data": {
         "results": [
             {
-                "id": "YDyrP7SQyRGUkTN1WEwkDA==",
+                "id": "YDyrP7SQyRGUkTN1WEwkDA==", // Unique ID of the Manufacturer
                 "title": "Cipla Ganric"
             },
             {

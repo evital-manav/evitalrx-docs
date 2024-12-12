@@ -1,0 +1,8 @@
+more than 1 prescription is accepted. prescription can also be sent in the delivery orders. Copy & paste the below request in the postman, then any language code snippets can be generated with it.
+
+curl --location 'https://api.evitalrx.in/v1/patient/orders/place_order'
+--form 'apikey="***********************"'
+--form 'items="[{"medicine_id":"gv0GokYn9w4zFL51eouS2g==","quantity":50,"discount_percentage": 5}]"'
+--form 'patient_id="yxu0Bh1hNM61K3b7t7+vlw=="'
+--form 'delivery_type="pickup"'
+--form 'image=@"/C:/Users/91999/Downloads/image (51f8e0f5-d996-4d8e-91bb-752d923d88a6).png"'

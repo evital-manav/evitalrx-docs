@@ -6,7 +6,7 @@ description: To get item details in your inventory by unique medicine Id.
 
 ## Product Details
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/catalog/medicines/view`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}catalog/medicines/view`](https://api.evitalrx.in/v1/catalog/medicines/view)
 
 #### Request Body
 
@@ -27,7 +27,7 @@ description: To get item details in your inventory by unique medicine Id.
         "content": "",
         "how_medicine_works": "",
         "how_to_use": "",
-        "id": "8Oq/U+AVxuCWtncoxUgtEg==",
+        "id": "8Oq/U+AVxuCWtncoxUgtEg==", // medicine_id
         "medicine_image": "https://d2ffmswuyj0h1d.cloudfront.net/storage/medicines/5f056fbc83c8c.jpg",
         "is_rx_required": 0,
         "dosage_type": "",

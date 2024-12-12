@@ -1,0 +1,779 @@
+{
+	"info": {
+		"_postman_id": "9d9e5616-90c1-4c6e-988f-efb8a3ecf56f",
+		"name": "Catalog Postman Collection - Production",
+		"description": "This bundle provides APIs for managing and retrieving product information, including searching for medicines, viewing product details, exploring categories, and requesting products. It helps to smooth the product catalog management.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38017393"
+	},
+	"item": [
+		{
+			"name": "search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "searchstring",
+							"value": "dolo 650",
+							"description": "Medicine/Product Name (Min: 3 chars, Max: 20 chars)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}medicines/search",
+					"host": [
+						"{{url}}medicines"
+					],
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "adDEWRWEF46546DFDSFsdfsfsdfsdfsl",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "ltk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/search",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2212"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8a4-RNI5RbEtPrf1cxTdF36AmWYqzng\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Nov 2022 05:59:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2022-11-30 11:29:49\",\n    \"data\": {\n        \"did_you_mean_result\": [],\n        \"result\": [\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk 50 Tablet\",\n                \"content\": \"Losartan (50mg)\",\n                \"mrp\": \"23.5\",\n                \"medicine_id\": \"ZnsQl586DmR/ANT3aLdM4g==\",\n                \"packing_size\": \"10 tablets in 1 strip\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk 50 Tab\",\n                \"content\": \"Testosterone Propionate      (5mg) + Tetanus Toxoid      (50billion cells) + Tannic Acid (10iu)\",\n                \"mrp\": \"150\",\n                \"medicine_id\": \"gMjdftHXOx7qaMun0d4Ukw==\",\n                \"packing_size\": \"1 Bottle of  10 Tablet\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"Themis Medicare Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk 2569 Tbas\",\n                \"content\": \"Allopurinol (100mg)\",\n                \"mrp\": \"15\",\n                \"medicine_id\": \"QJVVDJK0jsS5wmTqGAGurg==\",\n                \"packing_size\": \"1 Strip of  10 Tablet\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Themis Medicare Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk 25 Mg Tablet\",\n                \"content\": \"\",\n                \"mrp\": \"9.8\",\n                \"medicine_id\": \"p09z4gqM8/MDjnyiqRpInQ==\",\n                \"packing_size\": \"1X10\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Unison Laboratories\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"LTK-H Tablet 5\",\n                \"content\": \"\",\n                \"mrp\": \"32.9\",\n                \"medicine_id\": \"otUfMtG4nIpWSc+oWoX7Lw==\",\n                \"packing_size\": \"1 Strip of  15 Tablet\",\n                \"size\": \"15\",\n                \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n                \"medicine_type\": \"otc\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk 25 mg Tablet\",\n                \"content\": \"Losartan (25mg)\",\n                \"mrp\": \"11.7\",\n                \"medicine_id\": \"8gyvuy5U3rrbIdrRy7AKIw==\",\n                \"packing_size\": \"10 tablets in 1 strip\",\n                \"size\": \"15\",\n                \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk 50 Mg Tablet\",\n                \"content\": \"\",\n                \"mrp\": \"19.8\",\n                \"medicine_id\": \"IllPi+ExHRiDlt5QKDWmjw==\",\n                \"packing_size\": \"1X10\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Unison Laboratories\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Ltk AM Tablet 569\",\n                \"content\": \"Losartan (50mg) + Amlodipine (5mg)\",\n                \"mrp\": \"38.1\",\n                \"medicine_id\": \"Eli4pMFfzobV63G67jtjZw==\",\n                \"packing_size\": \"1 Strip of  10 Tablet\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n                \"medicine_type\": \"drug\",\n                \"cess_percentage\": \"5\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "search",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "adDEWRWEF46546DFDSFsdfsfsdfsdfsl",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "c,Potassium citrate",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/search",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2700"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a8c-YyuSU73cqyO+H2Jp/IJPoQ3xWwA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Dec 2022 06:48:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2022-12-01 12:18:19\",\n    \"data\": {\n        \"did_you_mean_result\": [],\n        \"result\": [\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Urofit Oral Solution\",\n                \"content\": \"Potassium Citrate (1100mg) + Magnesium Citrate (375mg) + Vitamin B6 (Pyridoxine) (20mg)\",\n                \"mrp\": \"192\",\n                \"medicine_id\": \"phpMMeeGk1ObLfWRamuoKA==\",\n                \"packing_size\": \"300 ml in 1 bottle\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"TTK Healthcare Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Alkamax MB 6 Syrup\",\n                \"content\": \"Potassium Citrate (1100mg/5ml) + Magnesium Citrate (375mg/5ml) + Vitamin B6 (Pyridoxine) (20mg/5ml)\",\n                \"mrp\": \"253\",\n                \"medicine_id\": \"VBRW3ya9aJka00f5u9JEEQ==\",\n                \"packing_size\": \"450 ml in 1 bottle\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"Overseas Healthcare Pvt Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Potrate 5 Tablet ER\",\n                \"content\": \"Potassium Citrate (540mg)\",\n                \"mrp\": \"34\",\n                \"medicine_id\": \"Dn2u+VY/EKCXPJCbNoyijQ==\",\n                \"packing_size\": \"10 tablet er in 1 strip\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Intas Pharmaceuticals Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Urofit Oral Solution\",\n                \"content\": \"Potassium Citrate (1100mg) + Magnesium Citrate (375mg) + Vitamin B6 (Pyridoxine) (20mg)\",\n                \"mrp\": \"91.5\",\n                \"medicine_id\": \"TYnH+jXtuOQ6S8/DGvJTtw==\",\n                \"packing_size\": \"100 ml in 1 bottle\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"TTK Healthcare Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"K Mac B6  Oral Solution\",\n                \"content\": \"Potassium Citrate (1100mg/5ml) + Magnesium Citrate (375mg/5ml) + Vitamin B6 (Pyridoxine) (20mg/5ml)\",\n                \"mrp\": \"165\",\n                \"medicine_id\": \"D3Bx53Bt7OuNl47TEMVTrA==\",\n                \"packing_size\": \"200 ml in 1 bottle\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"Fourrts India Laboratories Pvt Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Potrate 10 Tablet ER\",\n                \"content\": \"Potassium Citrate (1080mg)\",\n                \"mrp\": \"58\",\n                \"medicine_id\": \"mk+8wPJx5gaYdgwhc4k09Q==\",\n                \"packing_size\": \"10 tablet er in 1 strip\",\n                \"size\": \"10\",\n                \"manufacturer_name\": \"Intas Pharmaceuticals Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Alkamax MB 6 Syrup\",\n                \"content\": \"Potassium Citrate (1100mg/5ml) + Magnesium Citrate (375mg/5ml) + Vitamin B6 (Pyridoxine) (20mg/5ml)\",\n                \"mrp\": \"142\",\n                \"medicine_id\": \"jppSntf0TcIJCDeJlUG4dA==\",\n                \"packing_size\": \"200 ml in 1 bottle\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"Overseas Healthcare Pvt Ltd\",\n                \"medicine_type\": \"drug\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"medicine_name\": \"Noculi B6 Oral Solution\",\n                \"content\": \"Potassium Citrate (1100mg/5ml) + Magnesium Citrate (375mg/5ml) + Vitamin B6 (Pyridoxine) (20mg/5ml)\",\n                \"mrp\": \"141\",\n                \"medicine_id\": \"qQRT0kaTlkza6kwGTImspQ==\",\n                \"packing_size\": \"200 ml in 1 bottle\",\n                \"size\": \"1\",\n                \"manufacturer_name\": \"Sun Pharmaceutical Industries Ltd\",\n                \"medicine_type\": \"drug\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "view",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "medicine_id",
+							"value": "HD3nI9bnanVvGm6N6jthJw==",
+							"description": "Unique ID of the Medicine/Product",
+							"type": "text"
+						},
+						{
+							"key": "medicine_ids",
+							"value": "[\"z5s5a+e/Cj4ip7sUl2zJFQ==\", \"otUfMtG4nIpWSc+oWoX7Lw==\"]",
+							"description": "Stringified array of medicine_ids, contain at l;east 2 ids, optional",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}medicines/view",
+					"host": [
+						"{{url}}medicines"
+					],
+					"path": [
+						"view"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "adDEWRWEF46546DFDSFsdfsfsdfsdfsl",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "ZnsQl586DmR/ANT3aLdM4g==",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/view",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"view"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3158"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c56-BTGlWFLDhqqOD/sDxmGsY9I/q5o\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Nov 2022 05:58:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2022-11-30 11:28:53\",\n    \"data\": {\n        \"content\": \"Losartan (50mg)\",\n        \"how_medicine_works\": \"Ltk 50 Tablet is an angiotensin receptor blocker (ARB). It relaxes blood vessel by blocking the action of a chemical that usually makes blood vessels tighter. This lowers the blood pressure, allowing the blood to flow more smoothly to different organs and the heart to pump more efficiently.\",\n        \"how_to_use\": \"Take this medicine in the dose and duration as advised by your doctor. Swallow it as a whole. Do not chew, crush or break it. Ltk 50 Tablet may be taken with or without food, but it is better to take it at a fixed time.\",\n        \"id\": \"ZnsQl586DmR/ANT3aLdM4g==\",\n        \"medicine_image\": \"\",\n        \"is_rx_required\": 1,\n        \"dosage_type\": \"tablet\",\n        \"medicine_name\": \"Ltk 50 Tablet\",\n        \"mrp\": 23.5,\n        \"packing_size\": \"10 tablets in 1 strip\",\n        \"size\": 10,\n        \"manufacturer_name\": \"Unison Pharmaceuticals Pvt Ltd\",\n        \"side_effects\": \" Common   Dizziness  Back pain  Sinus inflammation  Increased potassium level in blood  \",\n        \"alcohol\": \"Taking Losartan with alcohol may excessively lower the blood pressure.\",\n        \"driving\": \"It is not known whether Ltk 50 Tablet alters the ability to drive. Do not drive if you experience any symptoms that affect your ability to concentrate and react.\",\n        \"kidney\": \"Ltk 50 Tablet is safe to use in patients with kidney disease. No dose adjustment of Ltk 50 Tablet is recommended.<br>However, talk to your doctor if you have any underlying kidney disease. Regular monitoring of blood pressure is recommended for better dose adjustment.\",\n        \"lactation\": \"Ltk 50 Tablet is probably safe to use during lactation.  Limited human data suggests that the drug does not represent a significant risk to the baby.\",\n        \"liver\": \"Ltk 50 Tablet should be used with caution in patients with liver disease. Dose adjustment of Ltk 50 Tablet may be needed. Please consult your doctor.<br>Use of Ltk 50 Tablet is not recommended in patients with severe liver disease.\",\n        \"pregnancy\": \"Ltk 50 Tablet is unsafe to use during pregnancy.<br>There is positive evidence of human fetal risk, but the benefits from use in pregnant women may be acceptable despite the risk, for example in life-threatening situations. Please consult your doctor.\",\n        \"medicine_category\": \"generic\",\n        \"alternative_results\": {\n            \"in_stock_count\": 0,\n            \"results\": []\n        },\n        \"medicine_images\": [\n            {\n                \"id\": 96,\n                \"medicine_image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/611cb05d49e3d.jpg\",\n                \"medicine_id\": 73861,\n                \"default\": \"no\"\n            },\n            {\n                \"id\": 99,\n                \"medicine_image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/611cb1e1ee996.jpg\",\n                \"medicine_id\": 73861,\n                \"default\": \"no\"\n            },\n            {\n                \"id\": 108,\n                \"medicine_image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/611ccc345338b.jpg\",\n                \"medicine_id\": 73861,\n                \"default\": \"no\"\n            },\n            {\n                \"id\": 49,\n                \"medicine_image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/611b81f100258.jpeg\",\n                \"medicine_id\": 73861,\n                \"default\": \"no\"\n            },\n            {\n                \"id\": 50,\n                \"medicine_image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/611b81fdcbc59.jpeg\",\n                \"medicine_id\": 73861,\n                \"default\": \"no\"\n            },\n            {\n                \"id\": 52,\n                \"medicine_image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/611b81fe85433.jpeg\",\n                \"medicine_id\": 73861,\n                \"default\": \"no\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "content_search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "losartan",
+							"description": "Content (in the medicine) to be searched",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}medicines/content_search",
+					"host": [
+						"{{url}}medicines"
+					],
+					"path": [
+						"content_search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "request_medicine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "medicine_name",
+							"value": "Himalaya Fairness Cream",
+							"description": "Product/Medicine Name",
+							"type": "text"
+						},
+						{
+							"key": "manufacturer_name",
+							"value": "Himalaya",
+							"description": "Manufacturer Name",
+							"type": "text"
+						},
+						{
+							"key": "packaging",
+							"value": "tube",
+							"description": "Product's Packaging | strip, bottle, packet, piece, tube, etc...",
+							"type": "text"
+						},
+						{
+							"key": "mrp",
+							"value": "100",
+							"description": "Price of the Product",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"description": "Back photo of the Product",
+							"type": "file",
+							"src": "/C:/Users/91999/Downloads/5wj1l6aln0.png"
+						},
+						{
+							"key": "image",
+							"description": "Front photo of the Product",
+							"type": "file",
+							"src": "/C:/Users/91999/Downloads/5wj1l6aln0.png"
+						},
+						{
+							"key": "medicine_category",
+							"value": "otc",
+							"description": "Category of the medicine like otc, generic, FMCG, cosmetic, etc...",
+							"type": "text"
+						},
+						{
+							"key": "weightage",
+							"value": "100",
+							"description": "Optional Param",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "gm",
+							"description": "Unit of the medicine in gm, ml, tablets, capsules, etc...",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}medicines/request_medicine",
+					"host": [
+						"{{url}}medicines"
+					],
+					"path": [
+						"request_medicine"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "request_medicine",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "adDEWRWEF46546DFDSFsdfsfsdfsdfsl",
+									"type": "text"
+								},
+								{
+									"key": "medicine_name",
+									"value": "request test1",
+									"type": "text"
+								},
+								{
+									"key": "manufacturer_name",
+									"value": "manav manufacturer",
+									"type": "text"
+								},
+								{
+									"key": "packaging",
+									"value": "bottle",
+									"type": "text"
+								},
+								{
+									"key": "mrp",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/91999/Downloads/6013f2f69a97b.jpg"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/91999/Downloads/c4tn1fjitf.png"
+								},
+								{
+									"key": "medicine_category",
+									"value": "otc",
+									"type": "text"
+								},
+								{
+									"key": "weightage",
+									"value": "100",
+									"description": "Optional Param",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/request_medicine",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"request_medicine"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "316"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13c-X4FEzPgd9ict3I/F/KIQvvQxNdk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 13:36:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2022-12-02 19:06:46\",\n    \"data\": {\n        \"medicine_id\": \"dPkTr0IhNs5y6eTtnDjzwg==\",\n        \"medicine_type\": \"\",\n        \"packing_size\": \"1 Bottle of 100 \",\n        \"pack_size\": \"100 \",\n        \"manufacturer_name\": \"\",\n        \"hsn_code\": \"\",\n        \"gst_percentage\": 0,\n        \"gtin_number\": \"\",\n        \"mrp\": 100,\n        \"medicine_name\": \"Request Test1\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get_categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Default: 1",
+							"type": "text"
+						},
+						{
+							"key": "searchstring",
+							"value": "baby",
+							"description": "Default: '' (blank) | Min len: 3 char | Max len: 20 char",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}medicines/get_categories",
+					"host": [
+						"{{url}}medicines"
+					],
+					"path": [
+						"get_categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_categories Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Default: 1",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "baby",
+									"description": "Default: '' (blank) | Min len: 3 char | Max len: 20 char",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_categories",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_categories"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 12:16:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "292"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"124-YZPjsF77+Tr2MV6t+RZeu20AsrM\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2023-10-03 17:46:41\",\n    \"data\": {\n        \"current_page\": 1,\n        \"rpp\": 5,\n        \"results\": [\n            {\n                \"id\": \"0vcJSAAf3JXqrMpO75f+IA==\",\n                \"category_name\": \"Baby Care\",\n                \"category_picture\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/extra/cosmetic/BabyBathEssentials.png\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get_category_items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "34J1T5SGeWaGNRwbUVLGCA==",
+							"description": "Unique ID of the Category",
+							"type": "text"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Optional",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}medicines/get_category_items",
+					"host": [
+						"{{url}}medicines"
+					],
+					"path": [
+						"get_category_items"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_category_items",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "4hqSQ10dYTul9vNBMlCrUQ==",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}medicines/get_category_items",
+							"host": [
+								"{{url}}medicines"
+							],
+							"path": [
+								"get_category_items"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 03 Oct 2023 12:20:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2164"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"874-DQD+Bx9YeH4Y+yL4khOWobENm7Q\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Success\",\n    \"datetime\": \"2023-10-03 17:50:28\",\n    \"data\": {\n        \"current_page\": 1,\n        \"rpp\": 10,\n        \"results\": [\n            {\n                \"dosage_type\": \"\",\n                \"salt_content_id\": \"\",\n                \"medicine_name\": \"MamyPoko Standard Pants L\",\n                \"content\": \"\",\n                \"mrp\": 195,\n                \"medicine_id\": \"PUe/q5mC00cuci4cVAgiWg==\",\n                \"packing_size\": \"1 Packet of  17 Piece\",\n                \"size\": 1,\n                \"manufacturer_name\": \"Unicharm India\",\n                \"medicine_type\": \"otc\",\n                \"image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/6286077028b09.jpg\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"salt_content_id\": \"\",\n                \"medicine_name\": \"MamyPoko Standard Pants L\",\n                \"content\": \"\",\n                \"mrp\": 195,\n                \"medicine_id\": \"PUe/q5mC00cuci4cVAgiWg==\",\n                \"packing_size\": \"1 Packet of  17 Piece\",\n                \"size\": 1,\n                \"manufacturer_name\": \"Unicharm India\",\n                \"medicine_type\": \"otc\",\n                \"image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/6286077028b09.jpg\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"salt_content_id\": \"\",\n                \"medicine_name\": \"MamyPoko Extra Absorb Pants L\",\n                \"content\": \"\",\n                \"mrp\": 30,\n                \"medicine_id\": \"8orluEHZ13mtYr/kNuhTlA==\",\n                \"packing_size\": \"1 Packet of  2 Piece\",\n                \"size\": 1,\n                \"manufacturer_name\": \"Unicharm India\",\n                \"medicine_type\": \"otc\",\n                \"image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/62a87226034ff.jpg\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"salt_content_id\": \"\",\n                \"medicine_name\": \"MamyPoko Extra Absorb Pants L\",\n                \"content\": \"\",\n                \"mrp\": 30,\n                \"medicine_id\": \"8orluEHZ13mtYr/kNuhTlA==\",\n                \"packing_size\": \"1 Packet of  2 Piece\",\n                \"size\": 1,\n                \"manufacturer_name\": \"Unicharm India\",\n                \"medicine_type\": \"otc\",\n                \"image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/62a87226034ff.jpg\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"salt_content_id\": \"\",\n                \"medicine_name\": \"Dove Baby Lotion Rich Moisture\",\n                \"content\": \"\",\n                \"mrp\": 65,\n                \"medicine_id\": \"SfplmQsHVjJsp3tv4qlMIQ==\",\n                \"packing_size\": \"1 Bottle of  1 Gm\",\n                \"size\": 1,\n                \"manufacturer_name\": \"Unilever India\",\n                \"medicine_type\": \"otc\",\n                \"image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/63be802b49ab8.jpg\"\n            },\n            {\n                \"dosage_type\": \"\",\n                \"salt_content_id\": \"\",\n                \"medicine_name\": \"Dove Baby Lotion Rich Moisture\",\n                \"content\": \"\",\n                \"mrp\": 65,\n                \"medicine_id\": \"SfplmQsHVjJsp3tv4qlMIQ==\",\n                \"packing_size\": \"1 Bottle of  1 Gm\",\n                \"size\": 1,\n                \"manufacturer_name\": \"Unilever India\",\n                \"medicine_type\": \"otc\",\n                \"image\": \"https://d1tu4pmhr82np8.cloudfront.net/storage/medicines/63be802b49ab8.jpg\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://dev-api.evitalrx.in/v1/catalog/",
+			"type": "string"
+		},
+		{
+			"key": "apikey",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

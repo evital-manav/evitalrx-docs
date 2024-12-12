@@ -6,7 +6,7 @@ description: This API is used to Save the draft orders.
 
 ## Complete the order.
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in//v1/patient/orders/save`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/save`](https://api.evitalrx.in/v1/patient/orders/save)
 
 If the order is made in a draft state, It can be saved by this API. This removes the headache of the integration partners, who don't want their chemists to switch 2 portals. Their portal to place orders, and eVitalRx portal to save the order.
 

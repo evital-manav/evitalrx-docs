@@ -4,11 +4,9 @@ description: To get item batches in your inventory by unique medicine Id.
 
 # Get Product Batch
 
-
-
 ## Product Batches
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/get_batches`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/get_batches`](https://api.evitalrx.in/v1/doctor/medicines/get_batches)
 
 Get Product Batches available in your inventory by Medicine Key.
 
@@ -29,7 +27,7 @@ Get Product Batches available in your inventory by Medicine Key.
     "data": [
         {
             "medicine_id": "otUfMtG4nIpWSc+oWoX7Lw==",
-            "id": "o5+9ckBfrNDerV+gyQmOCQ==",
+            "id": "o5+9ckBfrNDerV+gyQmOCQ==", // Batch ID
             "batch": "ABC",
             "expiry": "2025-12-01",
             "mrp": 24,

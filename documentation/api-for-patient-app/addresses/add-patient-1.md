@@ -1,8 +1,6 @@
 # Add-Update Address
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/addresses/add_update`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/addresses/add_update`](https://api.evitalrx.in/v1/patient/addresses/add_update)
 
 #### Request Body
 
@@ -38,7 +36,7 @@
         "latitude": "11",
         "longitude": "72",
         "is_default": "no",
-        "id": "r6ISwkWxJLDDhxprrJ0D8w=="
+        "id": "r6ISwkWxJLDDhxprrJ0D8w==" // Unique Address ID
     }
 }
 ```

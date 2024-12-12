@@ -1,8 +1,9 @@
 # Table of contents
 
 * [API - powered by eVitalRx](README.md)
+* [Getting Started with eVitalRx](getting-started-with-evitalrx.md)
 
-## API for Product Catalogue
+## API FOR Product Catalogue
 
 * [Introduction](api-for-product-catalogue/introduction.md)
 * [Medicines](api-for-product-catalogue/medicines/README.md)
@@ -13,7 +14,7 @@
   * [Get Categories](api-for-product-catalogue/medicines/get-categories.md)
   * [Get Category Products](api-for-product-catalogue/medicines/get-category-products.md)
 
-## API for Patient App
+## API FOR Patient App
 
 * [Introduction](api-for-patient-app/introduction.md)
 * [Login/Signup](api-for-patient-app/login-signup/README.md)
@@ -58,6 +59,7 @@
   * [⛔ Mark as Shipped](api-for-patient-app/orders/mark-as-shipped.md)
   * [Mark as Delivered](api-for-patient-app/orders/mark-as-delivered.md)
   * [Order Return](api-for-patient-app/orders/order-return.md)
+  * [Order Return Details](api-for-patient-app/orders/order-return-details.md)
 
 ## API FOR EMR/HMIS SOFTWARE <a href="#api-for-doctor-portal" id="api-for-doctor-portal"></a>
 
@@ -65,14 +67,14 @@
 * [Medicines](api-for-doctor-portal/medicines/README.md)
   * [Search Products](api-for-doctor-portal/medicines/search-products.md)
   * [Product Details](api-for-doctor-portal/medicines/product-details.md)
+  * [Get Inventory Status](api-for-doctor-portal/medicines/get-inventory-status.md)
+  * [Get Inventory Items](api-for-doctor-portal/medicines/get-inventory-items.md)
   * [Get Alternatives](api-for-doctor-portal/medicines/get-alternatives.md)
   * [Get Product Batch](api-for-doctor-portal/medicines/get-product-batch.md)
   * [Get Expired Batches](api-for-doctor-portal/medicines/get-expired-batches.md)
   * [Request Product](api-for-doctor-portal/medicines/request-product.md)
   * [Branded to Generic](api-for-doctor-portal/medicines/branded-to-generic.md)
   * [Search Content](api-for-doctor-portal/medicines/search-content.md)
-  * [Get Inventory Status](api-for-doctor-portal/medicines/get-inventory-status.md)
-  * [Get Inventory Items](api-for-doctor-portal/medicines/get-inventory-items.md)
   * [Add Favorite Medicine](api-for-doctor-portal/medicines/add-favorite-medicine.md)
 * [Patients](api-for-doctor-portal/patients/README.md)
   * [Add Patient](api-for-doctor-portal/patients/add-patient.md)
@@ -86,20 +88,19 @@
   * [⛔ Update Order](api-for-doctor-portal/orders/update-order.md)
   * [Save](api-for-doctor-portal/orders/save.md)
 
-***
+## API FOR Custom Fields
 
-* [API FOR Custom Fields](api-for-custom-fields/README.md)
-  * [Introduction](api-for-custom-fields/introduction.md)
-  * [Add Custom Fields](api-for-custom-fields/add-custom-fields.md)
-  * [Update Custom Field](api-for-custom-fields/update-custom-field.md)
-  * [Delete Custom Fields](api-for-custom-fields/delete-custom-fields.md)
-  * [List Custom Fields](api-for-custom-fields/list-custom-fields.md)
+* [Introduction](api-for-custom-fields/introduction.md)
+* [Add Custom Fields](api-for-custom-fields/add-custom-fields.md)
+* [Update Custom Field](api-for-custom-fields/update-custom-field.md)
+* [Delete Custom Fields](api-for-custom-fields/delete-custom-fields.md)
+* [List Custom Fields](api-for-custom-fields/list-custom-fields.md)
 
 ## API FOR MASTER <a href="#api-for-master-portal" id="api-for-master-portal"></a>
 
 * [Reports](api-for-master-portal/reports/README.md)
   * [Margin Report](api-for-master-portal/reports/margin-report.md)
-  * [Sales GST-wise Report](api-for-master-portal/reports/sales-gst-wise-report.md)
+  * [Stock Summary](api-for-master-portal/reports/stock-summary.md)
 
 ## API FOR FULFILLMENT <a href="#api-for-fulfillment-portal" id="api-for-fulfillment-portal"></a>
 
@@ -117,7 +118,7 @@
   * [Add Patient](api-for-fulfillment-portal/patients/add-patient.md)
   * [Get Patient](api-for-fulfillment-portal/patients/get-patient.md)
 
-## API for B2B
+## API FOR B2B
 
 * [Introduction](api-for-b2b/introduction.md)
 * [Orders](api-for-b2b/orders/README.md)

@@ -6,7 +6,7 @@ description: To check availability of the items.
 
 ## Get the availability of medicines
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/fulfillment/orders/checkout`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/checkout`](https://api.evitalrx.in/v1/fulfillment/orders/checkout)
 
 For the medicines which are out of stock, available alternative medicines will be provided.
 
@@ -35,7 +35,7 @@ For the medicines which are out of stock, available alternative medicines will b
                 "mrp": 36.1,
                 "price": 36.1,
                 "available": "yes",
-                "alternatives": []
+                "alternatives": [] // alternatives, if any
             },
             {
                 "medicine_id": "vVgL6Ggy5tYhqQr1qXOAzA==",

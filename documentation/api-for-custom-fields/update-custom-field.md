@@ -8,28 +8,9 @@ Update a custom field
 
 Below is sample cURL request to update a custom field. Use raw JSON format to call the API. Length of the array while update action should be one only.
 
-```json
-curl --location 'https://api.evitalrx.in/v1/custom_fields/add_update_custom_field' \
---header 'Content-Type: application/json' \
---data '{
-  "apikey":"**************",
-  "action": "update",
-   "custom_fields": [
-    {
-      "id": "oyESErpn5eM/lQZPgEvxRw==",
-      "attribute_key": "patient_mapped_id",
-      "module":"customers"
-    }
-   ]
-}
-'
-```
+{% file src="../.gitbook/assets/sample_curl - update_custom_field.txt" %}
 
-
-
-<mark style="color:green;">`POST`</mark>`https://api.evitalrx.in/v1/custom_fields/add_update_custom_field`
-
-
+<mark style="color:green;">`POST`</mark>[`{{apiUrl}}custom_fields/add_update_custom_field`](https://api.evitalrx.in/v1/custom_fields/add_update_custom_field)
 
 #### Request Body
 

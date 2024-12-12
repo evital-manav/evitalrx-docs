@@ -1,8 +1,8 @@
 # Order Save as Draft
 
-## Place Order
+## Save Draft Order
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in//v1/b2b/save_as_draft`&#x20;
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/save_as_draft`](https://api.evitalrx.in/v1/b2b/save_as_draft)&#x20;
 
 #### Request Body
 
@@ -24,12 +24,12 @@
 
 {% tabs %}
 {% tab title="200 Order Saved successfully." %}
-<pre><code><strong>{
+<pre class="language-json"><code class="lang-json"><strong>{
 </strong>    "status_code": "1",
     "status_message": "Bill created successfully",
     "datetime": "2024-10-01 12:50:37",
     "data": {
-        "chemist_order_id": "QlOCazEdBCkSk9qdEQF2qA=="
+        "chemist_order_id": "QlOCazEdBCkSk9qdEQF2qA==" // Order ID
     }
 }
 </code></pre>

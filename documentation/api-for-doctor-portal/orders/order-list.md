@@ -4,7 +4,7 @@ description: To get the order details
 
 # Order List
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/orders/list`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/orders/list`](https://api.evitalrx.in/v1/doctor/orders/list)
 
 #### Request Body
 
@@ -27,7 +27,7 @@ description: To get the order details
     "data": {
         "results": [
             {
-                "id": "X+j2u3xGNvyTzLrZCz+g+Q==",
+                "id": "X+j2u3xGNvyTzLrZCz+g+Q==", // Order ID
                 "bill_no": "",
                 "order_number": "OMLN8WCXGU",
                 "order_delivery_datetime": "2023-10-02 18:28:38",
@@ -35,7 +35,7 @@ description: To get the order details
                 "order_status": "draft",
                 "created_date": "2023-10-02 18:28:38",
                 "amount": 4870,
-                "remark": "ICU Patient"
+                "remark": "ICU Patient" // remarks from patient/other entity
             }
         ],
         "rpp": 20,

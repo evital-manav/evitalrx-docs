@@ -4,33 +4,11 @@ description: To add user defined custom fields with attribute key and module
 
 # Add Custom Fields
 
-Add custom fields,&#x20;
+Add custom fields, Maximum limit for an entity to add custom fields is 20. Below is a sample cURL request to add some custom fields:
 
-Maximum limit for an entity to add custom fields is 20
+{% file src="../.gitbook/assets/sample_curl - add_custom_field.txt" %}
 
-Below is a sample cURL request to add some custom fields.
-
-```json
-curl --location 'https://api.evitalrx.in/v1/custom_fields/add_update_custom_field' \
---header 'Content-Type: application/json' \
---data '{
-  "apikey":"***************",
-  "custom_fields": [
-     {
-      "attribute_key": "patient_ipd_id",
-      "module":"customers"
-    },
-    {
-      "attribute_key": "patient_mapped_id ",
-      "module":"customers"
-    }
-    ],
-  "action": "add"
-}
-'
-```
-
-<mark style="color:green;">`POST`</mark>`https://api.evitalrx.in/v1/custom_fields/add_update_custom_field`
+<mark style="color:green;">`POST`</mark>[`{{apiUrl}}custom_fields/add_update_custom_field`](https://api.evitalrx.in/v1/custom_fields/add_update_custom_field)
 
 #### Request Body
 

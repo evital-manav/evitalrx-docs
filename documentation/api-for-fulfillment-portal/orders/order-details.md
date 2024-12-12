@@ -6,7 +6,7 @@ description: To get the order details
 
 ## Order View
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/fulfillment/orders/view`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}fulfillment/orders/view`](https://api.evitalrx.in/v1/fulfillment/orders/view)
 
 #### Request Body
 
@@ -23,7 +23,7 @@ description: To get the order details
     "status_message": "Success",
     "datetime": "2022-12-07 14:26:53",
     "data": {
-        "id": "JoPUmfKRiivtIxpkAKtpng==",
+        "id": "JoPUmfKRiivtIxpkAKtpng==", // Order ID
         "order_number": "OOLBDETJIQ",
         "amount": 115,
         "discount": 0,
@@ -34,7 +34,7 @@ description: To get the order details
         "city": "",
         "state": "",
         "zipcode": "",
-        "order_status": "draft",
+        "order_status": "draft", // status of the order
         "created_date": "2022-12-07 14:20:04",
         "order_delivery_datetime": "2022-12-07 14:20:04",
         "pharmacy_name": "Manav Pharmacy",

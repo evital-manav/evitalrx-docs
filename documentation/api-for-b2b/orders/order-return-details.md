@@ -1,6 +1,6 @@
 # Order Return Details
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/b2b/return/view`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}b2b/return/view`](https://api.evitalrx.in/v1/b2b/return/view)
 
 #### Request Body
 
@@ -17,7 +17,7 @@
     "status_message": "",
     "datetime": "2024-10-01 15:32:00",
     "data": {
-        "wholesale_return_id": "2kz3qQobevj9wkrgNXyPHQ==",
+        "wholesale_return_id": "2kz3qQobevj9wkrgNXyPHQ==", // Return Order ID
         "chemist_id": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
         "reference_number": 6,
         "owner_pharmacy_name": "Demo Pharmacy",

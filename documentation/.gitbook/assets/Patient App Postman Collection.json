@@ -1,0 +1,2387 @@
+{
+	"info": {
+		"_postman_id": "d2126daa-57a7-41eb-a9fa-787cdb425635",
+		"name": "Patient App - Production",
+		"description": "This bundle provides APIs for managing patient accounts, medicines, addresses, and orders. It includes features for user authentication (login/signup), patient management, address handling, product searches, and order placements. It enables a smooth experience for patients interacting with healthcare services.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38017393"
+	},
+	"item": [
+		{
+			"name": "addresses",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Unique ID of the Patient",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/addresses/",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"addresses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Unique ID of the patient",
+									"type": "text"
+								},
+								{
+									"key": "address_name",
+									"value": "home",
+									"description": "Valid Values: \"home\" | \"work\"",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "hBLrWEgpQeGZeRmCE93K4Q==",
+									"description": "Unique ID of address, If provided, it will update the address associated with this ID. If not provided then will add new address",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "1001 B Raman Tower",
+									"description": "Address of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "address_line2",
+									"value": "Noida Sector 52",
+									"description": "Area, street or Landmark of the patient address",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "201301",
+									"description": "Pincode of the patient's address",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "28.535517",
+									"description": "GPS co-ordinate of the patient's address",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "77.391029",
+									"description": "GPS  co-ordinate of the patient's address",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/addresses/add_update",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"addresses",
+								"add_update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set_default",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Unique ID of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "hBLrWEgpQeGZeRmCE93K4Q==",
+									"description": "Unique Address ID of the Patient",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/addresses/set_default",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"addresses",
+								"set_default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Unique ID of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "YE74U0QbUPYYMU+U8p3hBw==",
+									"description": "Unique Address ID of the Patient",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/addresses/delete",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"addresses",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "signup_sendotp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365412",
+									"description": "Mobile number of Patient",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Khush",
+									"description": "First name of Patient",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Shah",
+									"description": "Last name of Patient",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/signup_sendotp",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"signup_sendotp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotpassword_sendotp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365412",
+									"description": "Patient's registered mobile\n\n",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Khush",
+									"description": "Optional",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Shah",
+									"description": "Optional",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/login/forgotpassword_sendotp",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"login",
+								"forgotpassword_sendotp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset_password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365412",
+									"description": "Patient's registered mobile",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qbxo4031ppyuJK09",
+									"description": "New password",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "6434",
+									"description": "OTP sent in Forget password send OTP API",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/reset_password",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"reset_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365412",
+									"description": "Mobile number of Patient",
+									"type": "text"
+								},
+								{
+									"key": "firstname",
+									"value": "Khush",
+									"description": "First name of Patient",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Shah",
+									"description": "Last name of Patient",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "9058",
+									"description": "Verification OTP sent to customer mobile in Signup send OTP API",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "rootroot",
+									"description": "Password set by patient",
+									"type": "text"
+								},
+								{
+									"key": "os",
+									"value": "android",
+									"description": "\"web\" | \"android\" | \"ios\" | default: \"android\"",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380013",
+									"description": "Length: 6 | Patient's pincode",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/signup",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);\r",
+									"    console.log(\"jsonData\", jsonData)\r",
+									"\r",
+									"if (jsonData.status_code == \"1\") {\r",
+									"    user_id = jsonData.data.id;\r",
+									"    patient_id = jsonData.data.patient_id;\r",
+									"    pm.variables.set(\"user_id\", user_id);\r",
+									"    pm.variables.set(\"patient_id\", patient_id);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365412",
+									"description": "Mobile number of Patient",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qbxo4031ppyuJK007",
+									"description": "Password set by patient",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change_password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "F4ehM3hGxaYsDRvJREFonw==",
+									"description": "Unique ID of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "qbxo4031ppyuJK09",
+									"description": "Existing password",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "qbxo4031ppyuJK007",
+									"description": "New Password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/login/change_password",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"login",
+								"change_password"
+							]
+						},
+						"description": "Generated from cURL: curl --location 'http://localhost:4000/v1/patient/login/reset_password' \\\r\n--form 'apikey=\"XMFvChaAbrQgdpBHQhsYDYNeavvzsG58\"' \\\r\n--form 'mobile=\"9876541258\"' \\\r\n--form 'password=\"qbxo4031ppyuJK09\"' \\\r\n--form 'otp=\"4260\"'"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "place_order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"description": "Mobile number of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0}]",
+									"description": "Stringified Array of items with quantity (in pills) and medicine_id.",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Unique ID of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "delivery",
+									"description": "Order Delivery type can be pickup or delivery",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "Call before order shipment.",
+									"description": "Optional field to include any specific notes or instructions associated with the order",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "draft",
+									"description": "It will save the order in the \"draft\" status",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "shipping",
+									"value": "20",
+									"description": "Shipping charge for delivery (Will round up the given value, For ex: 20.5 => 21 , 20.2 => 20 )",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "c-32, pushpak city",
+									"description": "Address of Patient for delivery if no address_id",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address_line2",
+									"value": "Hathijan",
+									"description": "Address Line 2 for long address if no address_id",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Ahemedabad",
+									"description": "City of Patient for delivery if no address_id",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "382445",
+									"description": "Zip code of Patient for delivery if no address_id",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "gujarat",
+									"description": "State of Patient for delivery if no address_id",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"description": "Pass one or more prescription images in FormData. (png/jpg/jpeg)",
+									"type": "file",
+									"src": "postman-cloud:///1efb07d3-8f00-47b0-a402-65c5f9969467",
+									"disabled": true
+								},
+								{
+									"key": "address_id",
+									"value": "hBLrWEgpQeGZeRmCE93K4Q==",
+									"description": "Address ID from the address/list API.  required in case of the delivery_type is \"delivery\"",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/place_order",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"place_order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "place_order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "items",
+											"value": "[{\"medicine_id\": \"SwAb2//rlstOjXa6IWRisw==\",\"quantity\": 10}]",
+											"type": "text"
+										},
+										{
+											"key": "apikey",
+											"value": "{{apikey}}",
+											"type": "text"
+										},
+										{
+											"key": "patient_id",
+											"value": "zRC97Kh3xOMVdHZKkyZRVA==",
+											"type": "text"
+										},
+										{
+											"key": "delivery_type",
+											"value": "pickup",
+											"type": "text"
+										},
+										{
+											"key": "batch_with",
+											"value": "yes",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "Cambridge Road, Halasuru",
+											"description": "your address",
+											"type": "text"
+										},
+										{
+											"key": "city",
+											"value": "Banglore",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "Karnataka",
+											"type": "text"
+										},
+										{
+											"key": "zipcode",
+											"value": "560008",
+											"type": "text"
+										},
+										{
+											"key": "is_draft",
+											"value": "yes",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "batch_with",
+											"value": "yes",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}orders/place_order",
+									"host": [
+										"{{url}}orders"
+									],
+									"path": [
+										"place_order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ac-UIO4IuphivMmzkBNcH+fss+vlcQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 10 Jan 2023 09:41:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status_code\": \"1\",\n    \"status_message\": \"Order placed successfully\",\n    \"datetime\": \"2023-01-10 15:11:53\",\n    \"data\": {\n        \"order_id\": \"jL7PJWebyGnAt7UNb3Uihg==\",\n        \"order_number\": \"O8LCQ1N4H8\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mark_as_accept",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "mLfcEJQrqI2UIoNIBu6OHQ==",
+									"description": "Order ID from the response of Place Order API",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_accept",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_accept"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark_as_reject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "InNTVUCektuAEPiyaqK9uA==",
+									"description": "Order ID from the response of Place Order API",
+									"type": "text"
+								},
+								{
+									"key": "reason_source",
+									"value": "delivery",
+									"description": "\"pickup\" | \"delivery\" pass order is pickup or delivery",
+									"type": "text"
+								},
+								{
+									"key": "reason_id",
+									"value": "25",
+									"description": "ID of the reasons got from Get Reject Reasons API",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_reject",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_reject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark_as_shipped",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5, \"discount\":0},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0,\"discount\":0}]",
+									"description": "List of items with quantity (in pills). Medicine Id and batch should have unique combination.",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "pickup",
+									"description": "Must be one of pickup or delivery. default is pickup.",
+									"type": "text"
+								},
+								{
+									"key": "patient_name",
+									"value": "Khush Shah",
+									"description": "Name of the Patient ",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"description": "Mobile number of the patient",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cambridge Road, Halasuru",
+									"description": "Address of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Banglore",
+									"description": "City of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "Karnataka",
+									"description": "State of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "560008",
+									"description": "Zipcode City of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "chemist_id",
+									"value": "pFSLzbwQTH8LY23N2IlczQ==",
+									"description": "Unique ID of the Chemist",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "12.970612",
+									"description": "GPS co-ordinate of the patient's address",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "77.6382433",
+									"description": "GPS co-ordinate of the patient's address",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Id to uniquely identify the patient for whom the order is placed",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "mLfcEJQrqI2UIoNIBu6OHQ==",
+									"description": "Order ID from the response of Place Order API",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2024-12-03",
+									"description": "Date of the bill. Format: YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"description": "To choose payment mode of the order. \n\n1: CASH \n\n2: CREDIT \n\n3: UPI \n\n4: CHEQUE \n\n5: PAYTM \n\n6: CC/DC \n\n7: RTGS/NEFT",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "100",
+									"description": "Extra charges in the order",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "this is remark",
+									"description": "Note for the Prescription. This param is also available in the Order Details.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_shipped",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_shipped"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark_as_delivered",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "mLfcEJQrqI2UIoNIBu6OHQ==",
+									"description": "Order ID from the response of Place Order API",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "1",
+									"description": "To choose payment mode of the order. \n1: CASH \n2: CREDIT \n3: UPI \n4: CHEQUE \n5: PAYTM \n6: CC/DC \n7: RTGS/NEFT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/mark_as_delivered",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"mark_as_delivered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5, \"discount\":0},{\"medicine_id\":\"hKtRHscgbs/zRdGqisi3HA==\",\"batch\":\"ASDAS234\",\"expiry\":\"2029-02-01\",\"mrp\":130,\"price_to_retailer\":75.63,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":75.63,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":0,  \"discount\":0}]",
+									"description": "List of items with quantity (default in pills). You can change the quantity_type to consider them as strip.",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "pickup",
+									"description": "Must be one of pickup or delivery. default is pickup",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patient_name",
+									"value": "Khush Shah",
+									"description": "Name of the Patient ",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9876541258",
+									"description": "Mobile of the Patient ",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Cambridge Road, Halasuru",
+									"description": "Address of the Patient ",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Banglore",
+									"description": "City of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "state",
+									"value": "Karnataka",
+									"description": "State of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "560008",
+									"description": "Pincode of the Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "chemist_id",
+									"value": "pFSLzbwQTH8LY23N2IlczQ==",
+									"description": "Unique ID of the chemist",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "12.970612",
+									"description": "GPS co-ordinate of the patient's address",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "longitude",
+									"value": "77.6382433",
+									"description": "GPS co-ordinate of the patient's address",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Id to uniquely identify the patient for whom the order is placed",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "XzHltA+JgND9+WnCr8WoOw==",
+									"description": "Order ID from the draft orders",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "order_date",
+									"value": "2024-12-02",
+									"description": "Date of the bill. Format: YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"description": "To choose payment mode of the order. \n1: CASH \n2: CREDIT \n3: UPI \n4: CHEQUE \n5: PAYTM \n6: CC/DC \n7: RTGS/NEFT",
+									"type": "text"
+								},
+								{
+									"key": "shipping",
+									"value": "100",
+									"description": "Extra charges in the order",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "remark",
+									"value": "this it asjflkjklj1kl234;l;llr][ll'',.;.,",
+									"description": "Note for the Prescription. This param is also available in the Order Details.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/save",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales_return",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "items",
+									"value": "[{\"medicine_id\":\"TF7Wm49nceLV+NmoM6HJYw==\",\"batch\":\"WER321\",\"expiry\":\"2030-02-01\",\"mrp\":23.5,\"price_to_retailer\":15.85,\"quantity\":10,\"free\":0,\"hf\":0,\"base_price\":15.85,\"discount_percentage\":0,\"scheme_amount\":0,\"gst_percentage\":12,\"cess_percentage\":5,\"discount\":0}]",
+									"description": "List of items with quantity (in pills). ",
+									"type": "text"
+								},
+								{
+									"key": "patient_name",
+									"value": "Avi Patel",
+									"description": "Name of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "ol9yB5QU/R7YW7CBLhJVBw==",
+									"description": "Id to uniquely identify the patient for whom the order is placed",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2024-07-24",
+									"description": "Date of the bill. Format: YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "2",
+									"description": "To choose payment mode of the order. \n1: CASH \n2: CREDIT \n3: UPI \n4: CHEQUE \n5: PAYTM \n6: CC/DC \n7: RTGS/NEFT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/sales_return",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"sales_return"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales_return_view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "chemist_sales_return_id",
+									"value": "zD2GbRYPHMaC/CL7Ot4Yjg==",
+									"description": "order_id which was in response of sales_return save API",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/sales_return/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"sales_return",
+								"view"
+							]
+						},
+						"description": "Generated from cURL: curl --location 'localhost:4000/v1/patient/orders/sales_return/view' \\\r\n--form 'apikey=\"adDEWRWEF46546DFDSFsdfsfspatient\"' \\\r\n--form 'chemist_sales_return_id=\"tEvc4sY7xqkBkYYDEGsjhg==\"'"
+					},
+					"response": []
+				},
+				{
+					"name": "reject_reasons",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "reason_source",
+									"value": "delivery",
+									"description": "\"pickup\" | \"delivery\", pass order is pickup or delivery.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/reject_reasons",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"reject_reasons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "mLfcEJQrqI2UIoNIBu6OHQ==",
+									"description": "Unique id of the Order",
+									"type": "text"
+								},
+								{
+									"key": "order_number",
+									"value": "O9LF0XE26F",
+									"description": "Unique Order Number in response of Place Order",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Default 1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "Id to uniquely identify the Patient to fetch the list of orders of the particular patient",
+									"type": "text"
+								},
+								{
+									"key": "order_mode\n\n",
+									"value": "online",
+									"description": "'' | 'online' | 'offline'\n\nDefault: ''\n\nIf it is online, then only online orders will be fetched of the patients. \n\nIf provided offline, then only offline orders will be fetched from patients. \n\nIf not provided, or provided as '' then, it will fetch both online and offline orders of the patient. ",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/list",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "report",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2024-11-25",
+									"description": "Required | maximum duration 1 month allowed",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "2024-12-02",
+									"description": "Required | maximum duration 1 month allowed",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "assigned",
+									"description": "'assigned', 'accepted', 'rejected', 'shipped', 'completed', 'cancelled'",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "OHM46RAZAU",
+									"description": "Search with order_number or mobile like OOLH4J1GM3 | 7043120038",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Page no for pagination",
+									"type": "text"
+								},
+								{
+									"key": "delivery_type",
+									"value": "delivery",
+									"description": "Order Type like 'pickup' | 'delivery' ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/order_report",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"order_report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chemist_order_settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/get_chemist_order_settings",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"get_chemist_order_settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel_order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "4KP0nr9icMqJTH9WqemXOA==",
+									"description": "Order ID from the response of Place Order API",
+									"type": "text"
+								},
+								{
+									"key": "reason_source",
+									"value": "pickup",
+									"description": "\"pickup\" | \"delivery\"",
+									"type": "text"
+								},
+								{
+									"key": "reason_id",
+									"value": "25",
+									"description": "ID of the reasons got from Get Reject Reasons API",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "nedHb77r4XjtKevKSGyYpg==",
+									"description": "ID of the patient to cancel the order",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/orders/cancel_order",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"orders",
+								"cancel_order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "patients",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365421",
+									"description": "Mobile number of Patient",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Lionel",
+									"description": "First name of Patient",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Patel",
+									"description": "Last name of Patient",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"description": "Zip code of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"description": "Date of Birth of the Patient | Format: YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"description": "Must be one of male, female, other",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"description": "Blood Group of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Ahmedabad",
+									"description": "City of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "Gujarat",
+									"description": "State of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "custom_fields",
+									"value": "{\"patient_ipd_id\": \"IPD1234\", \"patient_mapped_id\": \"PMID9876\"}",
+									"description": "Key value pairs of attribute_key and it's value",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/add",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add_family_member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "parent_patient_mobile",
+									"value": "8567127197",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "first_name",
+									"value": "Jenny",
+									"description": "First name of Patient's family member",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "test",
+									"description": "Last name of Patient's family member",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"description": "Pincode of Patient's Family Member",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"description": "Date of Birth of the Patient | Format: YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"description": "Gender of Patient's Family Member",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "AB+",
+									"description": "Blood Group of Patient's Family Member",
+									"type": "text"
+								},
+								{
+									"key": "relation",
+									"value": "Sister",
+									"description": "Relation with the Parent Patient. Possible values are:\n[ \"Brother\", \"Sister\", \"Father\", \"Mother\", \"Son\", \"Daughter\", \"Grand_Father\", \"Grand_Mother\", \"Uncle\", \"Aunt\", \"Wife\", \"Husband\", \"Grand_Daughter\", \"Grand_Son\" ]",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "eWcqmJESNB2tVGwPfMkRpw==",
+									"description": "Either pass the Parent patient's Mobile Or Patient ID",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "mxzcCeMqmfn95pk4HhWsNg==",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/add_family_member",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"add_family_member"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "lhi0dsdbEOhkEJCTOmPyDA==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "mobile",
+									"value": "6354365421",
+									"description": "Either patient_id or mobile should be passed",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "patient_id",
+									"value": "eWcqmJESNB2tVGwPfMkRpw==",
+									"description": "Unique ID of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "6354365421",
+									"description": "Registered Mobile of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Lionel",
+									"description": "First name of Patient",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Messi",
+									"description": "Last name of Patient",
+									"type": "text"
+								},
+								{
+									"key": "zipcode",
+									"value": "380008",
+									"description": "Pincode of the Patient",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "2001-10-14",
+									"description": "Date of Birth of the Patient | Format: YYYY-MM-DD",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"description": "Must be one of male, female, other",
+									"type": "text"
+								},
+								{
+									"key": "blood_group",
+									"value": "B+",
+									"description": "Blood Group of the Patient",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/patients/update",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"patients",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "medicines",
+			"item": [
+				{
+					"name": "branded to generic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"K7LV8VgG+EjTnDryY/1kBw==\", \"77eruTI3h1JUg4RqaV20JQ\\==\"]",
+									"description": "Array of medicine_ids in the form data",
+									"type": "text"
+								},
+								{
+									"key": "order_by",
+									"value": "epm",
+									"description": "must be one of epm, mep, pem | epm: Expiry -> Price -> Margin | mep: Margin -> Expiry -> Price | pem: Price -> Expiry -> Margin",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/branded_to_generic",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"branded_to_generic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "dolo",
+									"description": "Medicine/Product Name (Min: 3 chars, Max: 20 chars)",
+									"type": "text"
+								},
+								{
+									"key": "show_sale_rate",
+									"value": "yes",
+									"description": "yes  -> price = mrp - discount | no -> price = mrp | Default: no",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/search",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"gv0GokYn9w4zFL51eouS2g==\", \"YGRDTONIwE509Pq4nodu/A==\"]",
+									"description": "Stringified Array of medicine_ids. medicine_id param is optional, if medicine_ids param is passed.",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_id",
+									"value": "hKtRHscgbs/zRdGqisi3HA==",
+									"description": "Unique ID of the product/medicine",
+									"type": "text"
+								},
+								{
+									"key": "show_sale_rate",
+									"value": "yes",
+									"description": "yes  -> price = mrp - discount | no -> price = mrp | Default: no",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/view",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_medicine_by_batch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "hKtRHscgbs/zRdGqisi3HA==",
+									"description": "Unique id of the Product/Medicine",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"BXGcaezmfzcQEdh7fZVmUg==\", \"otUfMtG4nIpWSc+oWoX7Lw==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "batch_name",
+									"value": "ASDAS234",
+									"description": "Batch Name of the Product. If batch_name is provided, then only that batch information will come.",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/search_medicine_by_batch",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"search_medicine_by_batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_category_items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "M5PevXRL7Iy+CZXC2UB6Jw==",
+									"description": "Unique Category ID",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Default: 1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "show_sale_rate",
+									"value": "yes",
+									"description": "yes  -> price = mrp - discount | no -> price = mrp | Default: no",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_category_items",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_category_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "well",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_categories",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_entity_categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Default 1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "searchstring",
+									"value": "c",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_entity_categories",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_entity_categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_entity_category_items",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "LueJgS+uDrNpWmyGOjZ37A==",
+									"description": "Unique Category ID",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Default: 1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "in_stock",
+									"value": "true",
+									"description": "Fetch products which quantity > 0 | Default: False",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_entity_category_items",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_entity_category_items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_inventory_status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your appi key here",
+									"type": "text"
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"K7LV8VgG+EjTnDryY/1kBw==\"]",
+									"description": "Stringified Array of medicine_ids. medicine_ids should contain at least 1 medicine_ids.",
+									"type": "text"
+								},
+								{
+									"key": "medicine_id",
+									"value": "K7LV8VgG+EjTnDryY/1kBw==",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"P80KstV0c7EoQwvKJwrRNw==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "apikey",
+									"value": "yqHe0r7DYyyQ7b5CRlD1W4FINOl7hCnj",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[\"UrTCe4zuaduEJk3GS5/K7Q==\", \"jgadgLBeNCAEIDNDOSq9Lw==\", \"+SUBYR+hmkJWRDYChGEpMA==\", \"mHrkl/k1tKoV2TA4sKpqow==\", \"b5fC3H0KD+s+RVOYrap1sQ==\", \"Akj/icRT53sLLlxceAfHtg==\", \"Y4Ax3gp1XjnzKcYKa/UF/A==\", \"CoGwmTTgGMgdQGlpyrOQIw==\", \"EO69w0XszdXmTnDHnxT5tA==\", \"V+ax+ChAG4cE87lNlQyliA==\", \"aqGoSwFgO05AH6jLEND7nQ==\", \"6/DOVgTzJPwJcGzD+CL+lQ==\", \"W3yaFkkRtLcx66J93GuAhg==\", \"KqWVEJWaEt07+lFDINXKAw==\", \"KB0FEqXbHJpLbrckFM94aw==\", \"ML7XiT2FiSFOFoHy8CeBJA==\", \"VyZ//fv8MxlRyj9vrVlkcw==\", \"kwMy+2pCR6TsF1tbBcxGxg==\", \"3raBdAj5dYhEPOLOceUAmg==\", \"7SIi6pNhBj7ftaH0s0WXaw==\", \"o78PiZa6YfAizAUEfNcQIQ==\", \"yQbP4VrFJCwUZQ4LCgmeeg==\", \"UYGIinjzR7QLT/59iocfcA==\", \"GdX2hx4IBGDNgVTMvQL3yg==\", \"zveE6yS9vjOyUaCOZnviww==\", \"0EzWCLqw7hR4KoL07vd5Mw==\", \"QECB7DtdWtZ9TPRxLIJ/ug==\", \"teKBIj9TzqG1W6WYYtnblA==\", \"+RonZoR0PJUntqtIQnj3ZA==\", \"6jJV9vQV/Srx8/RZyW5DMg==\", \"zuTpc5jyPn3AlgulSxlg+Q==\", \"h4N8x5M8dkGEaQOSuA+2EQ==\", \"Zjz5L9Sa3dDPGiRTSrm7nQ==\", \"eKzhdHsqv2jrQohnrEl4dw==\", \"yrmzexPBiPihPoyHp/Xqrg==\", \"qGHJYq1XpqgopOgeQ9D8MQ==\", \"X1GG8J6+gKnFXWLqpVvs9w==\", \"juGl16Qt8a1yU7oel951kA==\", \"RWGWuuoLZno1stNYZ9Otig==\", \"jPx/9zaIZB5aicqyTLlC+w==\", \"pYWWWCXOGtktF/Jq0jr/9w==\", \"mMtTDatbvcna3GB6QxMP5Q==\", \"oQEkqBwJJJGSyNdvfMWWGA==\", \"PxRnn2m7zLZT1iMjL0lKJw==\", \"acNkRW1IPttyJPsuIy3wwg==\", \"BmVeQBv+9TtHxGOJRgw+UA==\", \"RmttVxjPVzybiOPFYL0gEw==\", \"0+55GOHKUMzLVyqiGqOTtw==\", \"23pFb5XXdM4RZqmRiXrEXA==\", \"+sIulS+I3AIE7I1fbOOLsQ==\", \"4F4za8NIa01CejOC13Sqcw==\", \"t9EAVk9giv2FK0zFNn3qxQ==\", \"FyU/5UEQVDeCdIR0K6Hx8g==\", \"K1I5Lq3NKcDEAAk+yfgI0w==\", \"VfwJ72ilrG4AIdzVq8NAvQ==\", \"DA65kaZyZk+GJwncOD53Xw==\", \"UozM8bfsfQ9Qhfleld6hvQ==\", \"ptbqOSj0yFvf3vRYvDEicg==\", \"A7LfCN34XA9xlO2nzqWaQQ==\", \"uY5yBb9VvpftW9prGNF1vQ==\", \"Yx2WMs01bt9sYv1wL0hBhg==\", \"BasDTeuL2Awzke3M0Qq+7A==\", \"PHWGyq0aq+qKoJ3O9BxaqA==\", \"wU9Gq9kw5R4Foluk0VPirA==\", \"KrPABPKRvNsyGDqJ5nR/Iw==\", \"iW5RKfIo4znTxjBCkkztqA==\", \"UCo8L0eVe30iYKmFChXB8Q==\", \"bMY8v3yjhyjPWyw8a6mk9Q==\", \"ORe0n7u/3IisbPN8bfBLVQ==\", \"TASsN5ixbiHy5Z90ayd1dA==\", \"yO1GsSKKYm4/aL3WLHwfXA==\", \"Yo0nD92E73REvEuL5J0p5g==\", \"vcax5YHzquURcqSqLa+REQ==\", \"GLNNbZ8aEcp/370lwJPJFw==\", \"o3WgYlEXUN+9oKwi1Sgk4w==\", \"6z3UIVFiOejHpPHF/7bDjg==\", \"3v6GS/v+OwXsMzIpuqPfUg==\", \"29QZg5tU7QnGXxvNW+YC5w==\", \"cMxMfQgMAIAdf0hQYcU9XQ==\", \"sqtget5egtaNMV4pLCiOjw==\", \"4q1NTXhXmLStRq2xOe9hPQ==\", \"tdb/Hfx0y3n1KRwpP52P2Q==\", \"z2FqkdUWeIyruZCsHbR9qA==\", \"o+pA7y4Wcl+ASWOje8h+2w==\", \"pY0TtYJu3mYuYGAaynfp+w==\", \"u7cFIGnVwQSd6d20+nONLw==\", \"GyNW0E5K+9XSE8nZM8jF3A==\", \"Vvu4kNBCL9bYcAlfjEfU9w==\"]",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "medicine_ids",
+									"value": "[ \"IRRkRqMN5Hf0ZHNkUNvPFQ==\", \"uWEwUK447LhjoYVqbuVM7g==\", \"w5JSfwLEUqciIEnl7n6DwQ==\", \"fpfFcRxRxdjdUjKJLJ8EIA==\", \"OiYnfvBuWxgmYbYZ16C3SA==\", \"AKTCpiwtOVg3RsIqLy9UVQ==\", \"ogO9lLYyaC2MtJ9Iqntz8g==\", \"fO+zsG7D7Eqi9E0AnQ0YBA==\", \"pUVv7pzTrfgTD5JpDjJgqQ==\", \"ptA8/IV4UyRnTiL5bau83Q==\", \"3ZG9m3ZImr7NocVepCPZjw==\", \"peWzKA5ZExWY0Uz0k2hDGw==\", \"2KyN/9zgWSuva6LrN4ufvQ==\", \"a98cSac4+wxc6+f5+chFgg==\", \"gvPrbNLaWQE/VmC0CL8GJg==\", \"nPaocKFL299nVcK9h7MP/A==\", \"8sBPYqtqyy8eZIk7qEe+jQ==\", \"crxqBgpDlY8Cck6/IPHsOw==\", \"boEOpsqjD4nG+TeGXmNP+Q==\", \"ERTgSvQb/Qw7Wy0tzI0KWg==\"]",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/get_inventory_status",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"get_inventory_status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search_manufacturer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "searchstring",
+									"value": "cip",
+									"description": "Min: 3 char required i.e. Cipla",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/manufacturer/search",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"manufacturer",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "content_search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "apikey",
+									"value": "{{apikey}}",
+									"description": "your api key here",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Paradichlorobenzene",
+									"description": "Content to be searched",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{apiUrl}}/medicines/content_search",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"medicines",
+								"content_search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiUrl",
+			"value": "https://dev-api.evitalrx.in/v1/patient",
+			"type": "string"
+		},
+		{
+			"key": "apikey",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "user_id",
+			"value": "p6/ijEOd6txe4W7iWzKUpA==",
+			"type": "default"
+		}
+	]
+}

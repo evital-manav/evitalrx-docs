@@ -6,7 +6,7 @@ description: To request a product, which is not available at eVitalRx.
 
 ## Request Product
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/catalog/medicines/request_medicine`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}catalog/medicines/request_medicine`](https://api.evitalrx.in/v1/catalog/medicines/request_medicine)
 
 #### Request Body
 

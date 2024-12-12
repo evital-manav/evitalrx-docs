@@ -6,7 +6,7 @@ description: Get the Product categories list.
 
 ## Get Categories
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/catalog/medicines/get_categories`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}catalog/medicines/get_categories`](https://api.evitalrx.in/v1/catalog/medicines/get_categories)
 
 #### Request Body
 
@@ -29,7 +29,7 @@ description: Get the Product categories list.
         "rpp": 5,
         "results": [
             {
-                "id": "mB3b+VF0xsD9XnRkj0evHQ==",
+                "id": "mB3b+VF0xsD9XnRkj0evHQ==", // Unique ID of Category
                 "category_name": "Personal Care",
                 "category_picture": "https://d2ffmswuyj0h1d.cloudfront.net/storage/extra/cosmetic/default.jpg"
             },

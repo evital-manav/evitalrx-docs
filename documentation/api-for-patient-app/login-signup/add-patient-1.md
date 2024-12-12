@@ -4,9 +4,7 @@ description: Login with mobile & password
 
 # Login
 
-
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/login`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/login`](https://api.evitalrx.in/v1/patient/login)
 
 #### Request Body
 

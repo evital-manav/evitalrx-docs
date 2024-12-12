@@ -6,7 +6,7 @@ description: To get the order details
 
 ## Order View
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/orders/view`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}patient/orders/view`](https://api.evitalrx.in/v1/patient/orders/view)
 
 #### Request Body
 
@@ -23,7 +23,7 @@ description: To get the order details
     "status_message": "Success",
     "datetime": "2022-12-06 19:09:07",
     "data": {
-        "id": "/6vMKQj0JOB9GvN+6I27zg==",
+        "id": "/6vMKQj0JOB9GvN+6I27zg==", // Order ID
         "order_number": "OJLBC8WC1I",
         "amount": 10000,
         "discount": 0,
@@ -52,7 +52,7 @@ description: To get the order details
         "patient_id": "KFb7duiHDJAXqKUJc2poVw==",
         "delivery_pin": "U2FsdGVkX1/ChV2gPONI9ava2S0tZ8h9Hf7LAV2E6WA=",
         "payment_ref_id": "",
-        "custom_fields": {
+        "custom_fields": { // addtional fields for order/patient
                 "prescription_id": "879",
                 "appointment_id": "123"
             }

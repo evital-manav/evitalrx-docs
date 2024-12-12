@@ -8,31 +8,9 @@ Delete one or more custom fields.
 
 Below is a Sample cURL request to delete particular custom fields.
 
-```json
-curl --location 'localhost:4000/v1/custom_fields/add_update_custom_field' \
---header 'Content-Type: application/json' \
---data '{
-  "apikey":"**************",
-  "action": "delete",
-  "custom_fields": [
-        {
-            "id": "5wP6t/dlZrIzNqssQLUUbQ==",
-            "attribute_key": "zipcode",
-            "module": "customers"
-        },
-        {
-            "id": "iZ4zlQnA1LpIEiZ+i0D25Q==",
-            "attribute_key": "prescription_id",
-            "module": "customers"
-        }
-   ]
-}
-'
-```
+{% file src="../.gitbook/assets/sample_curl - delete_custom_field.txt" %}
 
-
-
-<mark style="color:green;">`POST`</mark>`https://api.evitalrx.in/v1/custom_fields/add_update_custom_field`
+<mark style="color:green;">`POST`</mark>[`{{apiUrl}}custom_fields/add_update_custom_field`](https://api.evitalrx.in/v1/custom_fields/add_update_custom_field)
 
 #### Request Body
 

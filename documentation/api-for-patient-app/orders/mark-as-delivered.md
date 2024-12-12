@@ -6,7 +6,7 @@ description: This API is used to complete your order.
 
 ## Push the Order in delivered state
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in//v1/patient/orders/mark_as_delivered`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/orders/mark_as_delivered`](https://api.evitalrx.in/v1/patient/orders/mark_as_delivered)
 
 This API marks the order in the delivered state. This API will complete the order.
 

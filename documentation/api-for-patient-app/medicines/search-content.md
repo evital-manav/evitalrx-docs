@@ -6,7 +6,7 @@ description: To search content
 
 ## Search Contents
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/medicines/content_search`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}patient/medicines/content_search`](https://api.evitalrx.in/v1/patient/medicines/content_search)
 
 #### Request Body
 
@@ -25,8 +25,8 @@ description: To search content
     "data": {
         "results": [
             {
-                "content": "Paradichlorobenzene (4gm)",
-                "id": "TmOVsxtb5BlFs4px88ReRQ=="
+                "content": "Paradichlorobenzene (4gm)", // Content from product details response
+                "id": "TmOVsxtb5BlFs4px88ReRQ==" // Unique ID of the Content
             },
             {
                 "content": "Paradichlorobenzene (162.5mg)",

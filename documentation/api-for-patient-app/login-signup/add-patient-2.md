@@ -4,9 +4,7 @@ description: To reset password with mobile OTP
 
 # Reset password
 
-## &#x20;&#x20;
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/patient/login/reset_password`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}patient/login/reset_password`](https://api.evitalrx.in/v1/patient/login/reset_password)
 
 #### Request Body
 

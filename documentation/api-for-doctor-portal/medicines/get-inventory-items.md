@@ -4,9 +4,7 @@ description: To get all items in your inventory.
 
 # Get Inventory Items
 
-
-
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/doctor/medicines/get_inventory_items`
+<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/medicines/get_inventory_items`](https://api.evitalrx.in/v1/doctor/medicines/get_inventory_items)
 
 #### Request Body
 

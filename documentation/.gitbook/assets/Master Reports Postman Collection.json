@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "257cb046-49db-416a-80cb-e5f7e8da618d",
+		"name": "Master Reports - Production",
+		"description": "The Master Bundle API provides two types of reports: the Margin Report, which details product margins, pricing, and related financial information, and the Stock Summary Report, which offers a comprehensive overview of stock levels, details, and product locations. Users can request these reports in either compressed or non-compressed formats, allowing for flexibility in data presentation and usage.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38017393"
+	},
+	"item": [
+		{
+			"name": "margin_report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2024-11-01",
+							"description": "Format = YYYY-MM-DD | Start Date of the report. Must be less than equals to current Date or End Date.",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-11-30",
+							"description": "Format = YYYY-MM-DD | End Date of the report. Must be greater than equals to Start Date and less than equals to current Date.\nThe duration between End Date and Start Date must be less than equals to 31 days.",
+							"type": "text"
+						},
+						{
+							"key": "view_by",
+							"value": "item_wise ",
+							"description": "item_wise | bill_item_wise | \nbill_item_wise: Show the margin on Sales bills. \nitem_wise: Show the margin on items. \nDefault Value: bill_item_wise",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "requested_by",
+							"value": "sales",
+							"description": "Default: sales | sales | sale_return\nsales: Show Sales Margin Report. \nsale_return: Show Sales Return Margin Report.",
+							"type": "text"
+						},
+						{
+							"key": "tags",
+							"value": "headache",
+							"description": "[\"headache\", \"painkiller\"] | filter by tags in the bill_item_wise report.",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "child_chemist_code",
+							"value": "pAUYuNJCJxZDFD5U4Nq/ZQ==",
+							"description": "chemist_code of Child Chemist. It will show the margin report of the child chemist.",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{apiUrl}}margin_report",
+					"host": [
+						"{{apiUrl}}margin_report"
+					]
+				},
+				"description": "To view Margin of Sales/Sales Return"
+			},
+			"response": []
+		},
+		{
+			"name": "stock_summary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apikey",
+							"value": "{{apikey}}",
+							"description": "your api key here",
+							"type": "text"
+						},
+						{
+							"key": "manufacturer_name",
+							"value": "[\"TTK Healthcare Ltd\", \"Staunch Health Care Pvt Ltd\"]",
+							"description": "Array of manufacturer_name in the form data (min: 1)",
+							"type": "text"
+						},
+						{
+							"key": "compress_repsonse",
+							"value": "no",
+							"description": "Specify whether to compress the response data (values: \"yes\" or \"no\")",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "report_fields",
+							"value": "[\"medicine_id\", \"medicine_code\", \"manufacturer_name\", \"medicine_name\", \"medicine_category\",\"content\", \"pack_size\", \"batch\", \"margin\", \"expiry\", \"batch_stock\", \"mrp\", \"total_by_mrp\", \"price_to_retailer\", \"price_to_supplier\", \"total_by_ptr\", \"total_by_pts\", \"landing_price\", \"total_by_lp\", \"location\", \"gst_percentage\", \"hsn_code\", \"tags\", \"size\", \"stock\", \"medicine_name_alias\", \"old_db_ref_id\",\"max_quantity\",\"min_quantity\"]",
+							"description": "List of fields to be included in the stock summary report (e.g., medicine name, price, stock, etc.)",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "[\"pqr\"]",
+							"description": "List of locations (e.g., rack1, drawer1, etc...)",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "item_type",
+							"value": "all",
+							"description": "Filter to include either all items or only discontinued items (values: \"all\" or \"discontinued\")",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{apiUrl}}/stock_summary",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"stock_summary"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apikey",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "apiUrl",
+			"value": "https://dev-api.evitalrx.in/v1/master/reports/",
+			"type": "default"
+		}
+	]
+}

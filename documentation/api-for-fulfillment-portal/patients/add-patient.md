@@ -4,9 +4,11 @@ description: To add patients with mobile number, name and address.
 
 # Add Patient
 
+## <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Learn How to Add a Patient](https://youtu.be/voc4bcyhZ_8?si=Nf_SpvsQX9vVo26v)
+
 ## Add Patient &#x20;
 
-<mark style="color:green;">`POST`</mark> `https://api.evitalrx.in/v1/fulfillment/patients/add`
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/patients/add`](https://api.evitalrx.in/v1/fulfillment/patients/add)
 
 #### Request Body
 
@@ -23,13 +25,13 @@ description: To add patients with mobile number, name and address.
 
 {% tabs %}
 {% tab title="200 Patient added successfully." %}
-```
+```json
 {
     "status_code": "1",
     "status_message": "Patient registered successfully.",
     "datetime": "2022-12-06 18:07:04",
     "data": {
-        "patient_id": "qAj4hhwefVxwuZX9nFxHkQ=="
+        "patient_id": "qAj4hhwefVxwuZX9nFxHkQ==" // Unique Patient ID
     }
 }
 ```
