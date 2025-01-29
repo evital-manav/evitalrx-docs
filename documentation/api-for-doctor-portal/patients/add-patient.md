@@ -8,7 +8,7 @@ description: To add patients with mobile number, name and address.
 
 ## Add Patient
 
-<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}doctor/patients/add`](https://api.evitalrx.in/v1/doctor/patients/add)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}doctor/patients/add`](https://api.evitalrx.in/v1/doctor/patients/add)
 
 #### Request Body
 
@@ -30,11 +30,12 @@ description: To add patients with mobile number, name and address.
 {% tab title="200: OK Patient added successfully." %}
 ```json
 {
-    "status_code": "0",
-    "status_message": "This Mobile is already exist.",
-    "datetime": "2022-12-07 12:18:55",
+    "status_code": "1",
+    "status_message": "Patient registered successfully.",
+    "datetime": "2025-01-29 11:51:06",
+    "version": "1.1.17",
     "data": {
-        "patient_id": "haaLvntZX7KmadCtJa314w==" // Uniquue ID of the Patient
+        "patient_id": "iQJtsq0ypLhX11C0NCHQig==" // Uniquue ID of the Patient
     }
 }
 ```
