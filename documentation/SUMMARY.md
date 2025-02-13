@@ -110,6 +110,7 @@
   * [Product Details](api-for-fulfillment-portal/medicines/product-details.md)
 * [Orders](api-for-fulfillment-portal/orders/README.md)
   * [Checkout](api-for-fulfillment-portal/orders/checkout.md)
+  * [Check Serviceability](api-for-fulfillment-portal/orders/check-serviceability.md)
   * [Place Order](api-for-fulfillment-portal/orders/place-order.md)
   * [Order Details](api-for-fulfillment-portal/orders/order-details.md)
   * [Cancel Order](api-for-fulfillment-portal/orders/cancel-order.md)
