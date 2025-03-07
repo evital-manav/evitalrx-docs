@@ -1,14 +1,14 @@
 ---
-description: This API is deprecated.
+description: To place order with items and its quantity.
 ---
 
-# ⛔ Place Order
+# Place Order V2
 
 ## <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Placing Orders with Ease: A Step-by-Step Guide](https://youtu.be/1TlUVPaWolI?si=2ybv22QYp_P3w994)
 
 ## Place Order
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order`](https://api.evitalrx.in/v1/fulfillment/orders/place_order)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v2`](https://api.evitalrx.in/v1/fulfillment/orders/place_order_v2)
 
 &#x20;
 
@@ -38,14 +38,16 @@ description: This API is deprecated.
 {
     "status_code": "1",
     "status_message": "Order placed successfully",
-    "datetime": "2023-02-14 19:23:51",
+    "datetime": "2025-03-07 12:41:52",
+    "version": "1.1.46",
     "data": {
-        "order_id": "FjauqxGgQYVpkl57jXYMhg==",
-        "order_number": "OQLE4B1Z8F",
-        "total": 111,
-        "thankyou_msg_first": "Thank You",
-        "thankyou_msg_second": "Your order has been placed to ",
-        "pharmacy_name": "API medicals"
+        "order_id": "ZcjkXEmzoYrsLxCsSSHOYQ==",
+        "order_number": "OMM7YFTL7D",
+        "total_amount": 458,
+        "total": 458,
+        "pharmacy_name": "Demo Pharmacy",
+        "pharmacy_latitude": 23.1025849,
+        "pharmacy_longitude": 72.5953601
     }
 }
 ```

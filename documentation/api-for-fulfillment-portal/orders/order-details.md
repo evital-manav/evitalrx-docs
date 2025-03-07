@@ -1,12 +1,12 @@
 ---
-description: To get the order details
+description: This API is deprecated.
 ---
 
 # Order Details
 
 ## Order View
 
-<mark style="color:green;">`POST`</mark>  [`{{apiUrl}}fulfillment/orders/view`](https://api.evitalrx.in/v1/fulfillment/orders/view)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/view`](https://api.evitalrx.in/v1/fulfillment/orders/view)
 
 #### Request Body
 

@@ -1,8 +1,8 @@
 ---
-description: To check availability of the items.
+description: This API is deprecated.
 ---
 
-# Checkout
+# ⛔ Checkout
 
 ## Get the availability of medicines
 

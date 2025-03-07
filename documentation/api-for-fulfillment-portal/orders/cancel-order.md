@@ -1,8 +1,8 @@
 ---
-description: The patient can cancel the order with this API.
+description: This API is deprecated.
 ---
 
-# Cancel Order
+# ⛔ Cancel Order
 
 ## Push the Order in Cancelled state
 
