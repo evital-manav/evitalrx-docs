@@ -10,32 +10,30 @@ description: This API is deprecated.
 
 #### Request Body
 
-| Name                                        | Type   | Description            |
-| ------------------------------------------- | ------ | ---------------------- |
-| order\_id<mark style="color:red;">\*</mark> | String | Unique id of the order |
-| apikey<mark style="color:red;">\*</mark>    | String | Authentication token   |
-
 {% tabs %}
 {% tab title="200: OK Order successfully retrieved." %}
-````json
 ```json
 {
     "status_code": "1",
     "status_message": "Order details fetched successfully",
-    "datetime": "2025-03-07 13:13:56",
-    "version": "1.1.46",
+    "datetime": "2025-03-11 12:46:53",
+    "version": "1.1.49",
     "data": {
-        "order_id": "RXEBJA6pCyGyJaGg9qUN8A==",
-        "order_number": "OGM7YGCBEB",
-        "payment_date": "2025-03-07 12:56:25",
+        "order_id": "PSgqibb/4UzPKYBrsv6qqw==",
+        "order_number": "OKM80006AU",
+        "payment_date": "2025-03-08 14:54:37",
         "payment_status": 3,
         "address_name": "home",
         "address": "Evitalrx Office, 4d Square Mall",
         "address_line2": "",
         "city": "Ahmedabad",
         "zipcode": "380005",
-        "created_date": "2025-03-07 12:56:24",
+        "created_date": "2025-03-08 14:54:36",
+        "redeembalance": 0,
         "prescription_group_id": "",
+        "voucher_id": 0,
+        "voucher_amount": 0,
+        "voucher_discount": 0,
         "prescription_details": [],
         "items": [
             {
@@ -85,27 +83,31 @@ description: This API is deprecated.
             "payable_amount": {
                 "with_discount": 458,
                 "without_discount": 505.3
+            },
+            "applied_discounts": {
+                "wallet_redeemed": 0,
+                "voucher_applied": 0
             }
         },
         "overall_status": "assigned",
         "split_orders": [
             {
-                "order_id": 13539,
-                "chemist_order_number": "OBM7YGCBH7",
-                "chemist_order_id": "EVLkEFv9LfXghkcv8j8VHQ==",
+                "order_id": 13547,
+                "chemist_order_number": "OEM80006E6",
+                "chemist_order_id": "/gqBosy53QK574+jpT/auA==",
                 "utm_source": "visit_health",
                 "chemist_id": 685,
-                "order_status": "assigned",
+                "order_status": "cancelled",
                 "delivery_id": 0,
-                "created_date": "2025-03-07 12:56:24",
+                "tracking_url": null,
+                "created_date": "2025-03-08 14:54:36",
                 "order_delivery_status": null,
-                "delivery_estimate_time": 42,
-                "order_status_display_text": "Pharmacy has received your order.",
+                "delivery_estimate_time": 5,
                 "verification_images": {
                     "order_packet_verification_images": [],
                     "order_items_verification_images": []
                 },
-                "invoice_print_url": "http://localhost:8080/evital/invoice/T0JNN1lHQ0JINw==/print/",
+                "invoice_print_url": "http://localhost:8080/evital/invoice/T0VNODAwMDZFNg==/print/",
                 "invoice_pdf": "",
                 "items": [
                     {
@@ -149,7 +151,62 @@ description: This API is deprecated.
                         ],
                         "full_address": "Evital Rx 4d Square Mall, Ahmedabad, Gujarat, India, 380005",
                         "latitude": "23.1025849",
-                        "longitude": "72.5953601"
+                        "longitude": "72.5953601",
+                        "zipcode": "380005",
+                        "store_timings": {
+                            "fullday_working": "yes",
+                            "timings": [
+                                {
+                                    "id": "tGykhzbp4nsd9zeEAPSYuQ==",
+                                    "day_of_week": "monday",
+                                    "working": "no",
+                                    "start_time": "07:00:00",
+                                    "end_time": "18:00:00"
+                                },
+                                {
+                                    "id": "clyhyxOLPjGvmfppybaa/g==",
+                                    "day_of_week": "tuesday",
+                                    "working": "no",
+                                    "start_time": "07:00:00",
+                                    "end_time": "14:00:00"
+                                },
+                                {
+                                    "id": "rhvyzAAfMfMZzX4Rpt30bA==",
+                                    "day_of_week": "wednesday",
+                                    "working": "no",
+                                    "start_time": "07:00:00",
+                                    "end_time": "20:30:00"
+                                },
+                                {
+                                    "id": "FrJIdUy/EpK93fcLJcNNbg==",
+                                    "day_of_week": "thursday",
+                                    "working": "no",
+                                    "start_time": "07:00:00",
+                                    "end_time": "14:00:00"
+                                },
+                                {
+                                    "id": "xlE5pmGCNWdjVV7pR7foJw==",
+                                    "day_of_week": "friday",
+                                    "working": "no",
+                                    "start_time": "07:00:00",
+                                    "end_time": "14:00:00"
+                                },
+                                {
+                                    "id": "shodTymtXk8SWykPUv80yw==",
+                                    "day_of_week": "saturday",
+                                    "working": "no",
+                                    "start_time": "07:00:00",
+                                    "end_time": "19:00:00"
+                                },
+                                {
+                                    "id": "bvtsaFKUrO4nLT1fLD80rQ==",
+                                    "day_of_week": "sunday",
+                                    "working": "no",
+                                    "start_time": "00:00:00",
+                                    "end_time": "23:59:59"
+                                }
+                            ]
+                        }
                     }
                 }
             }
@@ -157,7 +214,6 @@ description: This API is deprecated.
     }
 }
 ```
-````
 {% endtab %}
 
 {% tab title="200: OK Could not find an order matching this query." %}

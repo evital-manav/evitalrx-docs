@@ -18,6 +18,7 @@
   "total": 1300,
   "amount": 1300,
   "order_by": "",
+  "draft_order_id": "y1sw0N315wy4+UDhhT5FjA==",
   "patient_id": "rfojNNab+jNKqxDTYowQSQ==",
   "patient_name": "Manav Patel",
   "mobile": "7458787853",
