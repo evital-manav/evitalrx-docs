@@ -151,6 +151,7 @@
 * [Order Rejected](api-for-webhook-responses/order-rejected.md)
 * [Order Shipped](api-for-webhook-responses/order-shipped.md)
 * [Order Delivered](api-for-webhook-responses/order-delivered.md)
+* [Order Split](api-for-webhook-responses/order-split.md)
 
 ## Others
 

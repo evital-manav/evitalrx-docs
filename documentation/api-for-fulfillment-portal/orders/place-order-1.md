@@ -38,16 +38,27 @@ description: To place order with items and its quantity.
 {
     "status_code": "1",
     "status_message": "Order placed successfully",
-    "datetime": "2025-03-07 12:41:52",
-    "version": "1.1.46",
+    "datetime": "2025-03-13 17:52:30",
+    "version": "1.1.51",
     "data": {
-        "order_id": "ZcjkXEmzoYrsLxCsSSHOYQ==",
-        "order_number": "OMM7YFTL7D",
-        "total_amount": 458,
-        "total": 458,
-        "pharmacy_name": "Demo Pharmacy",
-        "pharmacy_latitude": 23.1025849,
-        "pharmacy_longitude": 72.5953601
+        "order_id": "F7VH/hoYLmOIBrCiHyccng==",
+        "order_number": "OOM87BK5Y7",
+        "total_amount": 119,
+        "total": 149,
+        "split_orders": [
+            {
+                "order_id": "7xS09/uGsj9fglWVxIw97Q==",
+                "order_number": "O2M87BK68H",
+                "chemist_details": {
+                    "chemist_id": "GJmQXzl+VAVkke3efyTrcw==",
+                    "pharmacy_name": "Demo Pharmacy",
+                    "full_address": "Evital Rx 4d Square Mall, Ahmedabad, Gujarat, India, 380005",
+                    "latitude": "23.1025849",
+                    "longitude": "72.5953601",
+                    "zipcode": "380005"
+                }
+            }
+        ]
     }
 }
 ```
