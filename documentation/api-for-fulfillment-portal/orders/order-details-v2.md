@@ -1,5 +1,5 @@
 ---
-description: This API is deprecated.
+description: To view order details
 ---
 
 # Order Details V2
@@ -10,14 +10,19 @@ description: This API is deprecated.
 
 #### Request Body
 
+| Name                                        | Type   | Description            |
+| ------------------------------------------- | ------ | ---------------------- |
+| order\_id<mark style="color:red;">\*</mark> | String | Unique id of the order |
+| apikey<mark style="color:red;">\*</mark>    | String | Authentication token   |
+
 {% tabs %}
 {% tab title="200: OK Order successfully retrieved." %}
 ```json
 {
     "status_code": "1",
     "status_message": "Order details fetched successfully",
-    "datetime": "2025-03-11 12:46:53",
-    "version": "1.1.49",
+    "datetime": "2025-03-17 16:45:43",
+    "version": "1.1.57",
     "data": {
         "order_id": "PSgqibb/4UzPKYBrsv6qqw==",
         "order_number": "OKM80006AU",
@@ -95,7 +100,7 @@ description: This API is deprecated.
                 "order_id": 13547,
                 "chemist_order_number": "OEM80006E6",
                 "chemist_order_id": "/gqBosy53QK574+jpT/auA==",
-                "utm_source": "visit_health",
+                "utm_source": "fulfillment",
                 "chemist_id": 685,
                 "order_status": "cancelled",
                 "delivery_id": 0,

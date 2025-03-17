@@ -16,8 +16,6 @@ description: To check if a location is serviceable
 | full\_address<mark style="color:red;">\*</mark> | String | <p>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</p> |
 | latitude<mark style="color:red;">\*</mark>      | String | Latitude of the customer                                                                                                                 |
 | longitude<mark style="color:red;">\*</mark>     | String | Longitude of the customer                                                                                                                |
-| mobile<mark style="color:red;">\*</mark>        | String | Mobile number of the patient                                                                                                             |
-| name<mark style="color:red;">\*</mark>          | String | Name of the patient                                                                                                                      |
 | zipcode<mark style="color:red;">\*</mark>       | String | Zipcode of the patient                                                                                                                   |
 
 
