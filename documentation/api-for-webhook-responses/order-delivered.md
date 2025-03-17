@@ -2,101 +2,83 @@
 
 ```json
 {
-    "status_code": "1",
-    "status_message": "Success",
-    "datetime": "2025-03-11 12:43:34",
-    "version": "1.1.49",
-    "data": {
-        "shipping_charges": 30,
-        "chemist_details_list": [
-            {
-                "chemist_id": "EQYmBF/sPyAcIbTXvZ6vRA==",
-                "distance": 0,
-                "chemist_details": {
-                    "pharmacy_name": "Demo Pharmacy",
-                    "pharmacy_logo": "https://d3cgpvqmlaynvp.cloudfront.net/storage/chemists/kyc/col6p1dhuv.jpg",
-                    "store_photos": [
-                        "https://d3cgpvqmlaynvp.cloudfront.net/storage/chemists/kyc/35kddetdv0.png"
-                    ],
-                    "full_address": "Evital Rx 4d Square Mall, Ahmedabad, Gujarat, India, 380005",
-                    "latitude": "23.1025849",
-                    "longitude": "72.5953601",
-                    "zipcode": "380005",
-                    "store_timings": {
-                        "fullday_working": "yes",
-                        "timings": [
-                            {
-                                "id": "tGykhzbp4nsd9zeEAPSYuQ==",
-                                "day_of_week": "monday",
-                                "working": "no",
-                                "start_time": "07:00:00",
-                                "end_time": "18:00:00"
-                            },
-                            {
-                                "id": "clyhyxOLPjGvmfppybaa/g==",
-                                "day_of_week": "tuesday",
-                                "working": "no",
-                                "start_time": "07:00:00",
-                                "end_time": "14:00:00"
-                            },
-                            {
-                                "id": "rhvyzAAfMfMZzX4Rpt30bA==",
-                                "day_of_week": "wednesday",
-                                "working": "no",
-                                "start_time": "07:00:00",
-                                "end_time": "20:30:00"
-                            },
-                            {
-                                "id": "FrJIdUy/EpK93fcLJcNNbg==",
-                                "day_of_week": "thursday",
-                                "working": "no",
-                                "start_time": "07:00:00",
-                                "end_time": "14:00:00"
-                            },
-                            {
-                                "id": "xlE5pmGCNWdjVV7pR7foJw==",
-                                "day_of_week": "friday",
-                                "working": "no",
-                                "start_time": "07:00:00",
-                                "end_time": "14:00:00"
-                            },
-                            {
-                                "id": "shodTymtXk8SWykPUv80yw==",
-                                "day_of_week": "saturday",
-                                "working": "no",
-                                "start_time": "07:00:00",
-                                "end_time": "19:00:00"
-                            },
-                            {
-                                "id": "bvtsaFKUrO4nLT1fLD80rQ==",
-                                "day_of_week": "sunday",
-                                "working": "no",
-                                "start_time": "00:00:00",
-                                "end_time": "23:59:59"
-                            }
-                        ]
-                    }
-                }
-            }
-        ],
-        "items": [
-            {
-                "medicine_id": "EvM8wa0vXyjsi2JZnNKXrA==",
-                "mrp": 42.83,
-                "price": 38.55,
-                "discount_percentage": 10,
-                "available": "yes",
-                "alternatives": []
-            },
-            {
-                "medicine_id": "y1sw0N315wy4+UDhhT5FjA==",
-                "mrp": 23.5,
-                "price": 21.15,
-                "discount_percentage": 10,
-                "available": "yes",
-                "alternatives": []
-            }
-        ]
-    }
+   "id": "buctt+C5QzfVvqdIpKkYnQ==",
+   "transaction_type": "sales",
+   "transaction_nature": "delivered",
+   "chemist_id": "9kVNNczng10TbflL7zZEDA==",
+   "reference_number": 396,
+   "payment_mode": "Cash",
+   "payment_date": "2025-01-29 12:19:46",
+   "delivery_type": "delivery",
+   "order_number": "OOM6HJQ9BT",
+   "bill_no": 396,
+   "bill_date": "2025-01-29 12:26:51",
+   "order_status": "completed",
+   "draft_order_id": "imKLEWDEqB4IEolP16AK/w==",
+   "draft_order_shipping_charge": 30,
+   "invoice_pdf": "",
+   "reject_reason": "",
+   "total": 1300,
+   "amount": 1300,
+   "order_by": "Owner",
+   "patient_id": "rfojNNab+jNKqxDTYowQSQ==",
+   "patient_name": "Manav Patel",
+   "mobile": "7458787853",
+   "billing_for": "Manav Patel",
+   "billing_for_mobile": "7458787853",
+   "doctor_name": "",
+   "bill-pdf-url": "http://localhost/evital/invoice/T09NNkhKUTlCVA==/print/",
+   "direct_payment_url": "",
+   "remark": "",
+   "chemist_code": "C00ER",
+   "items": [
+     {
+       "price": 130,
+       "directions": "0-0-0-0",
+       "quantity": 100,
+       "mrp": 130,
+       "discount": 0,
+       "batch": "ASDAS234",
+       "expiry": "02/29",
+       "gst": 139.29,
+       "gstpercentage": 12,
+       "amount": 1300,
+       "size": 10,
+       "medicine_name": "Dolobest MR 100mg/500mg/250mg Tablet",
+       "pack_size": "10 Tablets",
+       "dosage_type": "",
+       "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/medicines/thumb/default.jpg",
+       "medicine_id": "LXarW6vPNnrbm2bwTZmnOw==",
+       "manufacturer_name": "TTK Healthcare Ltd",
+       "hsn_code": "554645",
+       "medicine_type": "drug",
+       "packing_size": "10 tablets in 1 strip",
+       "cess": 0,
+       "cess_percentage": 0,
+       "price_to_retailer": 75.63,
+       "margin": 121.53,
+       "base_price": 60.48435,
+       "landing_price": 9.011088279625897,
+       "location": "",
+       "sale_discount": 0,
+       "lock_discount": "no",
+       "sell_in_loose": "yes",
+       "loyalty_points": 0,
+       "loyalty_points_percentage": 0,
+       "batch_discount": 0,
+       "returnable": "yes",
+       "b2c_margin": 3,
+       "loyalty_points_redeemed": 0,
+       "stock_adjusted": "pending",
+       "offer_id": 0,
+       "item_category": "drug",
+       "expiry_return": "2029-02-01",
+       "gst_percentage": 12,
+       "order_type": "sale",
+       "reference_medicine_code": "I00014"
+     }
+    ],
+      "order_custom_fields": {},
+      "patient_custom_fields": {}
 }
 ```
