@@ -16,6 +16,8 @@
   order_status: "Cancelled",
   draft_order_id: "imKLEWDEqB4IEolP16AK/w==",
   reject_reason: "",
+  invoice_pdf: "",
+  draft_order_shipping_charge: 30,
   total: 428,
   amount: 475.3,
   order_by: "",

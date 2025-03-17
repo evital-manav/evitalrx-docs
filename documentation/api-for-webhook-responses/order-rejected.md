@@ -19,6 +19,8 @@
   "amount": 1300,
   "order_by": "",
   "draft_order_id": "y1sw0N315wy4+UDhhT5FjA==",
+  "invoice_pdf": "",
+  "draft_order_shipping_charge": 30,
   "patient_id": "rfojNNab+jNKqxDTYowQSQ==",
   "patient_name": "Manav Patel",
   "mobile": "7458787853",
