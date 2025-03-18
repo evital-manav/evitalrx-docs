@@ -16,7 +16,6 @@
    "order_status": "completed",
    "draft_order_id": "imKLEWDEqB4IEolP16AK/w==",
    "draft_order_shipping_charge": 30,
-   "invoice_pdf": "",
    "reject_reason": "",
    "total": 1300,
    "amount": 1300,
