@@ -114,7 +114,11 @@ description: To view order details
                 "delivery_estimate_time": 42,
                 "delivery_charge": 30,
                 "amount": 428,
+                "discount": 0,
+                "reject_reason": "Wrong medicines order",
                 "order_status_display_text": "Pharmacy has received your order.",
+                "estimated_maximum_delivery_date": "2025-03-19 14:24:36",
+                "estimated_minimum_delivery_date": "2025-03-19 13:24:36",
                 "verification_images": {
                     "order_packet_verification_images": [],
                     "order_items_verification_images": []
