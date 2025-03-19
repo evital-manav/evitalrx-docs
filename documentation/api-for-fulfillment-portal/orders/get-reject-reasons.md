@@ -19,39 +19,32 @@ description: Get list of reasons to reject the order.
 {
     "status_code": "1",
     "status_message": "Success",
-    "datetime": "2023-03-21 17:18:14",
+    "datetime": "2025-03-19 11:13:52",
+    "version": "1.1.64",
     "data": {
         "reasons": [
             {
-                "id": 1,
-                "reason": "Medicine not available"
+                "id": 50,
+                "reason": "Wrong medicines order"
             },
             {
-                "id": 2,
-                "reason": "Can't deliver in this area"
+                "id": 51,
+                "reason": "Order placed on wrong address"
             },
             {
-                "id": 4,
-                "reason": "Delivery person not available"
+                "id": 52,
+                "reason": "No response in order"
             },
             {
-                "id": 5,
-                "reason": "Less order value"
+                "id": 49,
+                "reason": "Discount is less"
             },
             {
-                "id": 6,
-                "reason": "Store closed"
+                "id": 53,
+                "reason": "By mistake place an order"
             },
             {
-                "id": 21,
-                "reason": "Prescription not attached in this order"
-            },
-            {
-                "id": 10,
-                "reason": "Can't modify MRP"
-            },
-            {
-                "id": 7,
+                "id": 61,
                 "reason": "Other"
             }
         ]
