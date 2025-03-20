@@ -98,7 +98,7 @@ description: To view order details
         "draft_order_status": "assigned",
         "split_orders": [
             {
-                "order_id": 13567,
+                "order_id": "64b37pPrrwp1clQteCuWMw==",
                 "chemist_order_number": "OTM8E5B9S7",
                 "chemist_order_id": "64b37pPrrwp1clQteCuWMw==",
                 "utm_source": "visit_health",
