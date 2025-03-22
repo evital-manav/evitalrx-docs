@@ -12,13 +12,13 @@ The orders in the "assigned" and "accepted" states, can be canceled with this AP
 
 #### Request Body
 
-| Name                                          | Type   | Description                                                                          |
-| --------------------------------------------- | ------ | ------------------------------------------------------------------------------------ |
-| apikey<mark style="color:red;">\*</mark>      | String | Authentication token                                                                 |
-| order\_id<mark style="color:red;">\*</mark>   | String | Order ID from the response of Place Order API.                                       |
-| reason\_id<mark style="color:red;">\*</mark>  | Number | ID of the reasons got from Get Reject Reasons API.                                   |
-| reason                                        | String | <p>Other reason if any<br><br>if reason_id is provided, then reason is optional.</p> |
-| patient\_id<mark style="color:red;">\*</mark> | String | ID of the patient to cancel the order                                                |
+| Name                                         | Type   | Description                                                                          |
+| -------------------------------------------- | ------ | ------------------------------------------------------------------------------------ |
+| apikey<mark style="color:red;">\*</mark>     | String | Authentication token                                                                 |
+| order\_id<mark style="color:red;">\*</mark>  | String | Order ID from the response of Place Order API.                                       |
+| reason\_id<mark style="color:red;">\*</mark> | Number | ID of the reasons got from Get Reject Reasons API.                                   |
+| reason                                       | String | <p>Other reason if any<br><br>if reason_id is provided, then reason is optional.</p> |
+| patient\_id                                  | String | ID of the patient to cancel the order                                                |
 
 {% tabs %}
 {% tab title="200: OK Success" %}
