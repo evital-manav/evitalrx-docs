@@ -115,7 +115,37 @@ For the medicines which are out of stock, available alternative medicines will b
                 "price": 38.55,
                 "discount_percentage": 10,
                 "available": "yes",
-                "alternatives": []
+                "alternatives": [
+                    {
+                        "approved": 0,
+                        "available_for_patient": "yes",
+                        "cess_percentage": 0,
+                        "requested_by_entity": "chemist",
+                        "content": "Paracetamol (650mg)",
+                        "dosage_type": "tablet",
+                        "gst_percentage": 12,
+                        "gtin_number": "",
+                        "hsn_code": "30049099",
+                        "image": "https://d2ffmswuyj0h1d.cloudfront.net/storage/medicines/thumb/60ae1dc73132f.jpg",
+                        "manufacturer_name": "Hetero Drugs Ltd",
+                        "medicine_id": "PDqfWw+enNR0w5U23KOsZg==",
+                        "medicine_name": "Lanol ER Tablet (10 Tablet)",
+                        "medicine_name_suggest": "Lanol ER Tablet (10 Tablet)",
+                        "medicine_type": "drug",
+                        "mrp": 22.4,
+                        "pack_size": "10 Tablet",
+                        "packing_size": "1 Strip of  10 Tablet",
+                        "price": 20.16,
+                        "discount_percentage": 10,
+                        "salt_content_id": 197,
+                        "schedule_type": "H",
+                        "size": 10,
+                        "slug": "lanol-er-tablet-10-tablet-MDDRG2183024649",
+                        "is_rx_required": 1,
+                        "primary_category_id": 819,
+                        "popularity_score": 99.83337266934151
+                    }
+                ]
             },
             {
                 "medicine_id": "y1sw0N315wy4+UDhhT5FjA==",
