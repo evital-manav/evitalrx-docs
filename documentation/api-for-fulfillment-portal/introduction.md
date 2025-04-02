@@ -6,7 +6,7 @@ The healthcare industry is changing how it serves patients, and a fulfillment AP
 
 **Flow diagram:**
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption><p><strong>Fulfillment API flow</strong></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Fulfillment Flow Chart.jpg" alt=""><figcaption></figcaption></figure>
 
 #### Here is the Postman Collection of APIs
 
