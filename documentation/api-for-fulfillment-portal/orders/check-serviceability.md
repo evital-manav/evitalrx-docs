@@ -10,13 +10,13 @@ description: To check if a location is serviceable
 
 #### Request Body
 
-| Name                                            | Type   | Description                                                                                                                              |
-| ----------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| apikey<mark style="color:red;">\*</mark>        | String | Authentication Token                                                                                                                     |
-| full\_address<mark style="color:red;">\*</mark> | String | <p>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</p> |
-| latitude<mark style="color:red;">\*</mark>      | String | Latitude of the customer                                                                                                                 |
-| longitude<mark style="color:red;">\*</mark>     | String | Longitude of the customer                                                                                                                |
-| zipcode<mark style="color:red;">\*</mark>       | String | Zipcode of the patient                                                                                                                   |
+| Name                                        | Type   | Description                                                                                                                              |
+| ------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| apikey<mark style="color:red;">\*</mark>    | String | Authentication Token                                                                                                                     |
+| latitude<mark style="color:red;">\*</mark>  | String | Latitude of the customer                                                                                                                 |
+| longitude<mark style="color:red;">\*</mark> | String | Longitude of the customer                                                                                                                |
+| zipcode<mark style="color:red;">\*</mark>   | String | Zipcode of the patient                                                                                                                   |
+| full\_address                               | String | <p>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</p> |
 
 
 
