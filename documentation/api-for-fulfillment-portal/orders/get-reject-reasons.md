@@ -19,32 +19,32 @@ description: Get list of reasons to reject the order.
 {
     "status_code": "1",
     "status_message": "Success",
-    "datetime": "2025-03-19 11:13:52",
-    "version": "1.1.64",
+    "datetime": "2025-05-02 16:05:50",
+    "version": "1.1.118",
     "data": {
         "reasons": [
             {
-                "id": 50,
+                "id": 13,
                 "reason": "Wrong medicines order"
             },
             {
-                "id": 51,
+                "id": 14,
                 "reason": "Order placed on wrong address"
             },
             {
-                "id": 52,
+                "id": 15,
                 "reason": "No response in order"
             },
             {
-                "id": 49,
+                "id": 12,
                 "reason": "Discount is less"
             },
             {
-                "id": 53,
+                "id": 16,
                 "reason": "By mistake place an order"
             },
             {
-                "id": 61,
+                "id": 17,
                 "reason": "Other"
             }
         ]
