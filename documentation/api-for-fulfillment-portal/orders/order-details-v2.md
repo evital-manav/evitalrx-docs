@@ -119,6 +119,7 @@ description: To view order details
                 "order_status_display_text": "Pharmacy has received your order.",
                 "estimated_maximum_delivery_date": "2025-03-19 14:24:36",
                 "estimated_minimum_delivery_date": "2025-03-19 13:24:36",
+                "service_type":"regular",
                 "verification_images": {
                     "order_packet_verification_images": [],
                     "order_items_verification_images": []
