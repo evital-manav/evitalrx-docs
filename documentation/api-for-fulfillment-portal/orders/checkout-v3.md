@@ -1,30 +1,31 @@
 ---
-description: This API is deprecated.
+description: To check availability of the items.
 ---
 
-# ⛔ Checkout V2
+# Checkout V3
 
 ## Get the availability of medicines
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/checkout_v2`](https://api.evitalrx.in/v1/fulfillment/orders/checkout_v2)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/checkout_v3`](https://api.evitalrx.in/v1/fulfillment/orders/checkout_v3)
 
 For the medicines which are out of stock, available alternative medicines will be provided.
 
 #### Request Body
 
-| Name                                        | Type    | Description                                                                                                                                                                                                                                                                                                                                                              |
-| ------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| apikey<mark style="color:red;">\*</mark>    | String  | Authentication Token                                                                                                                                                                                                                                                                                                                                                     |
-| patient\_id                                 | String  | Id to uniquely identify the patient for whom the order is placed                                                                                                                                                                                                                                                                                                         |
-| mobile                                      | String  | Patient's mobile no                                                                                                                                                                                                                                                                                                                                                      |
-| patient\_name                               | String  | Patient's name                                                                                                                                                                                                                                                                                                                                                           |
-| items<mark style="color:red;">\*</mark>     | String  | <p>Stringified Array of Items.</p><p></p><p>Items should contain at least 1 object. </p><p></p><p>MIN: 1 (medicines)</p><p>MAX: 20 (medicines)</p><p></p><p>Example:</p><pre class="language-json"><code class="lang-json">"[{\"quantity\":1,\"medicine_id\":\"vVgL6Ggy5tYhqQr1qXOAzA==\"},{\"quantity\":2,\"medicine_id\":\"BXGcaezmfzcQEdh7fZVmUg==\"}]"
+| Name                                              | Type    | Description                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| apikey<mark style="color:red;">\*</mark>          | String  | Authentication Token                                                                                                                                                                                                                                                                                                                                                     |
+| location\_token<mark style="color:red;">\*</mark> | String  | Get token fro Check Serviceability V3 API                                                                                                                                                                                                                                                                                                                                |
+| patient\_id                                       | String  | Id to uniquely identify the patient for whom the order is placed                                                                                                                                                                                                                                                                                                         |
+| mobile                                            | String  | Patient's mobile no                                                                                                                                                                                                                                                                                                                                                      |
+| patient\_name                                     | String  | Patient's name                                                                                                                                                                                                                                                                                                                                                           |
+| items<mark style="color:red;">\*</mark>           | String  | <p>Stringified Array of Items.</p><p></p><p>Items should contain at least 1 object. </p><p></p><p>MIN: 1 (medicines)</p><p>MAX: 20 (medicines)</p><p></p><p>Example:</p><pre class="language-json"><code class="lang-json">"[{\"quantity\":1,\"medicine_id\":\"vVgL6Ggy5tYhqQr1qXOAzA==\"},{\"quantity\":2,\"medicine_id\":\"BXGcaezmfzcQEdh7fZVmUg==\"}]"
 </code></pre> |
-| latitude<mark style="color:red;">\*</mark>  | Number  | Latitude of the customer                                                                                                                                                                                                                                                                                                                                                 |
-| longitude<mark style="color:red;">\*</mark> | Number  | Longitude of the customer                                                                                                                                                                                                                                                                                                                                                |
-| zipcode<mark style="color:red;">\*</mark>   | String  | Zipcode of the customer                                                                                                                                                                                                                                                                                                                                                  |
-| distance                                    | Number  | <p>Distance of fulfillment.<br><br>radius of search area for search provided item</p>                                                                                                                                                                                                                                                                                    |
-| find\_alternative                           | Boolean | Flag to get item alternatives                                                                                                                                                                                                                                                                                                                                            |
+| latitude<mark style="color:red;">\*</mark>        | Number  | Latitude of the customer                                                                                                                                                                                                                                                                                                                                                 |
+| longitude<mark style="color:red;">\*</mark>       | Number  | Longitude of the customer                                                                                                                                                                                                                                                                                                                                                |
+| zipcode<mark style="color:red;">\*</mark>         | String  | Zipcode of the customer                                                                                                                                                                                                                                                                                                                                                  |
+| distance                                          | Number  | <p>Distance of fulfillment.<br><br>radius of search area for search provided item</p>                                                                                                                                                                                                                                                                                    |
+| find\_alternative                                 | Boolean | Flag to get item alternatives                                                                                                                                                                                                                                                                                                                                            |
 
 
 
@@ -116,6 +117,8 @@ For the medicines which are out of stock, available alternative medicines will b
                 "price": 38.55,
                 "discount_percentage": 10,
                 "available": "yes",
+                "estimated_delivery_tat": "2025-05-14 10:45:50",
+                "service_type": "regular"
                 "alternatives": [
                     {
                         "approved": 0,
@@ -154,6 +157,16 @@ For the medicines which are out of stock, available alternative medicines will b
                 "price": 21.15,
                 "discount_percentage": 10,
                 "available": "yes",
+                "estimated_delivery_tat": "2025-05-14 10:45:50",
+                "service_type": "same_day"
+                "alternatives": []
+            },
+            {
+                "medicine_id": "b1ad0N315wy4+UDhhT5FjA==",
+                "mrp": 23.5,
+                "price": 21.15,
+                "discount_percentage": 10,
+                "available": "no",
                 "alternatives": []
             }
         ]

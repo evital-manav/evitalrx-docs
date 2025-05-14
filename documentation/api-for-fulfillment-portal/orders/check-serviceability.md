@@ -1,8 +1,8 @@
 ---
-description: To check if a location is serviceable
+description: This API is deprecated.
 ---
 
-# Check Serviceability
+# ⛔ Check Serviceability
 
 ## Get serviceability check
 

@@ -2,13 +2,13 @@
 description: This API is deprecated.
 ---
 
-# ⛔ Place Order
+# ⛔ Place Order V2
 
 ## <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Placing Orders with Ease: A Step-by-Step Guide](https://youtu.be/1TlUVPaWolI?si=2ybv22QYp_P3w994)
 
 ## Place Order
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order`](https://api.evitalrx.in/v1/fulfillment/orders/place_order)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v2`](https://api.evitalrx.in/v1/fulfillment/orders/place_order_v2)
 
 &#x20;
 
@@ -31,6 +31,7 @@ description: This API is deprecated.
 | latitude                                         | Number | Latitude of the patient to search in nearby pharmacies.                                                                                                                                                                                                                                                                                                                                |
 | longitude                                        | Number | Longitude of the patient to search in the nearby pharmacies.                                                                                                                                                                                                                                                                                                                           |
 | full\_address                                    | String | <p>Required If lat-long is not provided. This address is used to get the lat-long to find the nearest pharmacy store.</p><p></p><p>Only zipcode can also by passed in this param </p><p></p><p>like <code>{ "full_address": "560008" }</code></p>                                                                                                                                      |
+| requestId                                        | String | Partner order id                                                                                                                                                                                                                                                                                                                                                                       |
 
 {% tabs %}
 {% tab title="200 Order Placed successfully." %}
@@ -38,14 +39,27 @@ description: This API is deprecated.
 {
     "status_code": "1",
     "status_message": "Order placed successfully",
-    "datetime": "2023-02-14 19:23:51",
+    "datetime": "2025-03-13 17:52:30",
+    "version": "1.1.51",
     "data": {
-        "order_id": "FjauqxGgQYVpkl57jXYMhg==",
-        "order_number": "OQLE4B1Z8F",
-        "total": 111,
-        "thankyou_msg_first": "Thank You",
-        "thankyou_msg_second": "Your order has been placed to ",
-        "pharmacy_name": "API medicals"
+        "order_id": "F7VH/hoYLmOIBrCiHyccng==",
+        "order_number": "OOM87BK5Y7",
+        "total_amount": 119,
+        "total": 149,
+        "split_orders": [
+            {
+                "order_id": "7xS09/uGsj9fglWVxIw97Q==",
+                "order_number": "O2M87BK68H",
+                "chemist_details": {
+                    "chemist_id": "GJmQXzl+VAVkke3efyTrcw==",
+                    "pharmacy_name": "Demo Pharmacy",
+                    "full_address": "Evital Rx 4d Square Mall, Ahmedabad, Gujarat, India, 380005",
+                    "latitude": "23.1025849",
+                    "longitude": "72.5953601",
+                    "zipcode": "380005"
+                }
+            }
+        ]
     }
 }
 ```
