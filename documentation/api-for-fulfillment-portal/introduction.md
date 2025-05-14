@@ -10,13 +10,13 @@ The healthcare industry is changing how it serves patients, and a fulfillment AP
 
 #### Here is the Postman Collection of APIs
 
+**Version 3**
+
+{% embed url="https://drive.google.com/file/d/1g0D1QRuZ12bnBl89KmytoWsLHNNDLCn1/view?usp=sharing" %}
+
 **Version 2**
 
 {% embed url="https://drive.google.com/file/d/1dLwRzNVgptv3g_oHL2hJilYYbKpSv3sk/view?usp=sharing" %}
-
-**Version 1**
-
-{% embed url="https://drive.google.com/file/d/1Pdm6OML-mBEtOuTn2DX_s168qPOZptjT/view?usp=sharing" %}
 
 #### Watch a video.
 
