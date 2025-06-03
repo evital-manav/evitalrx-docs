@@ -158,7 +158,7 @@ For the medicines which are out of stock, available alternative medicines will b
                 "discount_percentage": 10,
                 "available": "yes",
                 "estimated_delivery_tat": "2025-05-14 10:45:50",
-                "service_type": "same_day"
+                "service_type": "same_day",
                 "alternatives": []
             },
             {
