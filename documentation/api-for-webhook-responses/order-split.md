@@ -11,6 +11,7 @@
   "payment_date": "",
   "delivery_type": "pickup",
   "order_number": "OKM807F47J",
+  "partner_order_id": "1234",
   "bill_no": "",
   "bill_date": "2025-03-08 18:22:11",
   "order_status": "Cancelled",
@@ -36,6 +37,7 @@
     {
       "medicine_id": "tbvnzkTyqsP/B5RDZoGfpQ==",
       "medicine_name": "Losakind-50 Tablet",
+      "partner_medicine_id": "1234",
       "size": 10,
       "medicine_type": "drug",
       "packing_size": "1 Strip of  10 Tablet",
