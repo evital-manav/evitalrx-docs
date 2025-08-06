@@ -32,6 +32,8 @@
    "direct_payment_url": "",
    "remark": "",
    "chemist_code": "C00ER",
+   "delivery_person_name": "test driver",
+   "delivery_person_mobile": "9876543210",
    "items": [
      {
        "price": 130,
