@@ -28,6 +28,7 @@
    "billing_for_mobile": "7458787853",
    "doctor_name": "",
    "bill-pdf-url": "http://localhost/evital/invoice/T09NNkhKUTlCVA==/print/",
+   "invoice_pdf":"https://d2ffmswuyj0h1d.cloudfront.net/storage/invoices/b2c_invoices/OGMDZPAD45.pdf",
    "direct_payment_url": "",
    "remark": "",
    "chemist_code": "C00ER",

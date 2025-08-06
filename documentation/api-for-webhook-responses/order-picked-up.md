@@ -1,4 +1,4 @@
-# Order Shipped
+# Order Picked Up
 
 ```json
 {
