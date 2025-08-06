@@ -33,6 +33,8 @@
   "remark": "",
   "medicine_refill_reminder_date": "2025-02-05 00:00:00",
   "chemist_code": "C00ER",
+  "delivery_person_name": "",
+  "delivery_person_mobile": "",
   "items": [
     {
       "price": 130,
