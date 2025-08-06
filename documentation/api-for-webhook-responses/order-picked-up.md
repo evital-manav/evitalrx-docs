@@ -4,7 +4,7 @@
 {
   "id": "buctt+C5QzfVvqdIpKkYnQ==",
   "transaction_type": "sales",
-  "transaction_nature": "shipped",
+  "transaction_nature": "order_picked_up",
   "chemist_id": "9kVNNczng10TbflL7zZEDA==",
   "reference_number": 396,
   "payment_mode": "Cash",
