@@ -31,6 +31,8 @@
   "direct_payment_url": "",
   "remark": "",
   "chemist_code": "C00ER",
+  "delivery_person_name": "",
+  "delivery_person_mobile": "",
   "items": [
     {
       "price": 130,

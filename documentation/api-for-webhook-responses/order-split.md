@@ -33,6 +33,8 @@
   "remark": "",
   "medicine_refill_reminder_date": "",
   "chemist_code": "C00J1",
+  "delivery_person_name": "",
+  "delivery_person_mobile": "",
   "items": [
     {
       "medicine_id": "tbvnzkTyqsP/B5RDZoGfpQ==",
