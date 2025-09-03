@@ -105,9 +105,12 @@
 ## API FOR FULFILLMENT <a href="#api-for-fulfillment-portal" id="api-for-fulfillment-portal"></a>
 
 * [Introduction](api-for-fulfillment-portal/introduction.md)
+* [Patients](api-for-fulfillment-portal/patients/README.md)
+  * [Add Patient](api-for-fulfillment-portal/patients/add-patient.md)
+  * [Get Patient](api-for-fulfillment-portal/patients/get-patient.md)
 * [Medicines](api-for-fulfillment-portal/medicines/README.md)
-  * [Search Products](api-for-fulfillment-portal/medicines/search-products.md)
-  * [Product Details](api-for-fulfillment-portal/medicines/product-details.md)
+  * [Search](api-for-fulfillment-portal/medicines/search-products.md)
+  * [View](api-for-fulfillment-portal/medicines/view.md)
 * [Orders](api-for-fulfillment-portal/orders/README.md)
   * [⛔ Check Serviceability](api-for-fulfillment-portal/orders/check-serviceability.md)
   * [Check Serviceability V3](api-for-fulfillment-portal/orders/check-serviceability-v3.md)
@@ -120,9 +123,15 @@
   * [⛔ Cancel Order](api-for-fulfillment-portal/orders/cancel-order.md)
   * [Cancel Order V2](api-for-fulfillment-portal/orders/cancel-order-v2.md)
   * [Get Reject Reasons](api-for-fulfillment-portal/orders/get-reject-reasons.md)
-* [Patients](api-for-fulfillment-portal/patients/README.md)
-  * [Add Patient](api-for-fulfillment-portal/patients/add-patient.md)
-  * [Get Patient](api-for-fulfillment-portal/patients/get-patient.md)
+* [Webhooks](api-for-fulfillment-portal/webhooks/README.md)
+  * [Overview](api-for-fulfillment-portal/webhooks/overview.md)
+  * [Order Accepted](api-for-webhook-responses/order-accepted.md)
+  * [Order Rejected](api-for-webhook-responses/order-rejected.md)
+  * [Order Shipped](api-for-webhook-responses/order-shipped.md)
+  * [Order Picked Up](api-for-webhook-responses/order-picked-up.md)
+  * [Order Delivered](api-for-webhook-responses/order-delivered.md)
+  * [Order Split/Reassign](api-for-webhook-responses/order-split.md)
+* [Fulfillment FAQ's](api-for-fulfillment-portal/fulfillment-faqs.md)
 
 ## API FOR B2B
 

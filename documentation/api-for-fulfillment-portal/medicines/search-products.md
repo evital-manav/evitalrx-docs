@@ -4,15 +4,13 @@ description: >-
   Salt-Composition(content).
 ---
 
-# Search Products
+# Search
 
 #### [Explore Medicines Available in Staging](../../getting-started-with-evitalrx.md#explore-medicines-available-in-staging)
 
 ## Search Products
 
-<mark style="color:green;">`POST`</mark> [`https://search.evitalrx.in:4000/v1/fulfillment/medicines/pillo/search`](https://search.evitalrx.in:4000/v1/fulfillment/medicines/pillo/search)&#x20;
-
-If the Item is present in your inventory, then it will appear first.
+<mark style="color:green;">`POST`</mark> [`https://search.evitalrx.in/v1/fulfillment/medicines/pillo/search`](https://search.evitalrx.in/v1/fulfillment/medicines/pillo/search)&#x20;
 
 #### Request Body
 

@@ -4,6 +4,13 @@ description: To check if a location is serviceable
 
 # Check Serviceability V3
 
+With this API you can check which delivery service are available at given latitude-longitude co-ordinates. We provide 4 delivery-service primarily:
+
+1. **quick :** delivery within 30 mins.
+2. **regular :** delivery within 2 hour.
+3. **same\_day :** delivery within 24 hour.
+4. **pan\_india :** delivery within 5-7 days varies upon distance.&#x20;
+
 ## Get serviceability check
 
 <mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/check_serviceability_v3`](https://api.evitalrx.in/v1/fulfillment/orders/check_serviceability_v3)

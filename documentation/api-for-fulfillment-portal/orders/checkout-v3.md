@@ -4,16 +4,22 @@ description: To check availability of the items.
 
 # Checkout V3
 
+This API provides availability of medicines with alternatives. And calculates the total cart value.
+
 ## Get the availability of medicines
 
 <mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/checkout_v3`](https://api.evitalrx.in/v1/fulfillment/orders/checkout_v3)
 
 For the medicines which are out of stock, available alternative medicines will be provided.
 
+> In API request, You need to pass either provide **patient\_id** or **mobile & patient\_name**.
+
+
+
 #### Request Body
 
-<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>apikey<mark style="color:red;">*</mark></td><td>String</td><td>Authentication Token</td></tr><tr><td>location_token<mark style="color:red;">*</mark></td><td>String</td><td>Get token fro Check Serviceability V3 API</td></tr><tr><td>patient_id</td><td>String</td><td>Id to uniquely identify the patient for whom the order is placed  </td></tr><tr><td>mobile</td><td>String</td><td>Patient's mobile no</td></tr><tr><td>patient_name</td><td>String</td><td>Patient's name</td></tr><tr><td>items<mark style="color:red;">*</mark></td><td>String</td><td><p>Stringified Array of Items.</p><p></p><p>Items should contain at least 1 object. </p><p></p><p>MIN: 1 (medicines)</p><p>MAX: 20 (medicines)</p><p></p><p>Example:</p><pre class="language-json"><code class="lang-json">"[{\"quantity\":1,\"medicine_id\":\"vVgL6Ggy5tYhqQr1qXOAzA==\"},{\"quantity\":2,\"medicine_id\":\"BXGcaezmfzcQEdh7fZVmUg==\"}]"
-</code></pre></td></tr><tr><td>latitude<mark style="color:red;">*</mark></td><td>Number</td><td>Latitude of the customer</td></tr><tr><td>longitude<mark style="color:red;">*</mark></td><td>Number</td><td>Longitude of the customer</td></tr><tr><td>zipcode<mark style="color:red;">*</mark></td><td>String</td><td>Zipcode of the customer</td></tr><tr><td>distance</td><td>Number</td><td>Distance of fulfillment.<br><br>radius of search area for search provided item</td></tr><tr><td>find_alternative</td><td>Boolean</td><td>Flag to get item alternatives</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>apikey<mark style="color:red;">*</mark></td><td>String</td><td>Authentication Token</td></tr><tr><td>location_token<mark style="color:red;">*</mark></td><td>String</td><td>Get token from Check Serviceability V3 API</td></tr><tr><td>patient_id<mark style="color:red;">*</mark></td><td>String</td><td><p>Id to uniquely identify the patient for whom the order is placed.</p><p></p><p>if mobile and patient name is provided, then patient_id is optional.</p></td></tr><tr><td>mobile</td><td>String</td><td>Patient's mobile no</td></tr><tr><td>patient_name</td><td>String</td><td>Patient's name</td></tr><tr><td>items<mark style="color:red;">*</mark></td><td>String</td><td><p>Stringified Array of Items.</p><p></p><p>Items should contain at least 1 object. </p><p></p><p>MIN: 1 (medicines)</p><p>MAX: 20 (medicines)</p><p></p><p>Example:</p><pre class="language-json"><code class="lang-json">"[{\"quantity\":1,\"medicine_id\":\"vVgL6Ggy5tYhqQr1qXOAzA==\"},{\"quantity\":2,\"medicine_id\":\"BXGcaezmfzcQEdh7fZVmUg==\"}]"
+</code></pre></td></tr><tr><td>latitude<mark style="color:red;">*</mark></td><td>Number</td><td>Latitude of the customer</td></tr><tr><td>longitude<mark style="color:red;">*</mark></td><td>Number</td><td>Longitude of the customer</td></tr><tr><td>zipcode<mark style="color:red;">*</mark></td><td>String</td><td>Zipcode of the customer</td></tr><tr><td>find_alternative</td><td>Boolean</td><td>Flag to get item alternatives</td></tr><tr><td>show_cart_options</td><td>Boolean</td><td>To know alternate cart items options.</td></tr><tr><td>delivery_type</td><td>String</td><td><p>It can be either delivery ot pickup where,</p><p>"delivery" : Order will be delivered.<br>"pickup" : Order will be of pick-up type.</p></td></tr></tbody></table>
 
 
 

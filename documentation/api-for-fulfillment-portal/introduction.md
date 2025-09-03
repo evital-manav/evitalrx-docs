@@ -18,6 +18,8 @@ The healthcare industry is changing how it serves patients, and a fulfillment AP
 
 {% embed url="https://drive.google.com/file/d/1dLwRzNVgptv3g_oHL2hJilYYbKpSv3sk/view?usp=sharing" %}
 
-#### Watch a video.
+#### Watch a video
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MkMQ1evvT-4Hx1hloPt%2Fuploads%2FHqvBwsGZ8z2NV7OvRNS2%2FDOCS-fulfillment%20API%20Overview.webm?alt=media&token=e967bd55-8229-4def-b493-36d75de62705" %}
 
 {% embed url="https://www.loom.com/share/2a48dcea42504b47b92d443947974dea" %}

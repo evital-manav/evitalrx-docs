@@ -4,17 +4,6 @@ description: >-
   APIs that enable seamless integration with various applications for managing
   stock, orders, and other pharmacy operations.
 icon: terminal
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # API - powered by eVitalRx
