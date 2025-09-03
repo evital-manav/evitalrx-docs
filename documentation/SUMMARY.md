@@ -130,7 +130,7 @@
   * [Order Shipped](api-for-webhook-responses/order-shipped.md)
   * [Order Picked Up](api-for-webhook-responses/order-picked-up.md)
   * [Order Delivered](api-for-webhook-responses/order-delivered.md)
-  * [Order Split/Reassign](api-for-webhook-responses/order-split.md)
+  * [Order Split](api-for-webhook-responses/order-split.md)
 * [Fulfillment FAQ's](api-for-fulfillment-portal/fulfillment-faqs.md)
 
 ## API FOR B2B

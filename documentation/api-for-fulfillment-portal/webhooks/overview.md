@@ -18,4 +18,4 @@ Webhooks allow your system to receive **real-time updates** whenever an event oc
    * At this stage the delivery is being assigned to our delivery partner and tracking URL is available. But, it might show no delivery assigned as it will be searching for Delivery Rider.
 4. [Order Picked Up](../../api-for-webhook-responses/order-picked-up.md) - When order is picked up by delivery rider and details of Delivery rider are available.
 5. [Order Delivered](../../api-for-webhook-responses/order-delivered.md) - When Order Gets Delivered to patient.
-6. [Order Split/Reassign](../../api-for-webhook-responses/order-split.md) - A common webhook for Split & Reassign of order.
+6. [Order Split](../../api-for-webhook-responses/order-split.md) - When order split into multiple orders.
