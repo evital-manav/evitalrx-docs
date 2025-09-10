@@ -8,7 +8,7 @@ This API provides availability of medicines with alternatives. And calculates th
 
 ## Get the availability of medicines
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/checkout_v3`](https://api.evitalrx.in/v1/fulfillment/orders/checkout_v3)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/checkout_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/checkout_v3)
 
 For the medicines which are out of stock, available alternative medicines will be provided.
 

@@ -6,7 +6,7 @@ description: To view order details
 
 ## Order View
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/view_v2`](https://api.evitalrx.in/v1/fulfillment/orders/view_v2)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/view_v2`](https://dev-api.evitalrx.in/v1/fulfillment/orders/view_v2)
 
 #### Request Body
 

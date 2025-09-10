@@ -12,7 +12,7 @@ The healthcare industry is changing how it serves patients, and a fulfillment AP
 
 **Version 3**
 
-{% embed url="https://drive.google.com/file/d/1g0D1QRuZ12bnBl89KmytoWsLHNNDLCn1/view?usp=sharing" %}
+{% embed url="https://drive.google.com/file/d/1qXLkIe_aQIMlzKHnhGmBEDCsDU_sGYx9/view?usp=drive_link" %}
 
 **Version 2**
 

@@ -15,7 +15,7 @@ Place Order API has two flow:
 
 ## Place Order
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v3`](https://api.evitalrx.in/v1/fulfillment/orders/place_order_v3)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/place_order_v3)
 
 #### Request Body
 

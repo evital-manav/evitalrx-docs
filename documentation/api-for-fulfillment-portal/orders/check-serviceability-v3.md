@@ -13,7 +13,7 @@ With this API you can check which delivery service are available at given latitu
 
 ## Get serviceability check
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/check_serviceability_v3`](https://api.evitalrx.in/v1/fulfillment/orders/check_serviceability_v3)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/check_serviceability_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/check_serviceability_v3)
 
 #### Request Body
 

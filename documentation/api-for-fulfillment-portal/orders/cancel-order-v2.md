@@ -6,7 +6,7 @@ description: The patient can cancel the order with this API.
 
 ## Push the Order in Cancelled state
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/cancel_order_v2`](https://api.evitalrx.in/v1/fulfillment/orders/cancel_order_v2)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/cancel_order_v2`](https://dev-api.evitalrx.in/v1/fulfillment/orders/cancel_order_v2)
 
 The orders in the "assigned" and "accepted" states, can be canceled with this API.
 
