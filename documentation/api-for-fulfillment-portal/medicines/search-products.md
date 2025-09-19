@@ -62,7 +62,6 @@ description: >-
                 "size": 15,
                 "slug": "dolo-650-tablet-M00234T",
                 "thumb_image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/medicines/thumb/62d4e09cd4dd3.jpg",
-                "watermark_free_image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/62d4e09cd4dd3.jpg",
                 "price_per_unit": 2.05,
                 "unit": "Tablet"
             },
@@ -97,7 +96,6 @@ description: >-
                 "size": 15,
                 "slug": "dolo-650-tablet-15-tablet-MDOTC316961964353",
                 "thumb_image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/medicines/thumb/default.jpg",
-                "watermark_free_image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/default.jpg",
                 "price_per_unit": 3.33,
                 "unit": "Tablet"
             },
@@ -132,7 +130,6 @@ description: >-
                 "size": 1,
                 "slug": "dolo-650-tablet-1-tablet-MDDRG31541966617",
                 "thumb_image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/medicines/thumb/default.jpg",
-                "watermark_free_image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/default.jpg",
                 "price_per_unit": 0,
                 "unit": "Tablet"
             }

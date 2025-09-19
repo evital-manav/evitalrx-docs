@@ -110,7 +110,7 @@
   * [Get Patient](api-for-fulfillment-portal/patients/get-patient.md)
 * [Medicines](api-for-fulfillment-portal/medicines/README.md)
   * [Search](api-for-fulfillment-portal/medicines/search-products.md)
-  * [View V3](api-for-fulfillment-portal/medicines/view-v3.md)
+  * [View V3](api-for-fulfillment-portal/medicines/view.md)
 * [Orders](api-for-fulfillment-portal/orders/README.md)
   * [⛔ Check Serviceability](api-for-fulfillment-portal/orders/check-serviceability.md)
   * [Check Serviceability V3](api-for-fulfillment-portal/orders/check-serviceability-v3.md)

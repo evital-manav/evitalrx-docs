@@ -16,7 +16,7 @@ description: Some common question that we were asked.
 
 <summary>Passing prescription URL is mandatory?</summary>
 
-Yes, for medicines where field **is\_rx\_required : "yes" (true)**  it is mandatory to provide prescription. It can be know from the [medicine/view](medicines/view-v3.md) API.
+Yes, for medicines where field **is\_rx\_required : "yes" (true)**  it is mandatory to provide prescription. It can be know from the [medicine/view](medicines/view.md) API.
 
 </details>
 
