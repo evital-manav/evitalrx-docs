@@ -33,6 +33,44 @@ For the medicines which are out of stock, available alternative medicines will b
     "version": "1.1.254",
     "data": {
         "shipping_charges": 50,
+        "charges": {
+            "total": {
+                "with_discount": 355.8,
+                "without_discount": 355.8
+            },
+            "delivery_charge": {
+                "with_discount": 69,
+                "without_discount": 69
+            },
+            "roundoff": {
+                "with_discount": 0.2,
+                "without_discount": 0.2
+            },
+            "payable_amount": {
+                "with_discount": 425,
+                "without_discount": 424.8
+            },
+            "wallet_amount": {
+                "available_amount": 0,
+                "redeemable_amount": 0
+            },
+            "surge_charge": {
+                "with_discount": 0,
+                "without_discount": 0
+            },
+            "handling_fee": {
+                "with_discount": 0,
+                "without_discount": 0
+            },
+            "small_cart_fee": {
+                "with_discount": 0,
+                "without_discount": 0
+            },
+            "delivery_tip_amount": {
+                "with_discount": 0,
+                "without_discount": 0
+            }
+        },
         "items": [
             {
                 "medicine_id": "EvM8wa0vXyjsi2JZnNKXrA==",
