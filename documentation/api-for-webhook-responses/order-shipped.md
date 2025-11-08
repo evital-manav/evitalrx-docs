@@ -1,5 +1,7 @@
 # Order Shipped
 
+In webhook response for `pickup` type order only are `chemist_details` available.
+
 ```json
 {
   "id": "buctt+C5QzfVvqdIpKkYnQ==",
@@ -35,6 +37,119 @@
   "chemist_code": "C00ER",
   "delivery_person_name": "",
   "delivery_person_mobile": "",
+  "chemist_details": {
+        "chemist_id": "vUrZeR78iAdoLVZYO6amjA==",
+        "pharmacy_name": "Shree Ganesh Pharmacy",
+        "pharmacist_name": "Bhumin Patel",
+        "contact_no": "7216009775",
+        "full_address": "4d SquareVisat, Chennai, Tamil Nadu, India, 380005",
+        "latitude": "23.1027599",
+        "longitude": "72.5951718",
+        "zipcode": "380005",
+        "store_timings": {
+            "fullday_working": "yes",
+            "timings": [
+                {
+                    "id": "OdONoVbisSnjEbkBi/2lAQ==",
+                    "day_of_week": "monday",
+                    "working": "yes",
+                    "start_time": "10:00:00",
+                    "end_time": "19:00:00"
+                },
+                {
+                    "id": "kTJR6KQDmrBy0TqQUoSQug==",
+                    "day_of_week": "tuesday",
+                    "working": "yes",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "6okjTHgbat0E94JRSSD6hw==",
+                    "day_of_week": "wednesday",
+                    "working": "yes",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "oNMmkOoRVZgg31i8Sdw/9w==",
+                    "day_of_week": "thursday",
+                    "working": "yes",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "V52t1Z5PYtC3QKi+v/oDfA==",
+                    "day_of_week": "friday",
+                    "working": "yes",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "vOKVXLw/5KUiTp3MY2FCuQ==",
+                    "day_of_week": "saturday",
+                    "working": "yes",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "5qfdG8eHfksSTzjSaMdaHA==",
+                    "day_of_week": "sunday",
+                    "working": "no",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "2w9ZyrNa+48wl8QmOQOcTw==",
+                    "day_of_week": "monday",
+                    "working": "yes",
+                    "start_time": "08:30:00",
+                    "end_time": "14:30:00"
+                },
+                {
+                    "id": "MeYZ1jFOCgmbfr0VloUcHg==",
+                    "day_of_week": "tuesday",
+                    "working": "yes",
+                    "start_time": "07:00:00",
+                    "end_time": "13:00:00"
+                },
+                {
+                    "id": "M9F4Aa846tskq8nmCzOI8Q==",
+                    "day_of_week": "wednesday",
+                    "working": "yes",
+                    "start_time": "10:00:00",
+                    "end_time": "15:30:00"
+                },
+                {
+                    "id": "cyFsLNErg1nDdEea5Xoaxg==",
+                    "day_of_week": "thursday",
+                    "working": "yes",
+                    "start_time": "08:30:00",
+                    "end_time": "14:00:00"
+                },
+                {
+                    "id": "yRzmhhhqdmxYAH2FcsAUcw==",
+                    "day_of_week": "friday",
+                    "working": "no",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "/VwXyi9uCP//h2/NgYXcnA==",
+                    "day_of_week": "saturday",
+                    "working": "no",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                },
+                {
+                    "id": "S+h72C73IChF/cqyP0kQDQ==",
+                    "day_of_week": "sunday",
+                    "working": "no",
+                    "start_time": "00:00:00",
+                    "end_time": "23:59:59"
+                }
+            ]
+        }
+    },
   "items": [
     {
       "price": 130,
@@ -87,3 +202,4 @@
   "patient_custom_fields": {}
 }
 ```
+
