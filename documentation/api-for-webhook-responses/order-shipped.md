@@ -37,6 +37,7 @@ In webhook response for `pickup` type order only are `chemist_details` available
   "chemist_code": "C00ER",
   "delivery_person_name": "",
   "delivery_person_mobile": "",
+  "delivery_pin": "1628",
   "chemist_details": {
         "chemist_id": "vUrZeR78iAdoLVZYO6amjA==",
         "pharmacy_name": "Shree Ganesh Pharmacy",
