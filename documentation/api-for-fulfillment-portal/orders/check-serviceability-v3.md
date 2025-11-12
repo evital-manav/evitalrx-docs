@@ -17,14 +17,15 @@ With this API you can check which delivery service are available at given latitu
 
 #### Request Body
 
-| Name                                            | Type   | Description                                                                                                                                               |
-| ----------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| apikey<mark style="color:red;">\*</mark>        | String | Authentication Token                                                                                                                                      |
-| latitude<mark style="color:red;">\*</mark>      | String | Latitude of the customer                                                                                                                                  |
-| longitude<mark style="color:red;">\*</mark>     | String | Longitude of the customer                                                                                                                                 |
-| zipcode<mark style="color:red;">\*</mark>       | String | Zipcode of the patient                                                                                                                                    |
-| service\_type<mark style="color:red;">\*</mark> | String | <p>Stringified array of service types. Service types includes "quick", "regular", "same_day" and "pan_india"</p><p>For eg.<br>["regular","same_day"]</p> |
-| full\_address                                   | String | <p>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</p>                  |
+| Name                                            | Type                   | Description                                                                                                                                               |
+| ----------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| apikey<mark style="color:red;">\*</mark>        | String                 | Authentication Token                                                                                                                                      |
+| latitude<mark style="color:red;">\*</mark>      | String                 | Latitude of the customer                                                                                                                                  |
+| longitude<mark style="color:red;">\*</mark>     | String                 | Longitude of the customer                                                                                                                                 |
+| zipcode<mark style="color:red;">\*</mark>       | String                 | Zipcode of the patient                                                                                                                                    |
+| service\_type<mark style="color:red;">\*</mark> | String                 | <p>Stringified array of service types. Service types includes "quick", "regular", "same_day" and "pan_india"</p><p>For eg.<br>["regular","same_day"]</p> |
+| delivery\_type                                  | 'pickup' \| 'delivery' | <p>It can be either delivery or pickup where,<br>"delivery" : Order will be delivered.<br>"pickup" : Order will be of pick-up type.</p>                   |
+| full\_address                                   | String                 | <p>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</p>                  |
 
 
 
