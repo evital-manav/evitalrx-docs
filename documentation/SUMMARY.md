@@ -157,6 +157,8 @@
 * [Draft Edit](api-for-webhook-responses/draft-edit.md)
 * [Order Save](api-for-webhook-responses/order-save.md)
 * [Order Edit](api-for-webhook-responses/order-edit.md)
+* [Digitization Completed](api-for-webhook-responses/digitization-completed.md)
+* [Order Assigned](api-for-webhook-responses/order-assigned.md)
 * [Order Accepted](api-for-webhook-responses/order-accepted.md)
 * [Order Rejected](api-for-webhook-responses/order-rejected.md)
 * [Order Shipped](api-for-webhook-responses/order-shipped.md)
