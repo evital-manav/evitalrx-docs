@@ -37,6 +37,7 @@ In webhook response for `pickup` type order only are `chemist_details` available
   "chemist_code": "C00ER",
   "delivery_person_name": "",
   "delivery_person_mobile": "",
+  "tracking_url": "http://localhost:4000/v1/fulfillment/apis/track/M3hyN0xmYWZySGtPalgzeThWeVlzUT09",
   "delivery_pin": "1628",
   "chemist_details": {
         "chemist_id": "vUrZeR78iAdoLVZYO6amjA==",

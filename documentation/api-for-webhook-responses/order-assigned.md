@@ -32,6 +32,7 @@
     "partner_order_id": "",
     "delivery_person_name": "",
     "delivery_person_mobile": "",
+    "tracking_url": "",
     "delivery_pin": "0498",
     "chemist_code": "C00EJ",
     "items": [

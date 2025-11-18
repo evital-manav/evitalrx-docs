@@ -34,6 +34,7 @@
    "chemist_code": "C00ER",
    "delivery_person_name": "test driver",
    "delivery_person_mobile": "9876543210",
+   "tracking_url": "http://localhost:4000/v1/fulfillment/apis/track/M3hyN0xmYWZySGtPalgzeThWeVlzUT09",
    "items": [
      {
        "price": 130,
