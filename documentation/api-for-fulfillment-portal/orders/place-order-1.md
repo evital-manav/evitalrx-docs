@@ -11,6 +11,16 @@ Place Order API has two flow:
 
 > In API request, You need to pass either provide **patient\_id** or **mobile & patient\_name**.
 
+
+
+To Place an order you can try with below medicines:
+
+* LTK-25    ( BEXJIx1DBa0TyZQjJB+qDw== )
+* LTK-50    ( gv0GokYn9w4zFL51eouS2g== )
+* LTK-AM   ( vVgL6Ggy5tYhqQr1qXOAzA== )
+* Rancil 10  ( kb/sYNrCj/A7lRqf7VCQOA== )
+* Vicks Vapourub 25 ml  ( P50Ved5KnpFmBp9XGAIVUg== )
+
 ## <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Placing Orders with Ease: A Step-by-Step Guide](https://youtu.be/1TlUVPaWolI?si=2ybv22QYp_P3w994)
 
 ## Place Order
