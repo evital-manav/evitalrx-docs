@@ -35,6 +35,9 @@
     "tracking_url": "",
     "delivery_pin": "0498",
     "chemist_code": "C00EJ",
+    "patient_latitude": "23.1025849",
+    "patient_longitude": "72.5953601",
+    "patient_full_address": "Evitalrx Office, 4d Square Mall , ahmedabad, , 380005",
     "items": [
         {
             "medicine_id": "JdEPzWib0NALLd8fgFBEBA==",
