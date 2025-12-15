@@ -34,6 +34,7 @@
   "delivery_person_name": "",
   "delivery_person_mobile": "",
   "tracking_url": "",
+  "is_final_rejection": false,
   "items": [
     {
       "price": 130,
