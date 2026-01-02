@@ -14,6 +14,42 @@ For the medicines which are out of stock, available alternative medicines will b
 
 > In API request, You need to pass either provide **patient\_id** or **mobile & patient\_name**.
 
+#### Charges Breakdown Explanation
+
+* `with_discount` represents the **actual payable amount** after offers.
+* `without_discount` is used for **price comparison and savings calculation**.
+* On Collecting Payment from patient always use `payable_amount.with_discount`&#x20;
+
+
+
+**charges-total-with\_discount** = This amount is summation of items `price * quantity`.
+
+**charges-total-without\_discount** = This amount is summation of items `mrp * quantity` .
+
+**payable\_amount.without\_discount** calculation
+
+```markdown
+payable_amount.without_discount =
+    total.without_discount
+  + delivery_charge.without_discount
+  + surge_charge.without_discount
+  + handling_fee.without_discount
+  + small_cart_fee.without_discount
+  + delivery_tip_amount.without_discount
+```
+
+**payable\_amount.with\_discount** calculation
+
+```markdown
+ payable_amount.with_discount =
+       total.with_discount
+      + delivery_charge.with_discount
+      + surge_charge.with_discount
+      + handling_fee.with_discount
+      + small_cart_fee.with_discount
+      + delivery_tip_amount.with_discount
+```
+
 
 
 #### Request Body
