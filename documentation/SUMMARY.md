@@ -133,6 +133,7 @@
   * [Order Split](api-for-webhook-responses/order-split.md)
   * [Order Re-Assigned](api-for-webhook-responses/order-re-assigned.md)
 * [Fulfillment FAQ's](api-for-fulfillment-portal/fulfillment-faqs.md)
+* [Corner Cases](api-for-fulfillment-portal/corner-cases.md)
 
 ## API FOR B2B
 
