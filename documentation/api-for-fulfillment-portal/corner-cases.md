@@ -2,15 +2,6 @@
 
 This document cover the cases which may or may not occur during the order lifecycle and there are some cases which are requested to be taken care by the integration client.
 
-### Check Serviceability Case
-
-* This API provides the real time pharmacy-store availability information whether they are online or not due to that it needs to be refreshed within certain time interval.
-* When to refresh the `location_token`&#x20;
-  * Refer to a threshold of 15 min limit.
-  * Upon cart-screen loading.
-  * Before Placing the order.
-  * When patient location is updated or address is changed.
-
 ### Checkout V3 Case
 
 * This API provides the real time stock availability cases that can be occur are:
@@ -32,5 +23,10 @@ This document cover the cases which may or may not occur during the order lifecy
 
 ### Order Return Case
 
-* After Order is Shipped, If patient location is incorrect or patient is not available or order is lost. Then the order will be Cancelled and Appropriate Reason will be provided within the Order Reject Webhook.
+* After Order is Shipped, If patient location is incorrect or patient is not available . Then the order will be Cancelled and Appropriate Reason will be provided within the Order Reject Webhook.
+* And If order is returned then there might be penalty for delivery which need to be paid by the clients.
 
+### Order Lost
+
+* In certain cases, after the order has been picked up by the rider, the rider may fraudulently complete the order by obtaining the OTP from the patient without delivering the parcel. OR stole the package.
+* Then it will be marked `cancelled` even after it is marked as `completed` .

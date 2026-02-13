@@ -4,12 +4,25 @@ description: To check if a location is serviceable
 
 # Check Serviceability V3
 
-With this API you can check which delivery service are available at given latitude-longitude co-ordinates. We provide 4 delivery-service primarily:
+With this API you can check which **location** are **serviceable** and are allowed for placing the order either for **pickup** or **delivery** type order. We check real-time availability of the nearby pharmacy-stores whether they are online or not.
 
-1. **quick :** delivery within 30 mins.
-2. **regular :** delivery within 2 hour.
-3. **same\_day :** delivery within 24 hour.
-4. **pan\_india :** delivery within 5-7 days varies upon distance.&#x20;
+We provide 5 delivery-service primarily:
+
+<table><thead><tr><th width="164.23809814453125">Delivery Service Type</th><th width="174.8092041015625">Delivery Time</th><th>When to Choose Which Delivery Service ?</th></tr></thead><tbody><tr><td>Quick</td><td>within 60 min</td><td><ul><li>Ideal for <strong>Quick-Commerce</strong></li><li>Unique Medicine SKU availability ranges from <strong>Small to Medium</strong> (<em>may vary depending upon the tier of city</em>)</li></ul></td></tr><tr><td>Regular</td><td>within 2 hour</td><td><ul><li>Ideal for <strong>Quick-Commerce</strong></li><li>Unique Medicine SKU availability ranges from <strong>Medium to Large.</strong></li></ul></td></tr><tr><td>In Stock Same Day</td><td>within 8 hours</td><td><ul><li>Ideal for <strong>Insurance-Provider</strong> &#x26; <strong>TPA</strong></li><li>Unique Medicine SKU availability ranges from <strong>Medium to Large.</strong></li></ul></td></tr><tr><td>Same Day</td><td>within 24 hours</td><td><ul><li>Ideal for <strong>Insurance-Provider</strong> &#x26; <strong>TPA</strong></li><li>Unique Medicine SKU availability are <strong>Large.</strong></li></ul></td></tr><tr><td>PAN India</td><td>within 5-7 days<br>vary upon distance</td><td><ul><li>Ideal for General Use</li><li>Unique Medicine SKU availability are <strong>Large.</strong></li></ul></td></tr></tbody></table>
+
+## Things to know
+
+1. Since this API contains real-time availability of the pharmacy-store it is required to refresh the location-token periodically.
+
+* When to refresh the `location_token`
+  * Refer to a threshold of 15 min limit.
+  * Upon cart-screen loading.
+  * Before Placing the order.
+  * When patient location is updated or address is changed.
+
+2. When you can place the order ?
+
+* When you get **serviceable** as `true`
 
 ## Get serviceability check
 
@@ -17,15 +30,8 @@ With this API you can check which delivery service are available at given latitu
 
 #### Request Body
 
-| Name                                            | Type                   | Description                                                                                                                                               |
-| ----------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| apikey<mark style="color:red;">\*</mark>        | String                 | Authentication Token                                                                                                                                      |
-| latitude<mark style="color:red;">\*</mark>      | String                 | Latitude of the customer                                                                                                                                  |
-| longitude<mark style="color:red;">\*</mark>     | String                 | Longitude of the customer                                                                                                                                 |
-| zipcode<mark style="color:red;">\*</mark>       | String                 | Zipcode of the patient                                                                                                                                    |
-| service\_type<mark style="color:red;">\*</mark> | String                 | <p>Stringified array of service types. Service types includes "quick", "regular", "same_day" and "pan_india"</p><p>For eg.<br>["regular","same_day"]</p> |
-| delivery\_type                                  | 'pickup' \| 'delivery' | <p>It can be either delivery or pickup where,<br>"delivery" : Order will be delivered.<br>"pickup" : Order will be of pick-up type.</p>                   |
-| full\_address                                   | String                 | <p>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</p>                  |
+<table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>apikey<mark style="color:red;">*</mark></td><td>String</td><td>Authentication Token</td></tr><tr><td>latitude<mark style="color:red;">*</mark></td><td>String</td><td>Latitude of the customer</td></tr><tr><td>longitude<mark style="color:red;">*</mark></td><td>String</td><td>Longitude of the customer</td></tr><tr><td>zipcode<mark style="color:red;">*</mark></td><td>String</td><td>Zipcode of the patient</td></tr><tr><td>service_type<mark style="color:red;">*</mark></td><td>'quick' | 'regular' | 'in_stock_same_day' | 'same_day' | 'pan_india'</td><td><p>Stringified array of service types.</p><p>For eg.</p><pre class="language-postman_json"><code class="lang-postman_json">"[\"quick\",\"regular\", \"in_stock_same_day\",\"same_day\", \"pan_india\"]"
+</code></pre></td></tr><tr><td>delivery_type</td><td>'pickup' | 'delivery'</td><td><strong>delivery</strong> (<em>Default</em>): Order will be delivered.<br><strong>pickup</strong> : Order will be of pick-up type.</td></tr><tr><td>full_address</td><td>String</td><td>Full address of  the patient for <br>eg. Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005</td></tr></tbody></table>
 
 
 
@@ -92,3 +98,13 @@ With this API you can check which delivery service are available at given latitu
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+## Errors Explanation
+
+* `no_pharmacy_found`&#x20;
+  * Currently no pharmacy are available there to take the order or area is not serviceable at the moment.
+* `no_pharmacy_found_due_to_off_hours`
+  * When pharmacies are there but they are offline or due to their store timing store is closed.
+
