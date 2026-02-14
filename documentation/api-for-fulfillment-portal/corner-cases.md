@@ -2,19 +2,6 @@
 
 This document cover the cases which may or may not occur during the order lifecycle and there are some cases which are requested to be taken care by the integration client.
 
-### Checkout V3 Case
-
-* This API provides the real time stock availability cases that can be occur are:
-  * Similar to check-serviceability, checkout API is need to be called to have an updated the cart availability as item-availability is directly related to the pharmacy availability directly.
-  * On Cart-Screen, Whenever the check-serviceability API is called the checkout should also be called with update `location_token`.
-
-### Place Order Case
-
-* **Price Increase After Order Place:** (very less probability to occur)
-  * **Scenario :** While taking the payment if time difference is too large between checkout and place-order due to payment delay(from patient/user) then the `location_token` might change. This might resulting in price-increase.
-  * **Solution-1:** Compare the order-total from Place-Order API Response with the payment amount taken from patient(user). If order-total is increased then cancel the order and place a new another.
-  * **Solution-2:** Place the order in `pending` state and then take payment on **order-total** from Place-Order Response. And then call **Payment-Webhook  API** to notify us.
-
 ### Order Shipped Webhook Case
 
 * **Order Total Amount Decreased,**

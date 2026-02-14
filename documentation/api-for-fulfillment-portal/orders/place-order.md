@@ -23,6 +23,15 @@ To Place an order you can try with below medicines:
 
 ## <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png" alt="" data-size="line"> [Placing Orders with Ease: A Step-by-Step Guide](https://youtu.be/1TlUVPaWolI?si=2ybv22QYp_P3w994)
 
+
+
+## Things to know
+
+* **Price Increase After Order Place:** (very less probability to occur)
+  * **Scenario :** While taking the payment if time difference is too large between checkout and place-order due to payment delay(from patient/user) then the `location_token` might change. This might resulting in price-increase.
+  * **Solution-1:** Compare the order-total from Place-Order API Response with the payment amount taken from patient(user). If order-total is increased then cancel the order and place a new another.
+  * **Solution-2:** Place the order in `pending` state and then take payment on **order-total** from Place-Order Response. And then call **Payment-Webhook  API** to notify us.
+
 ## Place Order
 
 <mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/place_order_v3)

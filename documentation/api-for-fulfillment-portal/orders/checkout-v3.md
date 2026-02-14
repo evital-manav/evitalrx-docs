@@ -52,6 +52,13 @@ payable_amount.without_discount =
 
 
 
+## Things to know
+
+This API provides the real time stock availability cases that can be occur are:
+
+* Similar to check-serviceability, checkout API is need to be called to have an updated the cart availability as item-availability is directly related to the pharmacy availability directly.
+* On Cart-Screen, Whenever the check-serviceability API is called the checkout should also be called with update `location_token`.
+
 #### Request Body
 
 <table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>apikey<mark style="color:red;">*</mark></td><td>String</td><td>Authentication Token</td></tr><tr><td>location_token<mark style="color:red;">*</mark></td><td>String</td><td>Get token from Check Serviceability V3 API</td></tr><tr><td>patient_id<mark style="color:red;">*</mark></td><td>String</td><td><p>Id to uniquely identify the patient for whom the order is placed.</p><p></p><p>if mobile and patient name is provided, then patient_id is optional.</p></td></tr><tr><td>mobile</td><td>String</td><td>Patient's mobile no</td></tr><tr><td>patient_name</td><td>String</td><td>Patient's name</td></tr><tr><td>items<mark style="color:red;">*</mark></td><td>String</td><td><p>Stringified Array of Items.</p><p></p><p>Items should contain at least 1 object. </p><p></p><p>MIN: 1 (medicines)</p><p>MAX: 20 (medicines)</p><p></p><p>Example:</p><pre class="language-json"><code class="lang-json">"[{\"quantity\":1,\"medicine_id\":\"vVgL6Ggy5tYhqQr1qXOAzA==\"},{\"quantity\":2,\"medicine_id\":\"BXGcaezmfzcQEdh7fZVmUg==\"}]"
