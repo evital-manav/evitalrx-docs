@@ -18,7 +18,7 @@ We provide 5 delivery-service primarily:
   * Refer to a threshold of 15 min limit.
   * Upon cart-screen loading.
   * Before Placing the order.
-  * When patient location is updated or address is changed.
+  * When patient location is updated or address is changed from address book, cart screen etc.
 
 2. When you can place the order ?
 
@@ -41,19 +41,20 @@ We provide 5 delivery-service primarily:
 {
     "status_code": "1",
     "status_message": "Success",
-    "datetime": "2025-05-14 10:22:04",
-    "version": "1.1.133",
+    "datetime": "2026-02-14 09:51:58",
+    "version": "1.1.547",
     "data": {
         "quick": null,
         "regular": {
             "serviceable": true,
             "error_slug": "",
-            "location_token": "0P6Hm1/BNc7uxzkOSZaBLVm6SiC2t0JAqdfTAkYsDVYnjO35Tp80VHQ/aZ9mWsGRs0y47uR97JYB5QvSDMltGUXuEppfksSED8isKapydaYzu+gfqX/0pH9syqVpDt2KL1tjCG+YhTdGeHuHDTKfOvFXtcAzEMOHWEOr8sSvnT4="
+            "location_token": "lGtSXojVIMwGbrsVqY03B4oboixKAingRNU6lPAIQy/G8L6J9CBmGcTGrx8f/RihijStxJAuMwNf55aMGcSgfrTDU2AKOBcyyhebNW3yc28acHe2sRSSYqtsFqwRfUJDrNQlcht1yEs8+Va6q3jbK69T5piJ7IM/RDpeWWoTvV5o0LFwLueIPfF2EGTMCLXPr191diEc/YmJOJj8hcq/q1XaUyUv0HeUVhe+XC9t6ynlfE2g6q6DlWbTytHQE3OfHyqjWw6QFA41SCo9QmRi/A=="
         },
+        "in_stock_same_day": null,
         "same_day": {
             "serviceable": true,
             "error_slug": "",
-            "location_token": "0P6Hm1/BNc7uxzkOSZaBLeGCJnWMLSOhvviSlR4mPlwrfwFot7T7TaVdW3JvgTd9C6SfulvWvA9nNXXXp2J3cNEKLbLvMJwhxzTgAWUP8wrGBBL2ONKI3DD/wx9lNM2R+5utflMGYgl6kuZ3zfZlEQz4Bz9yNzOTirPgVMYw/7A="
+            "location_token": "lGtSXojVIMwGbrsVqY03B5pG3EIS1dxZwe8yXIiW4NC4B4+02Uu+Iu1EoS5ynBnbz4j7Okw453FONcjxoUYEgzDkbuENC8PbMRNDsk2hNtAwLuTa9kF/VI7Vrs9ddwhtYnOyoDti7K21+BwHIuOP4CJVHu6kvQtFCN7d9XMg1LDzcA+1HcO3B9RXi3ej3nAy+7KhBuUfhI86N48Aewi29xxwEkLVMHfSj6bvvdAAjIdDRvW8NV2mBanAJn8pCfdz4T63PND9YuAL+s761e5Emg=="
         },
         "pan_india": null
     }
