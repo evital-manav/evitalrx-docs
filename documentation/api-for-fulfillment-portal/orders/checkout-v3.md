@@ -62,7 +62,7 @@ This API provides the real time stock availability cases that can be occur are:
 #### Request Body
 
 <table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>apikey<mark style="color:red;">*</mark></td><td>String</td><td>Authentication Token</td></tr><tr><td>location_token<mark style="color:red;">*</mark></td><td>String</td><td>Get token from Check Serviceability V3 API</td></tr><tr><td>patient_id<mark style="color:red;">*</mark></td><td>String</td><td><p>Id to uniquely identify the patient for whom the order is placed.</p><p></p><p>if mobile and patient name is provided, then patient_id is optional.</p></td></tr><tr><td>mobile</td><td>String</td><td>Patient's mobile no</td></tr><tr><td>patient_name</td><td>String</td><td>Patient's name</td></tr><tr><td>items<mark style="color:red;">*</mark></td><td>String</td><td><p>Stringified Array of Items.</p><p></p><p>Items should contain at least 1 object. </p><p></p><p>MIN: 1 (medicines)</p><p>MAX: 20 (medicines)</p><p></p><p>Example:</p><pre class="language-json"><code class="lang-json">"[{\"quantity\":1,\"medicine_id\":\"vVgL6Ggy5tYhqQr1qXOAzA==\"},{\"quantity\":2,\"medicine_id\":\"BXGcaezmfzcQEdh7fZVmUg==\"}]"
-</code></pre></td></tr><tr><td>latitude<mark style="color:red;">*</mark></td><td>Number</td><td>Latitude of the customer</td></tr><tr><td>longitude<mark style="color:red;">*</mark></td><td>Number</td><td>Longitude of the customer</td></tr><tr><td>zipcode<mark style="color:red;">*</mark></td><td>String</td><td>Zipcode of the customer</td></tr><tr><td>find_alternative</td><td>Boolean</td><td>Flag to get item alternatives</td></tr><tr><td>show_cart_options</td><td>Boolean</td><td>To know alternate cart items options.</td></tr><tr><td>delivery_type</td><td>String</td><td><p>It can be either delivery ot pickup where,</p><p>"delivery" : Order will be delivered.<br>"pickup" : Order will be of pick-up type.</p></td></tr></tbody></table>
+</code></pre></td></tr><tr><td>latitude<mark style="color:red;">*</mark></td><td>Number</td><td>Latitude of the customer</td></tr><tr><td>longitude<mark style="color:red;">*</mark></td><td>Number</td><td>Longitude of the customer</td></tr><tr><td>zipcode<mark style="color:red;">*</mark></td><td>String</td><td>Zipcode of the customer</td></tr><tr><td>find_alternative</td><td>Boolean</td><td>Flag to get item alternatives</td></tr><tr><td>show_cart_options</td><td>Boolean</td><td>To know alternate cart items options.</td></tr><tr><td>delivery_type</td><td>String</td><td><p>It can be either delivery or pickup where,</p><p>"delivery" : Order will be delivered.<br>"pickup" : Order will be of pick-up type.</p></td></tr><tr><td>address</td><td>String</td><td>Address of Patient for delivery.</td></tr><tr><td>address_line2</td><td>String</td><td>Address Line 2 for long address</td></tr><tr><td>city</td><td>String </td><td>City of Patient for delivery</td></tr><tr><td>state</td><td>String</td><td>State of Patient for delivery</td></tr></tbody></table>
 
 
 
@@ -457,6 +457,22 @@ This API provides the real time stock availability cases that can be occur are:
     "status_code": "0",
     "status_message": "No Pharmacies found near by your location",
     "datetime": "2023-02-15 12:37:11",
+    "data": null
+}
+```
+{% endtab %}
+
+{% tab title="400: Address & Lat-Long Diff" %}
+This Error indicates that the patient `address` (**address + address\_line2 + city + state + zipcode**) does not match with `latitude` & `longitude` .
+
+Such major difference can cause discrepancy at the time of delivery.
+
+```json
+{
+    "status_code": "0",
+    "status_message": "Your current location must be within 3000 meters of the provided address.",
+    "datetime": "2026-02-17 12:52:59",
+    "version": "1.1.548",
     "data": null
 }
 ```
