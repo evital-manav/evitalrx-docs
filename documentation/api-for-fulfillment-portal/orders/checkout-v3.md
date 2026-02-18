@@ -16,9 +16,8 @@ For the medicines which are out of stock, available alternative medicines will b
 
 #### Charges Breakdown Explanation
 
-* `with_discount` represents the **actual payable amount** after offers.
-* `without_discount` is used for **price comparison and savings calculation**.
-* On Collecting Payment from patient always use `payable_amount.with_discount`&#x20;
+* `with_discount` represents the **actual payable amount** after applying the offers.
+* `without_discount`  represents the total amount without applying any discount. It can also be used to show **Savings Calculation**.
 
 
 
@@ -58,6 +57,9 @@ This API provides the real time stock availability cases that can be occur are:
 
 * Similar to check-serviceability, checkout API is need to be called to have an updated the cart availability as item-availability is directly related to the pharmacy availability directly.
 * On Cart-Screen, Whenever the check-serviceability API is called the checkout should also be called with update `location_token`.
+* On Collecting Payment from patient always use `payable_amount.with_discount` .&#x20;
+
+> _**NOTE :**_ The amount quoted is the maximum amount it may or may not get reduced from the maximum quoted price. For Postpaid cleints, this Price Variation needs to handeled at their end.&#x20;
 
 #### Request Body
 

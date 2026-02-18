@@ -118,6 +118,7 @@
   * [Order Details V2](api-for-fulfillment-portal/orders/order-details-v2.md)
   * [Cancel Order V2](api-for-fulfillment-portal/orders/cancel-order-v2.md)
   * [Get Reject Reasons](api-for-fulfillment-portal/orders/get-reject-reasons.md)
+  * [Checkout By Content](api-for-fulfillment-portal/orders/checkout-by-content.md)
 * [Webhooks](api-for-fulfillment-portal/webhooks/README.md)
   * [Overview](api-for-fulfillment-portal/webhooks/overview.md)
   * [Order Accepted](api-for-webhook-responses/order-accepted.md)
