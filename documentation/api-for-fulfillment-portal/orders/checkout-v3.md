@@ -464,18 +464,242 @@ This API provides the real time stock availability cases that can be occur are:
 ```
 {% endtab %}
 
-{% tab title="400: Address & Lat-Long Diff" %}
-This Error indicates that the patient `address` (**address + address\_line2 + city + state + zipcode**) does not match with `latitude` & `longitude` .
+{% tab title="200: Error Note" %}
+**Error Slug :** It provides the an error slug for shorter error form.\
+**Error Note :** It provides potential errors can occur during the place-order flow working as a pre-validator. This gives error full description
 
-Such major difference can cause discrepancy at the time of delivery.
+* **`ADDRESS_LAT_LONG_MISMATCH` :** It indicates that the patient `address` (**address + address\_line2 + city + state + zipcode**) does not match with `latitude` & `longitude` . Such major difference can cause discrepancy at the time of delivery.
 
 ```json
 {
-    "status_code": "0",
-    "status_message": "Your current location must be within 3000 meters of the provided address.",
-    "datetime": "2026-02-17 12:52:59",
-    "version": "1.1.548",
-    "data": null
+    "status_code": "1",
+    "status_message": "Success",
+    "datetime": "2026-02-23 16:56:03",
+    "version": "1.1.559",
+    "data": {
+        "error_slug": "ADDRESS_LAT_LONG_MISMATCH",
+        "error_note": "Your current location must be within 3000 meters of the provided address.",
+        "shipping_charges": 99,
+        "charges": {
+            "total": {
+                "with_discount": 30.74,
+                "without_discount": 30.74
+            },
+            "delivery_charge": {
+                "with_discount": 99,
+                "without_discount": 99
+            },
+            "roundoff": {
+                "with_discount": 0.26,
+                "without_discount": 0.26
+            },
+            "payable_amount": {
+                "with_discount": 130,
+                "without_discount": 129.74
+            },
+            "wallet_amount": {
+                "available_amount": 0,
+                "redeemable_amount": 0
+            },
+            "surge_charge": {
+                "with_discount": 0,
+                "without_discount": 0
+            },
+            "handling_fee": {
+                "with_discount": 0,
+                "without_discount": 0
+            },
+            "small_cart_fee": {
+                "with_discount": 0,
+                "without_discount": 0
+            },
+            "delivery_tip_amount": {
+                "with_discount": 0,
+                "without_discount": 0
+            }
+        },
+        "items": [
+            {
+                "medicine_id": "25d10fcd689bd0d00b2ddf1f80504404",
+                "mrp": 30.74,
+                "price": 30.74,
+                "discount_percentage": 0,
+                "available": "yes",
+                "available_quantity": 1,
+                "requested_quantity": 1,
+                "hsn_code": "12343245",
+                "medicine_category": "generic",
+                "salt_content_id": "55331f9e6726942309ea0a07700cfade",
+                "medicine_uses": "Dolo 650 mg Tablet is used for <a href='/diseases/pain-relief-168'>pain relief</a> and <a href='/diseases/fever-191'>fever</a>. It is used to relieve pain in conditions like headache, joint pain, muscle pain or dental pain.",
+                "medicine_slug": "dolo-650-mg-tablet-MDDRG315497373",
+                "content": "Paracetamol/Acetaminophen (650mg)",
+                "medicine_name": "Dolo 650 Mg Tablet",
+                "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/default.jpg",
+                "size": 15,
+                "packing": "Strip",
+                "pack_size": "15 Tablets",
+                "packing_size": "1 Strip of 15 tablets",
+                "popularity_score": 0,
+                "medicine_type": "drug",
+                "alternatives": [
+                    {
+                        "medicine_id": "e083b908ee27700b7a4f427af70d2c6a",
+                        "medicine_slug": "doloflam-tablet-MDDRG5194076526",
+                        "content": "Nimesulide (NA)",
+                        "is_rx_required": 1,
+                        "medicine_name": "Doloflam Tablet",
+                        "manufacturer_name": "Vilco Laboratories Pvt Ltd",
+                        "size": 10,
+                        "packing": "Strip",
+                        "pack_size": "10 Tablets",
+                        "packing_size": "10 tablets in 1 strip",
+                        "mrp": 9.3,
+                        "price": 8.37,
+                        "discount_percentage": 10,
+                        "medicine_type": "drug",
+                        "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/default.jpg",
+                        "available_quantity": 1,
+                        "available": "yes",
+                        "requested_quantity": 1,
+                        "popularity_score": 0,
+                        "estimated_delivery_tat": "2026-02-23 18:56:03",
+                        "service_type": "regular"
+                    },
+                    {
+                        "medicine_id": "25238bbc02da87d1e4d64ce6f0bc6641",
+                        "medicine_slug": "vesdol-gel-MDOTC5174086888",
+                        "content": "",
+                        "is_rx_required": 0,
+                        "medicine_name": "Vesdol Gel",
+                        "manufacturer_name": "Vestal Healthcare",
+                        "size": 1,
+                        "packing": "Gel",
+                        "pack_size": "30 Gm",
+                        "packing_size": "30 gm Gel",
+                        "mrp": 90,
+                        "price": 90,
+                        "discount_percentage": 0,
+                        "medicine_type": "otc",
+                        "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/blank_otc_uobogo.png",
+                        "available_quantity": 1,
+                        "available": "yes",
+                        "requested_quantity": 1,
+                        "popularity_score": 0,
+                        "estimated_delivery_tat": "2026-02-23 18:56:03",
+                        "service_type": "regular"
+                    },
+                    {
+                        "medicine_id": "68ead7689035e0b037c9c23e99b5108e",
+                        "medicine_slug": "rancil-10-tablet-MDDRG4750189557",
+                        "content": "Cilnidipine (10mg)",
+                        "is_rx_required": 1,
+                        "medicine_name": "Rancil 10 Tablet",
+                        "manufacturer_name": "Sun Pharmaceutical Industries Ltd",
+                        "size": 10,
+                        "packing": "Strip",
+                        "pack_size": "10 Tablets",
+                        "packing_size": "10 tablets in 1 strip",
+                        "mrp": 86,
+                        "price": 86,
+                        "discount_percentage": 0,
+                        "medicine_type": "drug",
+                        "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/rancil-10-tablet-MDDRG4750189557.jpg",
+                        "available_quantity": 0,
+                        "available": "no",
+                        "requested_quantity": 1,
+                        "popularity_score": 0,
+                        "estimated_delivery_tat": "",
+                        "service_type": ""
+                    }
+                ],
+                "is_rx_required": 0,
+                "estimated_delivery_tat": "2026-02-23 18:56:03",
+                "service_type": "regular"
+            }
+        ],
+        "cart_options": [
+            {
+                "label": "quick_same_medicines",
+                "title": "Quick Delivery with Same Medicines",
+                "available_item_count": 1,
+                "total_mrp": 30.74,
+                "total_discount": 0,
+                "total_price": 30.74,
+                "shipping": 99,
+                "payable_amount": 129.74,
+                "items": [
+                    {
+                        "medicine_id": "25d10fcd689bd0d00b2ddf1f80504404",
+                        "mrp": 30.74,
+                        "price": 30.74,
+                        "discount_percentage": 0,
+                        "requested_quantity": 1,
+                        "amount": 30.74,
+                        "medicine_slug": "dolo-650-mg-tablet-MDDRG315497373",
+                        "content": "Paracetamol/Acetaminophen (650mg)",
+                        "is_rx_required": 0,
+                        "medicine_name": "Dolo 650 Mg Tablet",
+                        "manufacturer_name": "Micro Labs Ltd",
+                        "popularity_score": 0,
+                        "available_for_patient": "yes",
+                        "size": 15,
+                        "packing": "Strip",
+                        "pack_size": "15 Tablets",
+                        "packing_size": "1 Strip of 15 tablets",
+                        "medicine_type": "drug",
+                        "medicine_category": "generic",
+                        "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/default.jpg",
+                        "is_swap_available": "no",
+                        "swap_medicines": [],
+                        "available_quantity": 1,
+                        "available": "yes",
+                        "estimated_delivery_tat": "2026-02-23 18:55:59",
+                        "service_type": "regular"
+                    }
+                ]
+            },
+            {
+                "label": "quick_alternative_medicines",
+                "title": "Quick Delivery with Alternative Medicines",
+                "available_item_count": 1,
+                "total_mrp": 30.74,
+                "total_discount": 0,
+                "total_price": 30.74,
+                "shipping": 99,
+                "payable_amount": 129.74,
+                "items": [
+                    {
+                        "medicine_id": "25d10fcd689bd0d00b2ddf1f80504404",
+                        "mrp": 30.74,
+                        "price": 30.74,
+                        "discount_percentage": 0,
+                        "requested_quantity": 1,
+                        "amount": 30.74,
+                        "medicine_slug": "dolo-650-mg-tablet-MDDRG315497373",
+                        "content": "Paracetamol/Acetaminophen (650mg)",
+                        "is_rx_required": 0,
+                        "medicine_name": "Dolo 650 Mg Tablet",
+                        "manufacturer_name": "Micro Labs Ltd",
+                        "popularity_score": 0,
+                        "available_for_patient": "yes",
+                        "size": 15,
+                        "packing": "Strip",
+                        "pack_size": "15 Tablets",
+                        "packing_size": "1 Strip of 15 tablets",
+                        "medicine_type": "drug",
+                        "medicine_category": "generic",
+                        "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/itemoriginalcopy/medicines/default.jpg",
+                        "is_swap_available": "no",
+                        "swap_medicines": [],
+                        "available_quantity": 1,
+                        "available": "yes",
+                        "estimated_delivery_tat": "2026-02-23 18:55:59",
+                        "service_type": "regular"
+                    }
+                ]
+            }
+        ]
+    }
 }
 ```
 {% endtab %}
