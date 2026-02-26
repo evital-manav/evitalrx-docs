@@ -8,15 +8,13 @@ Webhooks allow your system to receive **real-time updates** whenever an event oc
 
 ### Webhook Sequence
 
-1. [Order Accepted](../../api-for-webhook-responses/order-accepted.md) - When order get accepted by pharmacist.
-2. [Order Rejected](../../api-for-webhook-responses/order-rejected.md) - If an order is rejected by the pharmacist, the webhook will be triggered according to the client’s configuration specified during onboarding.
-   * **Final Rejection**:
-     * Webhook is received only once after the order cannot be fulfilled in multiple reassignments.
-   * **Each Rejection**:
-     * Webhook is sent each time a pharmacy rejects the order during the reassignment process until the final rejection.
-3. [Order Re-Assign](../../api-for-webhook-responses/order-re-assigned.md) - When a Order gets Rejected by  Pharmacy we try to re-assign it to another nearby pharmacy.
-4. [Order Shipped](../../api-for-webhook-responses/order-shipped.md) -  When order is ready for shipping.
+1. [Digitization Completed](digitization-completed.md) - When the order is Digitized at our PaaS Portal then it is triggered. It is used in [**Order With Prescription Flow**](../orders/place-order.md) & an **Optinal** Webhook.
+2. [Order Assigned](order-assigned.md) - When Order is placed and gets asssigned to a pharamacy. This is generally used in Order With Prescription Flow & It is **Optinal** Webhook.
+3. [Order Accepted](order-accepted.md) - When order get accepted by pharmacist.
+4. [Order Rejected](../../api-for-webhook-responses/order-rejected.md) - If an order is rejected by the pharmacist or order is cancelled manually then this webhook is called.
+5. [Order Re-Assign](order-reassigned.md) - When a Order gets Rejected by  Pharmacy we try to re-assign it to another nearby pharmacy.
+6. [Order Shipped](order-shipped.md) -  When order is ready for shipping.
    * At this stage the delivery is being assigned to our delivery partner and tracking URL is available. But, it might show no delivery assigned as it will be searching for Delivery Rider.
-5. [Order Picked Up](../../api-for-webhook-responses/order-picked-up.md) - When order is picked up by delivery rider and details of Delivery rider are available.
-6. [Order Delivered](../../api-for-webhook-responses/order-delivered.md) - When Order Gets Delivered to patient.
-7. [Order Split](../../api-for-webhook-responses/order-split.md) - When order split into multiple orders.
+7. [Order Picked Up](order-picked-up.md) - When order is picked up by delivery rider and details of Delivery rider are available.
+8. [Order Delivered](order-delivered.md) - When Order Gets Delivered to patient.
+9. [Order Split](order-split.md) ⛔- When order gets reassigned this webhook this triggered.&#x20;

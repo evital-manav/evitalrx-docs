@@ -1,0 +1,96 @@
+# Order Rejected
+
+This webhook is triggered when the order is **Rejected** by pharmacy.
+
+Rejections can be of two types :&#x20;
+
+* **Final Rejection** : This rejection indicates that the order will not be processed further. It can be identified using `is_final_rejection : true` .
+* **Normal Rejection** : This rejection means an order can be re-assigned again & will be processed further. It can be identified using `is_final_rejection : false` .
+
+```json
+{
+  "id": "Z6zjjwoBRT005TwFcflWPw==",
+  "transaction_type": "sales",
+  "transaction_nature": "reject",
+  "chemist_id": "9kVNNczng10TbflL7zZEDA==",
+  "reference_number": 0,
+  "payment_mode": "Cash",
+  "payment_date": "1900-01-01 12:00:00",
+  "delivery_type": "delivery",
+  "order_number": "O9M6HJW44D",
+  "partner_order_id": "1234",
+  "bill_no": 0,
+  "bill_date": "2025-01-29 12:23:59",
+  "order_status": "rejected",
+  "reject_reason": "Other",
+  "total": 1300,
+  "amount": 1300,
+  "order_by": "",
+  "draft_order_id": "y1sw0N315wy4+UDhhT5FjA==",
+  "draft_order_shipping_charge": 30,
+  "patient_id": "rfojNNab+jNKqxDTYowQSQ==",
+  "patient_name": "Manav Patel",
+  "mobile": "7458787853",
+  "billing_for": "Manav Patel",
+  "billing_for_mobile": "7458787853",
+  "doctor_name": "",
+  "bill-pdf-url": "http://localhost/evital/invoice/TzlNNkhKVzQ0RA==/print/",
+  "direct_payment_url": "",
+  "remark": "",
+  "chemist_code": "C00ER",
+  "delivery_person_name": "",
+  "delivery_person_mobile": "",
+  "tracking_url": "",
+  "is_final_rejection": false,
+  "items": [
+    {
+      "price": 130,
+      "directions": "0-0-0-0",
+      "quantity": 100,
+      "mrp": 130,
+      "discount": 0,
+      "batch": "",
+      "expiry": "01/00",
+      "gst": 139.29,
+      "gstpercentage": 12,
+      "amount": 1300,
+      "size": 10,
+      "medicine_name": "Dolobest MR 100mg/500mg/250mg Tablet",
+      "pack_size": "10 Tablets",
+      "dosage_type": "",
+      "image": "https://d3cgpvqmlaynvp.cloudfront.net/storage/medicines/thumb/default.jpg",
+      "medicine_id": "LXarW6vPNnrbm2bwTZmnOw==",
+      "partner_medicine_id": "1234",
+      "manufacturer_name": "TTK Healthcare Ltd",
+      "hsn_code": "",
+      "medicine_type": "drug",
+      "packing_size": "10 tablets in 1 strip",
+      "cess": 0,
+      "cess_percentage": 0,
+      "price_to_retailer": 0,
+      "margin": 0,
+      "base_price": 0,
+      "landing_price": 0,
+      "location": "",
+      "sale_discount": 0,
+      "lock_discount": "no",
+      "sell_in_loose": "yes",
+      "loyalty_points": 0,
+      "loyalty_points_percentage": 0,
+      "batch_discount": null,
+      "returnable": "yes",
+      "b2c_margin": 3,
+      "loyalty_points_redeemed": 0,
+      "stock_adjusted": "pending",
+      "offer_id": 0,
+      "item_category": "drug",
+      "expiry_return": "1900-01-01",
+      "gst_percentage": 12,
+      "order_type": "sale",
+      "reference_medicine_code": "I00014"
+    }
+  ],
+  "order_custom_fields": {},
+  "patient_custom_fields": {}
+}
+```

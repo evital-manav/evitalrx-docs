@@ -1,5 +1,11 @@
 # Order Shipped
 
+This Webhook is triggered when the order is packed by the pharmacy store and ready to be picked up by Rider or Patient in case of `pickup`  type order.
+
+In webhook response for `pickup` type orders `chemist_details` are given to know the pharmacy store location,  timings & contact-details.
+
+At this stage the Order Final Amount is update & it is requested to calculate the difference of amount.&#x20;
+
 ```json
 {
   "id": "buctt+C5QzfVvqdIpKkYnQ==",
@@ -202,4 +208,3 @@
   "patient_custom_fields": {}
 }
 ```
-

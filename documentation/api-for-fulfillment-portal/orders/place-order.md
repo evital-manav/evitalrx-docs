@@ -30,8 +30,9 @@ To Place an order you can try with below medicines:
 
 * **Price Increase After Order Place:** (very less probability to occur)
   * **Scenario :** While taking the payment if time difference is too large between checkout and place-order due to payment delay(from patient/user) then the `location_token` might change. This might resulting in price-increase.
-  * **Solution-1:** Compare the order-total from Place-Order API Response with the payment amount taken from patient(user). If order-total is increased then cancel the order and place a new another.
-  * **Solution-2:** Place the order in `pending` state and then take payment on **order-total** from Place-Order Response. And then call **Payment-Webhook  API** to notify us.
+    * **Solution-1:** Every time Before taking the payment from user refresh the location-token, then call checkout-v3 to get updated price. After that only place-order to avoid price increase.
+    * **Solution-2:** Compare the order-total from Place-Order API Response with the payment amount taken from patient(user). If order-total is increased then cancel the order and place a new another.
+    * **Solution-3:** Place the order in `pending` state and then take payment on **order-total** from Place-Order Response. And then call **Payment-Webhook  API** to notify us.
 
 ## Place Order
 
