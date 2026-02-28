@@ -123,6 +123,7 @@
 * [Webhooks](api-for-fulfillment-portal/webhooks/README.md)
   * [Overview](api-for-fulfillment-portal/webhooks/overview.md)
   * [Digitization Completed](api-for-fulfillment-portal/webhooks/digitization-completed.md)
+  * [Digitization Rejected](api-for-fulfillment-portal/webhooks/digitization-rejected.md)
   * [Order Assigned](api-for-fulfillment-portal/webhooks/order-assigned.md)
   * [Order Accepted](api-for-fulfillment-portal/webhooks/order-accepted.md)
   * [Order Rejected](api-for-fulfillment-portal/webhooks/order-rejected.md)
