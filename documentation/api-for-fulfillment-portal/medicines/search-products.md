@@ -10,7 +10,7 @@ description: >-
 
 ## Search Products
 
-<mark style="color:green;">`POST`</mark> [`https://staging-search.evitalrx.in/v1/fulfillment/medicines/pillo/search`](https://staging-search.evitalrx.in/v1/fulfillment/medicines/pillo/search)
+<mark style="color:green;">`POST`</mark> [`https://ews-staging-search.portal-evital.com/v1/fulfillment/medicines/pillo/search`](https://ews-staging-search.portal-evital.com/v1/fulfillment/medicines/pillo/search)
 
 #### Request Body
 
