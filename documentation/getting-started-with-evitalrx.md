@@ -1,5 +1,23 @@
 ---
 icon: chart-line-up
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Getting Started with eVitalRx
@@ -34,6 +52,7 @@ password: test@api
 | EMR/HMIS Software | oORbgJ9u006PfjHQ8ICtFH4mNcwBWBZj |
 | Master Reports    | 6afjX4VSKeX3Pi82KYgy5ad7sm0CrWDK |
 | B2B               | QcT3NNYpLrGrPFvpgpYspTzk5esuM6R9 |
+| Fulfillment       | xhIxP75eG1sQEh8vVAdXykgzF4mLhDw3 |
 
 ***
 
@@ -41,13 +60,13 @@ password: test@api
 
 ⚕️Explore the diverse set of APIs designed for different use cases across our platform. 🔗 Below are the API bundles that can help you integrate and manage key functionalities:
 
-<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><a href="/broken/pages/7LFnXSiuPCz5XUcBXY6R"><strong>API for Product Catalogue</strong></a></td><td></td><td></td><td><a href="/broken/pages/7LFnXSiuPCz5XUcBXY6R">Broken link</a></td><td><a href=".gitbook/assets/API for Product Catalogue.jpg">API for Product Catalogue.jpg</a></td></tr><tr><td align="center"><a href="/broken/pages/-MkMeV3z2eoSkPDWWSpy"><strong>API for Patient App</strong></a></td><td></td><td></td><td><a href="/broken/pages/-MkMeV3z2eoSkPDWWSpy">Broken link</a></td><td><a href=".gitbook/assets/API for Patient App.png">API for Patient App.png</a></td></tr><tr><td align="center"><a href="/broken/pages/-MkMieU8ax-Kq0MIYwOA"><strong>API for EMR/HMIS Software</strong></a></td><td></td><td></td><td><a href="/broken/pages/-MkMieU8ax-Kq0MIYwOA">Broken link</a></td><td><a href=".gitbook/assets/HMIS SOFTWARE.png">HMIS SOFTWARE.png</a></td></tr><tr><td align="center"><a href="/broken/pages/8Zwrut5iUBPEY6XRxzsJ"><strong>API for Master</strong></a></td><td></td><td></td><td><a href="/broken/pages/8Zwrut5iUBPEY6XRxzsJ">Broken link</a></td><td><a href=".gitbook/assets/API FOR MASTER (1).png">API FOR MASTER (1).png</a></td></tr><tr><td align="center"><a href="/broken/pages/x5T98cNtQhPn56YY98ht"><strong>API for Fulfillment</strong></a></td><td></td><td></td><td><a href="/broken/pages/x5T98cNtQhPn56YY98ht">Broken link</a></td><td><a href=".gitbook/assets/API FOR FULFILLMENT.png">API FOR FULFILLMENT.png</a></td></tr><tr><td align="center"><a href="/broken/pages/QO61DJE2lF0SEL1tSDQE"><strong>API for B2B</strong></a></td><td></td><td></td><td><a href="/broken/pages/QO61DJE2lF0SEL1tSDQE">Broken link</a></td><td><a href=".gitbook/assets/API FOR B2B.png">API FOR B2B.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-product-catalogue"><strong>API for Product Catalogue</strong></a></td><td></td><td></td><td><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-product-catalogue">API FOR Product Catalogue</a></td><td><a href=".gitbook/assets/API for Product Catalogue.jpg">API for Product Catalogue.jpg</a></td></tr><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-patient-app"><strong>API for Patient App</strong></a></td><td></td><td></td><td><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-patient-app">API FOR Patient App</a></td><td><a href=".gitbook/assets/API for Patient App.png">API for Patient App.png</a></td></tr><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-doctor-portal"><strong>API for EMR/HMIS Software</strong></a></td><td></td><td></td><td><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-doctor-portal">API FOR EMR/HMIS SOFTWARE</a></td><td><a href=".gitbook/assets/HMIS SOFTWARE.png">HMIS SOFTWARE.png</a></td></tr><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-master-portal"><strong>API for Master</strong></a></td><td></td><td></td><td><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-master-portal">API FOR MASTER</a></td><td><a href=".gitbook/assets/API FOR MASTER (1).png">API FOR MASTER (1).png</a></td></tr><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-fulfillment-portal"><strong>API for Fulfillment</strong></a></td><td></td><td></td><td><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-fulfillment-portal">API FOR FULFILLMENT</a></td><td><a href=".gitbook/assets/API FOR FULFILLMENT.png">API FOR FULFILLMENT.png</a></td></tr><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-b2b"><strong>API for B2B</strong></a></td><td></td><td></td><td><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-b2b">API FOR B2B</a></td><td><a href=".gitbook/assets/API FOR B2B.png">API FOR B2B.png</a></td></tr></tbody></table>
 
 ### Utility API(s)
 
 ⚙️ The following utility APIs provide flexibility and additional configuration options to enhance your platform integration:
 
-<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><a href="/broken/pages/Ykw1etZbvohzJPZ1S7R3"><strong>API for Custom Fields</strong></a></td><td></td><td><a href=".gitbook/assets/API for Custom Fields.png">API for Custom Fields.png</a></td></tr><tr><td align="center"><a href="/broken/pages/tubhQM1xzELZyjSyDp3b"><strong>Webhooks &#x26; Responses</strong></a></td><td></td><td><a href=".gitbook/assets/Webhooks &#x26; Response.png">Webhooks &#x26; Response.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th align="center"></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-custom-fields"><strong>API for Custom Fields</strong></a></td><td></td><td><a href=".gitbook/assets/API for Custom Fields.png">API for Custom Fields.png</a></td></tr><tr><td align="center"><a href="https://app.gitbook.com/s/-MkMQ1evvT-4Hx1hloPt/api-for-webhook-responses"><strong>Webhooks &#x26; Responses</strong></a></td><td></td><td><a href=".gitbook/assets/Webhooks &#x26; Response.png">Webhooks &#x26; Response.png</a></td></tr></tbody></table>
 
 ***
 
