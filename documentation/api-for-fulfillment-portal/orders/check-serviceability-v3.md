@@ -24,6 +24,14 @@ We provide 5 delivery-service primarily:
 
 * When you get **serviceable** as `true`
 
+#### Testing Data
+
+* Location Details:&#x20;
+  * Latitude : 23.1025849
+  * Longitude : 72.5953601
+  * Zipcode : 380005
+  * Address : Office B, 3rd Floor, 4D Square Mall, below PVR Cinema, Motera, Ahmedabad, Gujarat 380005
+
 ## Get serviceability check
 
 <mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/check_serviceability_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/check_serviceability_v3)
