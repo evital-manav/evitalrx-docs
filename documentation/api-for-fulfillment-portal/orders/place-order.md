@@ -36,7 +36,7 @@ To Place an order you can try with below medicines:
 
 ## Place Order
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/place_order_v3)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/place_order_v3`](https://ews-staging-api-product.portal-evital.com/v1/fulfillment/orders/place_order_v3)
 
 #### Request Body
 

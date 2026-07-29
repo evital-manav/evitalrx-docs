@@ -34,7 +34,7 @@ We provide 5 delivery-service primarily:
 
 ## Get serviceability check
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/check_serviceability_v3`](https://dev-api.evitalrx.in/v1/fulfillment/orders/check_serviceability_v3)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/orders/check_serviceability_v3`](https://ews-staging-api-product.portal-evital.com/v1/fulfillment/orders/check_serviceability_v3)
 
 #### Request Body
 
