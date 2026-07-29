@@ -10,7 +10,7 @@ description: To add patients with mobile number, name and address.
 
 ## Add Patient &#x20;
 
-<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/patients/add`](https://dev-api.evitalrx.in/v1/fulfillment/patients/add)
+<mark style="color:green;">`POST`</mark> [`{{apiUrl}}fulfillment/patients/add`](https://ews-staging-api-product.portal-evital.com/v1/fulfillment/patients/add)
 
 #### Request Body
 
