@@ -39,7 +39,7 @@ password: test@api
 
 ## API Endpoint & Key(s)
 
-**Base URL for testing our API's (staging)**&#xD83D;&#xDD17;**:**  [**https://dev-api.evitalrx.in/v1/**](https://dev-api.evitalrx.in/v1/)
+**Base URL for testing our API's (staging)**&#xD83D;&#xDD17;**:**  [**https://ews-staging-api-product.portal-evital.com/v1**](https://ews-staging-api-product.portal-evital.com/v1)[**/**](https://dev-api.evitalrx.in/v1/)
 
 **Base URL for testing our API's (production)** �&#xDD17;**:**  [**https://api.evitalrx.in/v1/**](https://api.evitalrx.in/v1/)
 
