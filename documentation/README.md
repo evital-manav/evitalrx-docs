@@ -4,6 +4,24 @@ description: >-
   APIs that enable seamless integration with various applications for managing
   stock, orders, and other pharmacy operations.
 icon: terminal
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # API - powered by eVitalRx
@@ -24,9 +42,10 @@ The scope of integration is to maintain syncing of the data between two platform
 
 ## Getting Started
 
-* [Register](https://www.evitalrx.in/login?type=signup) on eVitalRx and subscribe for [**Capsule Plan**](https://www.evitalrx.in/pricing) 💊
-* Request for the API key to access the API product from [**My Profile**](https://www.evitalrx.in/profile/settings)  🔑👤
-* **Whoa**! you are all set to make the API Requests. 🚀
+* [Register](https://www.evitalrx.in/login?type=signup) on eVitalRx and make sure you have an active eVitalRx subscription to get started 💊
+* Subscribe to the [API subscription](https://www.evitalrx.in/api-pricing/?utm_source=www.google.com\&utm_medium=paid_search\&utm_campaign=referrer_www_google_com)  💳✨
+* After subscribing to the API subscription heead to your Profile and request your API key 🔑👤
+* Once your key is ready, start making your API requests 🚀
 
 ## Contact Us
 
