@@ -227,7 +227,15 @@ description: To view order details
                     }
                 }
             }
-        ]
+        ],
+        "refund_detail": {
+            "refund_mode": "original_payment",
+            "refund_date": "2026-08-31 11:16:41",
+            "refund_status": "initiated",
+            "original_payment_amount": 149,
+            "pillo_coin_amount": 0,
+            "refund_message": "Refund of ₹149 has been initiated to your original payment."
+        }
     }
 }
 ```

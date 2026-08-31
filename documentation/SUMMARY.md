@@ -132,6 +132,7 @@
   * [Order Delivered](api-for-fulfillment-portal/webhooks/order-delivered.md)
   * [Order Reassigned](api-for-fulfillment-portal/webhooks/order-reassigned.md)
   * [Order Split⛔](api-for-fulfillment-portal/webhooks/order-split.md)
+  * [Refund Initiated](api-for-fulfillment-portal/webhooks/refund-initiated.md)
 * [Fulfillment FAQ's](api-for-fulfillment-portal/fulfillment-faqs.md)
 * [Corner Cases](api-for-fulfillment-portal/corner-cases.md)
 

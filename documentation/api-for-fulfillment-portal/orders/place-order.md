@@ -90,7 +90,8 @@ To Place an order you can try with below medicines:
                     "zipcode": "380005"
                 }
             }
-        ]
+        ],
+        "payment_url": "https://ews-staging-mypillo.portal-evital.com/fulfillment/cart/61d843744cfa220afa0a6f6d450db6d8"
     }
 }
 ```
