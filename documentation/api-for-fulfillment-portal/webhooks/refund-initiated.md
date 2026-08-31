@@ -1,5 +1,7 @@
 ---
-description: This Webhook is triggered when the
+description: >-
+  This Webhook is triggered on Draft order level (Parent Order) for copay
+  clients.
 ---
 
 # Refund Initiated
