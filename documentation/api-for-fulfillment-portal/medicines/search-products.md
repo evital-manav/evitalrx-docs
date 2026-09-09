@@ -18,6 +18,9 @@ description: >-
 | ---------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | searchstring<mark style="color:red;">\*</mark> | String | <p>Search String input</p><p>It can be used in following ways.</p><p>By Item Name</p><p><code>"searchstring":"dolo"</code></p><p></p><p>By Content</p><p><code>"searchstring":"c,paraceta"</code></p><p></p><p>By GTIN Number</p><p><code>"searchstring":"89080034169"</code></p> |
 | apikey<mark style="color:red;">\*</mark>       | String | Authentication token                                                                                                                                                                                                                                                              |
+| chemist\_list                                  | String | Location token from the serviceability API's response                                                                                                                                                                                                                             |
+
+
 
 {% tabs %}
 {% tab title="200 Products Retrieved Successfully" %}
