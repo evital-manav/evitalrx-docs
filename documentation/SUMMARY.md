@@ -111,6 +111,8 @@
 * [Medicines](api-for-fulfillment-portal/medicines/README.md)
   * [Search](api-for-fulfillment-portal/medicines/search-products.md)
   * [View V3](api-for-fulfillment-portal/medicines/view.md)
+  * [Get Categories](api-for-fulfillment-portal/medicines/get-categories.md)
+  * [Get Category Items](api-for-fulfillment-portal/medicines/get-category-items.md)
 * [Orders](api-for-fulfillment-portal/orders/README.md)
   * [Check Serviceability V3](api-for-fulfillment-portal/orders/check-serviceability-v3.md)
   * [Checkout V3](api-for-fulfillment-portal/orders/checkout-v3.md)
