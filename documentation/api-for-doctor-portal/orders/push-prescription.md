@@ -27,6 +27,12 @@ description: To push prescription with items and its quantity.
 | custom\_fields                                | Object | <p>Key value pairs of custom attribute key and it's value.<br>For ex: <br>{"prescription_id": "879", "appointment_id": "123"}</p>                                                                                                                                                                                                                                                                                                                                 |
 | order\_action                                 | string | possible value : merge,update,""                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | order\_id                                     | string | <p>1.When you want to merge a prescription, you need to pass the order_id to which you want to merge.<br>And order_action should be "merge".<br><br>2.When you want to update a prescription, you need to pass the order_id to which you want to update.<br><br><br></p>                                                                                                                                                                                          |
+| hms\_admission\_type                          | string | **Optional** (Default: `'opd'`). Type of hospital admission. Allowed values: `'ipd'`, `'opd'`. Set to `'ipd'` when raising orders/prescriptions for admitted in-patients.                                                                                                                                                                                                                                                                                         |
+| hms\_reference\_admission\_number             | string | **Required for IPD** (when `hms_admission_type` is `'ipd'`). Unique IPD / Admission number from your hospital/EMR system. Max: 255 characters. Used to group and track all orders/challans under this patient admission. Orders will fail if this admission is already closed or if the patient has a conflicting active IPD admission.                                                                                                                           |
+| hms\_ward\_name                               | string | **Optional** (Recommended for IPD). Name of the ward where the patient is admitted (e.g., `"ICU"`, `"General Ward"`). Max: 100 characters. Default: `""`.                                                                                                                                                                                                                                                                                                         |
+| hms\_room\_number                             | string | **Optional** (Recommended for IPD). Room number where the patient is admitted (e.g., `"204"`, `"Deluxe-1"`). Max: 20 characters. Default: `""`.                                                                                                                                                                                                                                                                                                                   |
+| hms\_bed\_number                              | string | **Optional** (Recommended for IPD). Bed number assigned to the patient (e.g., `"B-12"`, `"Bed-3"`). Max: 20 characters. Default: `""`.                                                                                                                                                                                                                                                                                                                            |
+| hms\_created\_by\_entity                      | string | **Optional** (Default: `'doctor'`). Role of the user initiating the order. Allowed values: `'doctor'`, `'nurse'`. Set to `'nurse'` if the medication indent/order is placed by nursing staff.                                                                                                                                                                                                                                                                     |
 
 {% tabs %}
 {% tab title="200: OK Order Placed successfully." %}
@@ -34,10 +40,14 @@ description: To push prescription with items and its quantity.
 {
     "status_code": "1",
     "status_message": "Order placed successfully",
-    "datetime": "2022-12-07 14:18:11",
+    "datetime": "2026-10-29 18:05:39",
+    "version": "1.1.880",
     "data": {
-        "order_id": "jcdPUtlOBIBZY6xfDXJ6Gw==",
-        "order_number": "ODLBDER3UQ"
+        "draft_order_id": "N+nLgG4mboh2FsBzzyH6Hw==",
+        "order_id": "gpF7Ud8xUiEaCTQi3u7xqA==",
+        "order_number": "O6MVTJ0YGD",
+        "total_amount": 0,
+        "mrp_total": 81.2
     }
 }
 ```
